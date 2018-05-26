@@ -53,6 +53,7 @@ CN11SimIter(d, b, h) = {
 /* Cost Functions */
 QuadEnumCN11(b) = { 0.000784314*b^2 + 0.366078*b - 6.125; }
 EnumCN11(b) = { 0.270189*log(2)*b*log2(b) - 1.0192*b + 16.10; }
+EnumCN11Simple(b) = { b*log2(b)/(2*exp(1)) - b + 16; }
 QEnumCN11(b) = {
   my(C);
   C = 1/2 * EnumCN11(b);
@@ -61,7 +62,7 @@ QEnumCN11(b) = {
     return(MAXDEPTH + 2*(C-MAXDEPTH)));
 }
 
-SieveBDLG16(b) = { b*log2(sqrt(3/2)); }
+SieveBDGL16(b) = { b*log2(sqrt(3/2)); }
 QSieveLaa15(b) = { b*log2(sqrt(13/9)); }
 
 SieveSpace(b) = { b*log2(sqrt(4/3)); }
@@ -69,9 +70,10 @@ SieveSpace(b) = { b*log2(sqrt(4/3)); }
 /* Table indicating which cost functions will be used */
 COSTFNS =                                  /* enabled? */
 [["Quad Enum [CN11]",         QuadEnumCN11,     0],\
- ["Enum [CN11]",                  EnumCN11,     1],\
+ ["Enum [CN11]",                  EnumCN11,     0],\
+ ["Enum [CN11]",            EnumCN11Simple,     1],\
  ["Quantum CN11Enum",             QEnumCN11,    0],\
- ["LSF Sieve",                    SieveBDLG16,  1],\
+ ["LSF Sieve",                    SieveBDGL16,  1],\
  ["Quantum LSF Sieve",            QSieveLaa15,  1],\
  ["Sieve vectors",                SieveSpace,   0]];
 
@@ -281,6 +283,14 @@ Run(n, maxm, q, coeffDist, verbose=0) = {
 ));
 }
 
+RunPrimal(n,maxm,q,coeffDist,costFn) = {
+  PrimalCostEstimate(costFn,n,maxm,q,coeffDist,summarize=0)
+}
+
+RunHybrid(n,maxm,q,coeffDist,costFn) = {
+  k = HybridTradeoff(costFn,n,maxm,q,coeffDist);
+  HybridCostEstimate(costFn,n,maxm,q,coeffDist,k,summarize=0)
+}
 
 
 /* Distributions */
