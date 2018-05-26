@@ -131,15 +131,15 @@ write(concat(output_dir,"sieve_hrss_prq.dat"), data)
 
 \\ enum_sntrup.dat
 data = [];
-for(i=1, matsize(sntrup_params_pruned)[1], \
-  [n,q,t] = sntrup_params_pruned[i,]; \
+for(i=1, matsize(sntrup_params_all)[1], \
+  [n,q,t] = sntrup_params_all[i,]; \
   data = matconcat([data; data_sntrup(n,q,t,EnumCN11Simple,HYBRID)]));
 write(concat(output_dir,"enum_sntrup.dat"), data)
 
 \\ sieve_sntrup.dat
 data = [];
-for(i=1, matsize(sntrup_params_pruned)[1], \
-  [n,q,t] = sntrup_params_pruned[i,]; \
+for(i=1, matsize(sntrup_params_all)[1], \
+  [n,q,t] = sntrup_params_all[i,]; \
   data = matconcat([data; data_sntrup(n,q,t,SieveBDGL16,PRIMAL)]));
 write(concat(output_dir,"sieve_sntrup.dat"), data)
 
