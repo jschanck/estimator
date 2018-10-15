@@ -7,9 +7,7 @@ USE_SIMULATOR = 0;
 IGNORE_TOURS = 1;
 TOUR_CAP = 5;
 OPTIMIZE_M = 1;
-USVP = 1; /* TODO: Make this an argument to RUN
-             Controls whether we use d=n+m (USVP, NTRU key)
-                                  or d=n+m+1 (BDD, LWE, NTRU msg) */
+
 MAXDEPTH = -1; /* Infinite */
 
 UseSimulator(b) = {
@@ -200,9 +198,9 @@ HybridTradeoff(CostFn,n,maxm,q,coeffDist) = {
 
 /* Primal attack */
 
-PrimalBlocksize(n,m,q,s) = {
+PrimalBlocksize(n,m,q,s,usvp=0) = {
   my(d,bs);
-  if(USVP, d=n+m, d=n+m+1);
+  if(usvp, d=n+m, d=n+m+1);
   bs = MaxLT(/* max blocksize with b*_{d-bs} < s*sqrt{bs} */
          (x)->(GSAHeight(d, m, q, GSAHermite(x), d-x)/sqrt(x)), s, 2, d);
   if(USE_SIMULATOR, /* Same search using simulator */
@@ -212,23 +210,22 @@ PrimalBlocksize(n,m,q,s) = {
   bs + 1; /* Increment bs by 1 to tip height @ d-bs _above_ s*sqrt{bs} */
 }
 
-
 OptimalDim(n,q,h) = { floor(sqrt(n*log(q)/log(h))); }
 
-PrimalCostEstimate(CostFn,n,m,q,coeffDist,summarize=0) = {
+PrimalCostEstimate(CostFn,n,m,q,coeffDist,usvp=0,summarize=0) = {
   my(s,bs,d,h,iter,cost);
   s = ExpectedCoeffSize(coeffDist);
 
   \\ Search for b such that s*sqrt(b) < GSAHermite(b)^(2b - d - 1) Vol(L) 
-  bs = PrimalBlocksize(n,m,q,s);
+  bs = PrimalBlocksize(n,m,q,s,usvp);
   if(OPTIMIZE_M, /* Try to decrease number of samples */
     /* TODO: be smarter here */
     m = -n-1 + OptimalDim(n,q,GSAHermite(bs));
-    bs = PrimalBlocksize(n,m,q,s);
+    bs = PrimalBlocksize(n,m,q,s,usvp);
     m = -n-1 + OptimalDim(n,q,GSAHermite(bs));
-    bs = PrimalBlocksize(n,m,q,s));
+    bs = PrimalBlocksize(n,m,q,s,usvp));
 
-  if(USVP, d=n+m, d=n+m+1);
+  if(usvp, d=n+m, d=n+m+1);
   \\h = GSAEnsureHeight(d, m, q, s*sqrt(bs), d-bs);
   h = GSAHermite(bs);
 
@@ -260,7 +257,7 @@ SummarizeBKZ(CostFn, d, m, q, s, h, bs, iter) = {
 
 
 /* Main */
-Run(n, maxm, q, coeffDist, verbose=0) = {
+Run(n, maxm, q, coeffDist, usvp=0, verbose=0) = {
   my(costFn, k);
 
   if(verbose,
@@ -283,7 +280,7 @@ Run(n, maxm, q, coeffDist, verbose=0) = {
     costFn = COSTFNS[i][2];
     printf("\n----------------%s-------------------\n", COSTFNS[i][1]);
     printf("\nPrimal");
-    PrimalCostEstimate(costFn,n,maxm,q,coeffDist,summarize=1);
+    PrimalCostEstimate(costFn,n,maxm,q,coeffDist,usvp,summarize=1);
 
     printf("\nHybrid", COSTFNS[i][1]);
     k = HybridTradeoff(costFn,n,maxm,q,coeffDist);
@@ -291,8 +288,8 @@ Run(n, maxm, q, coeffDist, verbose=0) = {
 ));
 }
 
-RunPrimal(n,maxm,q,coeffDist,costFn) = {
-  PrimalCostEstimate(costFn,n,maxm,q,coeffDist,summarize=0)
+RunPrimal(n,maxm,q,coeffDist,costFn,usvp) = {
+  PrimalCostEstimate(costFn,n,maxm,q,coeffDist,usvp,summarize=0)
 }
 
 RunHybrid(n,maxm,q,coeffDist,costFn) = {
@@ -338,25 +335,25 @@ NTRUKEM(n=701) = {
   Run(n-1, n-1, q, coeffDist);
 }
 
-NTRUEES(n,q,t) = { Run(n, n, q, fixedWtTri(n,t)); }
+NTRUEES(n,q,t) = { Run(n, n, q, fixedWtTri(n,t), usvp=1); }
 NTRUEES443EP1() = { NTRUEES(443, 2048, 148) };
 NTRUEES509EP1() = { NTRUEES(509, 2048, 170) };
 NTRUEES587EP1() = { NTRUEES(587, 2048, 196) };
 NTRUEES743EP1() = { NTRUEES(743, 2048, 247) };
 
-NTRUPrime(n,q,t) = { Run(n, n, q, fixedWtTri(n,t)); }
+NTRUPrime(n,q,t) = { Run(n, n, q, fixedWtTri(n,t), usvp=1); }
 StreamlinedNTRUPrime739() = { NTRUPrime(739, 9829, 204); }
 StreamlinedNTRUPrime761() = { NTRUPrime(761, 4591, 143); }
 
 /* New Hope */
-ADPS16(n,q,k) = { Run(n, 2*n, q, cbd(k)); }
+ADPS16(n,q,k) = { Run(n, 2*n, q, cbd(k), usvp=0); }
 JarJar()  = { ADPS16( 512, 12289, 24) }
 NewHope() = { ADPS16(1024, 12289, 16) }
 
 /* Kyber */
 Kyber(n,d,q,ks) = {
   coeffDist = cbd(ks);
-  Run(n*d, n*d, q, coeffDist);
+  Run(n*d, n*d, q, coeffDist, usvp=0);
 }
 
 Kyber512() = { Kyber(256, 2, 7681, 5) };
