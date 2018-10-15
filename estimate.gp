@@ -229,7 +229,8 @@ PrimalCostEstimate(CostFn,n,m,q,coeffDist,summarize=0) = {
     bs = PrimalBlocksize(n,m,q,s));
 
   if(USVP, d=n+m, d=n+m+1);
-  h = GSAEnsureHeight(d, m, q, s*sqrt(bs), d-bs);
+  \\h = GSAEnsureHeight(d, m, q, s*sqrt(bs), d-bs);
+  h = GSAHermite(bs);
 
   iter = CN11SimIter(d,bs,h);
   cost = CostFn(bs) + log2(d*iter);
