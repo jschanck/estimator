@@ -115,19 +115,26 @@ GSAHermite(b,useStirling=1) = {
 };
 
 GSAHeight(d, m, q, h, i) = {
-  \\ q^(m/d) * h^(d - 2*i - 1);
+  \\ We are 1-indexing so we want
+  \\    q^(m/d)*h^d at i=1;
+  \\    q^(m/d)*h^-d at i=d; and
+  \\ geometric with ratio h^2 between.
   q^(m/d) * h^(d - 2*d*(i-1)/(d-1))
 }
 
 GSAEnsureHeight(d,m,q,height,index) = {
-  my(h,g);
+  my(s,h,g);
 
   \\ Find the largest root Hermite factor for which
   \\ the "index"-th gram schmidt norm would be greater
   \\ than "height"
 
+  \\ When index < d/2 approach height from above
+  \\ When index > d/2 approach height from below
+  s = if(2*index < d, 1, -1);
+
   g = 10e6;
-  h = MaxLT((x)->(-GSAHeight(d, m, q, x/g, index)), -height, g, 2*g);
+  h = MaxLT((x)->(s*GSAHeight(d, m, q, x/g, index)), s*height, g, 2*g);
   1.0*h/g;
 }
 
