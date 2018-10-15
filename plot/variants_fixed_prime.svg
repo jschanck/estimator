@@ -376,11 +376,24 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,692.4 L508.4,692.4 M739.9,692.4 L746.9,692.4  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,720.0 L746.9,720.0  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M60.5,692.4 L68.0,692.4 M746.9,692.4 L739.4,692.4  '/>	<g transform="translate(53.5,695.7)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<path stroke='black'  d='M60.5,720.0 L68.0,720.0 M746.9,720.0 L739.4,720.0  '/>	<g transform="translate(53.5,723.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+		<text><tspan font-family="arial" > 90</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,666.9 L508.4,666.9 M739.9,666.9 L746.9,666.9  '/></g>
+<g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M60.5,666.9 L68.0,666.9 M746.9,666.9 L739.4,666.9  '/>	<g transform="translate(53.5,670.2)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" > 100</tspan></text>
 	</g>
 </g>
@@ -389,11 +402,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,637.1 L746.9,637.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,613.8 L746.9,613.8  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M60.5,637.1 L68.0,637.1 M746.9,637.1 L739.4,637.1  '/>	<g transform="translate(53.5,640.4)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<path stroke='black'  d='M60.5,613.8 L68.0,613.8 M746.9,613.8 L739.4,613.8  '/>	<g transform="translate(53.5,617.1)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" > 110</tspan></text>
 	</g>
 </g>
@@ -402,11 +415,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,581.8 L746.9,581.8  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,560.7 L746.9,560.7  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M60.5,581.8 L68.0,581.8 M746.9,581.8 L739.4,581.8  '/>	<g transform="translate(53.5,585.1)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<path stroke='black'  d='M60.5,560.7 L68.0,560.7 M746.9,560.7 L739.4,560.7  '/>	<g transform="translate(53.5,564.0)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" > 120</tspan></text>
 	</g>
 </g>
@@ -415,11 +428,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,526.5 L746.9,526.5  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,507.7 L746.9,507.7  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M60.5,526.5 L68.0,526.5 M746.9,526.5 L739.4,526.5  '/>	<g transform="translate(53.5,529.8)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<path stroke='black'  d='M60.5,507.7 L68.0,507.7 M746.9,507.7 L739.4,507.7  '/>	<g transform="translate(53.5,511.0)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" > 130</tspan></text>
 	</g>
 </g>
@@ -428,11 +441,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,471.2 L746.9,471.2  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,454.6 L746.9,454.6  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M60.5,471.2 L68.0,471.2 M746.9,471.2 L739.4,471.2  '/>	<g transform="translate(53.5,474.5)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<path stroke='black'  d='M60.5,454.6 L68.0,454.6 M746.9,454.6 L739.4,454.6  '/>	<g transform="translate(53.5,457.9)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" > 140</tspan></text>
 	</g>
 </g>
@@ -441,11 +454,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,416.0 L746.9,416.0  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,401.5 L746.9,401.5  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M60.5,416.0 L68.0,416.0 M746.9,416.0 L739.4,416.0  '/>	<g transform="translate(53.5,419.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<path stroke='black'  d='M60.5,401.5 L68.0,401.5 M746.9,401.5 L739.4,401.5  '/>	<g transform="translate(53.5,404.8)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" > 150</tspan></text>
 	</g>
 </g>
@@ -454,11 +467,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,360.7 L746.9,360.7  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,348.4 L746.9,348.4  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M60.5,360.7 L68.0,360.7 M746.9,360.7 L739.4,360.7  '/>	<g transform="translate(53.5,364.0)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<path stroke='black'  d='M60.5,348.4 L68.0,348.4 M746.9,348.4 L739.4,348.4  '/>	<g transform="translate(53.5,351.7)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" > 160</tspan></text>
 	</g>
 </g>
@@ -467,11 +480,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,305.4 L746.9,305.4  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,295.3 L746.9,295.3  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M60.5,305.4 L68.0,305.4 M746.9,305.4 L739.4,305.4  '/>	<g transform="translate(53.5,308.7)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<path stroke='black'  d='M60.5,295.3 L68.0,295.3 M746.9,295.3 L739.4,295.3  '/>	<g transform="translate(53.5,298.6)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" > 170</tspan></text>
 	</g>
 </g>
@@ -480,11 +493,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,250.1 L746.9,250.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,242.2 L746.9,242.2  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M60.5,250.1 L68.0,250.1 M746.9,250.1 L739.4,250.1  '/>	<g transform="translate(53.5,253.4)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<path stroke='black'  d='M60.5,242.2 L68.0,242.2 M746.9,242.2 L739.4,242.2  '/>	<g transform="translate(53.5,245.5)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" > 180</tspan></text>
 	</g>
 </g>
@@ -493,11 +506,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,194.8 L746.9,194.8  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,189.1 L746.9,189.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M60.5,194.8 L68.0,194.8 M746.9,194.8 L739.4,194.8  '/>	<g transform="translate(53.5,198.1)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<path stroke='black'  d='M60.5,189.1 L68.0,189.1 M746.9,189.1 L739.4,189.1  '/>	<g transform="translate(53.5,192.4)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" > 190</tspan></text>
 	</g>
 </g>
@@ -506,11 +519,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,139.5 L746.9,139.5  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,136.0 L746.9,136.0  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M60.5,139.5 L68.0,139.5 M746.9,139.5 L739.4,139.5  '/>	<g transform="translate(53.5,142.8)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<path stroke='black'  d='M60.5,136.0 L68.0,136.0 M746.9,136.0 L739.4,136.0  '/>	<g transform="translate(53.5,139.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" > 200</tspan></text>
 	</g>
 </g>
@@ -519,11 +532,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,84.3 L746.9,84.3  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,83.0 L746.9,83.0  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M60.5,84.3 L68.0,84.3 M746.9,84.3 L739.4,84.3  '/>	<g transform="translate(53.5,87.6)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<path stroke='black'  d='M60.5,83.0 L68.0,83.0 M746.9,83.0 L739.4,83.0  '/>	<g transform="translate(53.5,86.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" > 210</tspan></text>
 	</g>
 </g>
@@ -701,7 +714,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M536.6,720.0 L536.6,712.5 M536.6,637.5 L536.6,51.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M536.6,720.0 L536.6,712.5 M536.6,622.5 L536.6,51.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -714,7 +727,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M570.8,720.0 L570.8,712.5 M570.8,637.5 L570.8,51.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M570.8,720.0 L570.8,712.5 M570.8,622.5 L570.8,51.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -727,7 +740,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M605.1,720.0 L605.1,712.5 M605.1,637.5 L605.1,51.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M605.1,720.0 L605.1,712.5 M605.1,622.5 L605.1,51.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -740,7 +753,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M639.4,720.0 L639.4,712.5 M639.4,637.5 L639.4,51.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M639.4,720.0 L639.4,712.5 M639.4,622.5 L639.4,51.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -753,7 +766,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M673.6,720.0 L673.6,712.5 M673.6,637.5 L673.6,51.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M673.6,720.0 L673.6,712.5 M673.6,622.5 L673.6,51.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -766,7 +779,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M707.9,720.0 L707.9,712.5 M707.9,637.5 L707.9,51.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M707.9,720.0 L707.9,712.5 M707.9,622.5 L707.9,51.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -793,12 +806,12 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 	<path stroke='black'  d='M60.5,51.1 L60.5,720.0 L746.9,720.0 L746.9,51.1 L60.5,51.1 Z  '/>	<g transform="translate(94.8,121.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="start">
 		<text><tspan font-family="arial" >Lines connect parameter sets that use the same ring.</tspan></text>
 	</g>
-	<g transform="translate(364.0,568.5)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="start">
-		<text><tspan font-family="arial" >n=701, q=7933</tspan></text>
+	<g transform="translate(364.0,548.1)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="start">
+		<text><tspan font-family="arial" >ntruhrss701</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='black'  d='M363.1,512.9 L357.8,498.9 L355.5,513.7 M364.0,559.7 L357.8,498.9  '/></g>
+	<path stroke='black'  d='M363.1,495.0 L357.8,481.1 L355.5,495.9 M364.0,539.5 L357.8,481.1  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(14.2,385.6) rotate(270)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="middle">
 		<text><tspan font-family="arial" >Core-sieve attack cost (log scale)</tspan></text>
@@ -811,214 +824,219 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(403.7,27.2)" stroke="none" fill="black" font-family="arial" font-size="14.00"  text-anchor="middle">
-		<text><tspan font-family="arial" >Comparison of prime q NTRU-HRSS variants: fixed weight vs. uniform</tspan></text>
+		<text><tspan font-family="arial" >Comparison of NTRU-HRSS variants: (fixed weight, prime q) vs. (uniform, prime q) vs. (uniform, pow2 q)</tspan></text>
 	</g>
 </g>
 	<g id="gnuplot_plot_1" ><title>gnuplot_plot_1</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(170, 170, 170)'  d='M60.5,692.4 L77.6,686.8 L89.3,686.8 L96.1,686.8 M72.8,675.8 L91.3,675.8 L103.0,670.2 L109.8,670.2
-		M111.9,631.6 L131.7,626.0 L143.4,626.0 L150.9,626.0 M124.2,615.0 L144.8,615.0 L157.8,615.0 L164.6,615.0
-		M127.6,615.0 L147.5,615.0 L160.5,609.4 L168.0,609.4 M150.9,587.3 L171.5,581.8 L185.2,581.8 L192.7,581.8
-		M166.0,570.7 L187.2,565.2 L200.9,565.2 L210.5,565.2 M177.0,554.2 L198.9,554.2 L213.3,554.2 L220.8,554.2
-		M195.5,543.1 L214.6,537.6 L229.7,537.6 L237.2,537.6 M203.7,526.5 L225.6,521.0 L241.3,521.0 L248.9,521.0
-		M216.0,509.9 L239.3,509.9 L254.4,509.9 L262.6,509.9 M243.4,482.3 L268.1,482.3 L282.4,476.8 L290.7,476.8
-		M259.2,465.7 L283.1,460.2 L298.9,460.2 L307.8,460.2 M270.1,454.7 L295.5,449.1 L309.9,449.1 L319.4,449.1
-		M314.0,404.9 L337.9,404.9 L355.1,399.4 L365.3,399.4 M325.6,388.3 L352.3,388.3 L368.8,382.8 L378.4,382.8
-		M350.3,366.2 L378.4,360.7 L395.5,360.7 L405.1,355.1 M377.0,333.0 L405.1,327.5 L423.6,327.5 L433.8,327.5
-		M390.7,316.4 L419.5,310.9 L438.0,310.9 L448.2,310.9 M393.4,316.4 L421.5,310.9 L440.0,310.9 L450.3,310.9
-		M405.1,305.4 L433.2,299.9 L451.7,299.9 L462.6,294.3 M406.4,299.9 L435.9,299.9 L454.4,294.3 L464.7,294.3
-		M444.8,261.2 L475.6,255.6 L494.8,250.1 L505.8,250.1 M446.9,255.6 L478.4,250.1 L496.9,250.1 L507.8,244.6
-		M473.6,228.0 L503.7,222.5 L523.6,222.5 L534.5,222.5 M501.7,194.8 L534.5,189.3 L555.8,189.3 L566.1,189.3
-		M527.7,167.2 L559.9,161.7 L581.1,161.7 L592.8,161.7 M541.4,150.6 L575.0,150.6 L596.2,145.1 L607.8,145.1
-		M555.1,139.5 L588.7,134.0 L609.9,128.5 L622.9,128.5 M582.5,106.4 L616.7,100.9 L639.4,100.9 L652.4,100.9
-		M623.6,62.2 L659.9,56.6 L682.5,56.6 L695.5,51.1  '/></g>
+	<path stroke='rgb(170, 170, 170)'  d='M60.5,666.9 L77.6,661.6 L89.3,661.6 L96.1,661.6 L121.5,693.5 L143.4,720.0 M72.8,651.0 L91.3,651.0
+		L103.0,645.7 L109.8,645.7 L135.9,677.5 M111.9,608.5 L131.7,603.2 L143.4,603.2 L150.9,603.2 L179.0,635.1
+		L196.8,661.6 M124.2,592.6 L144.8,592.6 L157.8,592.6 L164.6,592.6 L193.4,619.1 M127.6,592.6 L147.5,592.6
+		L160.5,587.3 L168.0,587.3 L195.5,619.1 M150.9,566.0 L171.5,560.7 L185.2,560.7 L192.7,560.7 L222.2,592.6
+		M166.0,550.1 L187.2,544.8 L200.9,544.8 L210.5,544.8 L239.3,576.7 M177.0,534.2 L198.9,534.2 L213.3,534.2
+		L220.8,534.2 L251.6,566.0 M195.5,523.6 L214.6,518.3 L229.7,518.3 L237.2,518.3 L268.7,550.1 M203.7,507.7
+		L225.6,502.3 L241.3,502.3 L248.9,502.3 L280.4,539.5 M216.0,491.7 L239.3,491.7 L254.4,491.7 L262.6,491.7
+		L295.5,523.6 L303.7,539.5 M243.4,465.2 L268.1,465.2 L282.4,459.9 L290.7,459.9 L324.9,497.0 L330.4,507.7
+		M259.2,449.3 L283.1,443.9 L298.9,443.9 L307.8,443.9 L342.0,481.1 M270.1,438.6 L295.5,433.3 L309.9,433.3
+		L319.4,433.3 L354.4,470.5 L357.1,475.8 M314.0,390.9 L337.9,390.9 L355.1,385.5 L365.3,385.5 L401.6,428.0
+		M325.6,374.9 L352.3,374.9 L368.8,369.6 L378.4,369.6 L416.0,412.1 M350.3,353.7 L378.4,348.4 L395.5,348.4
+		L405.1,343.1 L443.4,385.5 L503.0,449.3 M377.0,321.8 L405.1,316.5 L423.6,316.5 L433.8,316.5 L473.6,359.0
+		L531.8,422.7 M390.7,305.9 L419.5,300.6 L438.0,300.6 L448.2,300.6 L488.6,343.1 M393.4,305.9 L421.5,300.6
+		L440.0,300.6 L450.3,300.6 L491.4,343.1 M405.1,295.3 L433.2,290.0 L451.7,290.0 L462.6,284.7 L503.0,327.2
+		L560.6,390.9 M406.4,290.0 L435.9,290.0 L454.4,284.7 L464.7,284.7 L506.5,327.2 M444.8,252.8 L475.6,247.5
+		L494.8,242.2 L505.8,242.2 L548.2,290.0 M446.9,247.5 L478.4,242.2 L496.9,242.2 L507.8,236.9 L551.7,284.7
+		L606.5,343.1 M473.6,221.0 L503.7,215.7 L523.6,215.7 L534.5,215.7 L579.1,258.1 M501.7,189.1 L534.5,183.8
+		L555.8,183.8 L566.1,183.8 L611.9,226.3 L664.0,284.7 M527.7,162.6 L559.9,157.3 L581.1,157.3 L592.8,157.3
+		L639.4,199.7 M541.4,146.7 L575.0,146.7 L596.2,141.3 L607.8,141.3 L654.4,189.1 L704.4,242.2 M555.1,136.0
+		L588.7,130.7 L609.9,125.4 L622.9,125.4 L670.2,173.2 M582.5,104.2 L616.7,98.9 L639.4,98.9 L652.4,98.9
+		L700.3,146.7 M623.6,61.7 L659.9,56.4 L682.5,56.4 L695.5,51.1 L746.9,104.2  '/></g>
 	</g>
 	<g id="gnuplot_plot_2" ><title>gnuplot_plot_2</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=509, q=2179')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(60.5,692.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(60.5,666.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=521, q=2221')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(72.8,675.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(72.8,651.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=557, q=2389')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(111.9,631.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(111.9,608.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=569, q=2411')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(124.2,615.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(124.2,592.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=571, q=2467')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(127.6,615.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(127.6,592.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=593, q=2521')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(150.9,587.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(150.9,566.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=607, q=2591')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(166.0,570.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(166.0,550.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=617, q=2617')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(177.0,554.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(177.0,534.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=631, q=2791')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(195.5,543.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(195.5,523.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=641, q=2729')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(203.7,526.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(203.7,507.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=653, q=2767')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(216.0,509.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(216.0,491.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=677, q=2879')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(243.4,482.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(243.4,465.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=691, q=2953')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(259.2,465.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(259.2,449.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=701, q=2999')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(270.1,454.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(270.1,438.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=739, q=3209')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(314.0,404.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(314.0,390.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=751, q=3209')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(325.6,388.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(325.6,374.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=773, q=3299')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(350.3,366.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(350.3,353.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=797, q=3389')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(377.0,333.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(377.0,321.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=809, q=3433')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(390.7,316.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(390.7,305.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=811, q=3461')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(393.4,316.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(393.4,305.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=821, q=3511')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(405.1,305.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(405.1,295.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=823, q=3499')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(406.4,299.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(406.4,290.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=857, q=3643')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(444.8,261.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(444.8,252.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=859, q=3643')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(446.9,255.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(446.9,247.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=881, q=3793')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(473.6,228.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(473.6,221.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=907, q=3851')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(501.7,194.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(501.7,189.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=929, q=3967')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(527.7,167.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(527.7,162.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=941, q=4001')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(541.4,150.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(541.4,146.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=953, q=4049')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(555.1,139.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(555.1,136.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=977, q=4153')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(582.5,106.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(582.5,104.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=1013, q=4297')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt8' transform='translate(623.6,62.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt8' transform='translate(623.6,61.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
@@ -1026,45 +1044,45 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 	<g id="gnuplot_plot_3" ><title>prime q, fixed weight 3n/8</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g id="gnuplot_plot_3_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'gnuplot_plot_3')">
-	<g transform="translate(690.4,648.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<g transform="translate(690.4,633.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" >prime q, fixed weight 3n/8</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	</g>
-	<use xlink:href='#gpPt7' transform='translate(60.5,692.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(72.8,675.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(111.9,631.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(124.2,615.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(127.6,615.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(150.9,587.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(166.0,570.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(177.0,554.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(195.5,543.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(203.7,526.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(216.0,509.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(243.4,482.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(259.2,465.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(270.1,454.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(314.0,404.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(325.6,388.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(350.3,366.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(377.0,333.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(390.7,316.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(393.4,316.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(405.1,305.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(406.4,299.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(444.8,261.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(446.9,255.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(473.6,228.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(501.7,194.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(527.7,167.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(541.4,150.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(555.1,139.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(582.5,106.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt7' transform='translate(623.6,62.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(60.5,666.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(72.8,651.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(111.9,608.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(124.2,592.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(127.6,592.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(150.9,566.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(166.0,550.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(177.0,534.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(195.5,523.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(203.7,507.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(216.0,491.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(243.4,465.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(259.2,449.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(270.1,438.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(314.0,390.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(325.6,374.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(350.3,353.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(377.0,321.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(390.7,305.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(393.4,305.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(405.1,295.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(406.4,290.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(444.8,252.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(446.9,247.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(473.6,221.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(501.7,189.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(527.7,162.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(541.4,146.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(555.1,136.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(582.5,104.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(623.6,61.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
 	<g id="gnuplot_plot_3_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'gnuplot_plot_3')">
-	<use xlink:href='#gpPt7' transform='translate(715.1,645.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt7' transform='translate(715.1,630.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
 	</g>
 </g>
 	</g>
@@ -1073,187 +1091,187 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=509, q=2879')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(77.6,686.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(77.6,661.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=521, q=2953')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(91.3,675.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(91.3,651.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=557, q=3181')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(131.7,626.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(131.7,603.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=569, q=3221')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(144.8,615.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(144.8,592.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=571, q=3253')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(147.5,615.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(147.5,592.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=593, q=3359')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(171.5,581.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(171.5,560.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=607, q=3433')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(187.2,565.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(187.2,544.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=617, q=3491')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(198.9,554.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(198.9,534.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=631, q=3581')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(214.6,537.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(214.6,518.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=641, q=3623')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(225.6,521.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(225.6,502.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=653, q=3691')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(239.3,509.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(239.3,491.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=677, q=3877')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(268.1,482.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(268.1,465.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=691, q=3911')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(283.1,460.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(283.1,443.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=701, q=4019')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(295.5,449.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(295.5,433.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=739, q=4177')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(337.9,404.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(337.9,390.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=751, q=4259')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(352.3,388.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(352.3,374.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=773, q=4409')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(378.4,360.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(378.4,348.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=797, q=4513')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(405.1,327.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(405.1,316.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=809, q=4583')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(419.5,310.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(419.5,300.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=811, q=4583')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(421.5,310.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(421.5,300.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=821, q=4643')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(433.2,299.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(433.2,290.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=823, q=4657')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(435.9,299.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(435.9,290.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=857, q=4877')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(475.6,255.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(475.6,247.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=859, q=4889')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(478.4,250.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(478.4,242.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=881, q=4987')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(503.7,222.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(503.7,215.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=907, q=5153')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(534.5,189.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(534.5,183.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=929, q=5261')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(559.9,161.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(559.9,157.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=941, q=5351')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(575.0,150.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(575.0,146.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=953, q=5399')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(588.7,134.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(588.7,130.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=977, q=5527')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(616.7,100.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(616.7,98.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=1013, q=5737')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt12' transform='translate(659.9,56.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt12' transform='translate(659.9,56.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
@@ -1261,45 +1279,45 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 	<g id="gnuplot_plot_5" ><title>prime q, fixed weight 1n/2</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g id="gnuplot_plot_5_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'gnuplot_plot_5')">
-	<g transform="translate(690.4,663.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<g transform="translate(690.4,648.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" >prime q, fixed weight 1n/2</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	</g>
-	<use xlink:href='#gpPt11' transform='translate(77.6,686.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(91.3,675.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(131.7,626.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(144.8,615.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(147.5,615.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(171.5,581.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(187.2,565.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(198.9,554.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(214.6,537.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(225.6,521.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(239.3,509.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(268.1,482.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(283.1,460.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(295.5,449.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(337.9,404.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(352.3,388.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(378.4,360.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(405.1,327.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(419.5,310.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(421.5,310.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(433.2,299.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(435.9,299.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(475.6,255.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(478.4,250.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(503.7,222.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(534.5,189.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(559.9,161.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(575.0,150.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(588.7,134.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(616.7,100.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt11' transform='translate(659.9,56.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(77.6,661.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(91.3,651.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(131.7,603.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(144.8,592.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(147.5,592.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(171.5,560.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(187.2,544.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(198.9,534.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(214.6,518.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(225.6,502.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(239.3,491.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(268.1,465.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(283.1,443.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(295.5,433.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(337.9,390.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(352.3,374.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(378.4,348.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(405.1,316.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(419.5,300.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(421.5,300.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(433.2,290.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(435.9,290.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(475.6,247.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(478.4,242.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(503.7,215.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(534.5,183.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(559.9,157.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(575.0,146.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(588.7,130.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(616.7,98.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(659.9,56.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
 	<g id="gnuplot_plot_5_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'gnuplot_plot_5')">
-	<use xlink:href='#gpPt11' transform='translate(715.1,660.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt11' transform='translate(715.1,645.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
 	</g>
 </g>
 	</g>
@@ -1308,187 +1326,187 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=509, q=3449')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(89.3,686.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(89.3,661.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=521, q=3539')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(103.0,670.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(103.0,645.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=557, q=3779')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(143.4,626.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(143.4,603.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=569, q=3863')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(157.8,615.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(157.8,592.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=571, q=3917')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(160.5,609.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(160.5,587.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=593, q=4049')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(185.2,581.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(185.2,560.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=607, q=4129')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(200.9,565.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(200.9,544.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=617, q=4211')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(213.3,554.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(213.3,534.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=631, q=4327')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(229.7,537.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(229.7,518.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=641, q=4391')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(241.3,521.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(241.3,502.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=653, q=4451')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(254.4,509.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(254.4,491.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=677, q=4597')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(282.4,476.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(282.4,459.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=691, q=4721')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(298.9,460.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(298.9,443.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=701, q=4759')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(309.9,449.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(309.9,433.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=739, q=5021')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(355.1,399.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(355.1,385.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=751, q=5113')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(368.8,382.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(368.8,369.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=773, q=5273')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(395.5,360.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(395.5,348.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=797, q=5417')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(423.6,327.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(423.6,316.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=809, q=5507')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(438.0,310.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(438.0,300.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=811, q=5501')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(440.0,310.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(440.0,300.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=821, q=5569')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(451.7,299.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(451.7,290.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=823, q=5623')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(454.4,294.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(454.4,284.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=857, q=5813')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(494.8,250.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(494.8,242.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=859, q=5827')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(496.9,250.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(496.9,242.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=881, q=6011')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(523.6,222.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(523.6,215.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=907, q=6211')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(555.8,189.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(555.8,183.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=929, q=6311')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(581.1,161.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(581.1,157.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=941, q=6421')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(596.2,145.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(596.2,141.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=953, q=6469')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(609.9,128.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(609.9,125.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=977, q=6653')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(639.4,100.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(639.4,98.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=1013, q=6871')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt4' transform='translate(682.5,56.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt4' transform='translate(682.5,56.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
@@ -1496,45 +1514,45 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 	<g id="gnuplot_plot_7" ><title>prime q, fixed weight 3n/5</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g id="gnuplot_plot_7_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'gnuplot_plot_7')">
-	<g transform="translate(690.4,678.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<g transform="translate(690.4,663.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" >prime q, fixed weight 3n/5</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	</g>
-	<use xlink:href='#gpPt3' transform='translate(89.3,686.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(103.0,670.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(143.4,626.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(157.8,615.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(160.5,609.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(185.2,581.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(200.9,565.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(213.3,554.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(229.7,537.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(241.3,521.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(254.4,509.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(282.4,476.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(298.9,460.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(309.9,449.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(355.1,399.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(368.8,382.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(395.5,360.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(423.6,327.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(438.0,310.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(440.0,310.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(451.7,299.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(454.4,294.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(494.8,250.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(496.9,250.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(523.6,222.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(555.8,189.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(581.1,161.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(596.2,145.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(609.9,128.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(639.4,100.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt3' transform='translate(682.5,56.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(89.3,661.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(103.0,645.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(143.4,603.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(157.8,592.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(160.5,587.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(185.2,560.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(200.9,544.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(213.3,534.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(229.7,518.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(241.3,502.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(254.4,491.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(282.4,459.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(298.9,443.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(309.9,433.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(355.1,385.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(368.8,369.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(395.5,348.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(423.6,316.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(438.0,300.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(440.0,300.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(451.7,290.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(454.4,284.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(494.8,242.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(496.9,242.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(523.6,215.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(555.8,183.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(581.1,157.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(596.2,141.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(609.9,125.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(639.4,98.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(682.5,56.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
 	<g id="gnuplot_plot_7_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'gnuplot_plot_7')">
-	<use xlink:href='#gpPt3' transform='translate(715.1,675.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt3' transform='translate(715.1,660.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
 	</g>
 </g>
 	</g>
@@ -1543,181 +1561,181 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=509, q=3851')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(96.1,686.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(96.1,661.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=521, q=3929')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(109.8,670.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(109.8,645.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=557, q=4211')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(150.9,626.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(150.9,603.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=569, q=4297')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(164.6,615.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(164.6,592.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=571, q=4349')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(168.0,609.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(168.0,587.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=593, q=4481')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(192.7,581.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(192.7,560.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=607, q=4679')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(210.5,565.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(210.5,544.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=617, q=4673')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(220.8,554.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(220.8,534.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=631, q=4759')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(237.2,537.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(237.2,518.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=641, q=4831')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(248.9,521.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(248.9,502.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=653, q=4937')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(262.6,509.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(262.6,491.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=677, q=5107')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(290.7,476.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(290.7,459.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=691, q=5231')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(307.8,460.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(307.8,443.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=701, q=5303')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(319.4,449.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(319.4,433.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=739, q=5623')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(365.3,399.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(365.3,385.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=751, q=5669')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(378.4,382.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(378.4,369.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=773, q=5839')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(405.1,355.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(405.1,343.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=797, q=6011')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(433.8,327.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(433.8,316.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=809, q=6101')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(448.2,310.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(448.2,300.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=811, q=6121')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(450.3,310.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(450.3,300.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=821, q=6197')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(462.6,294.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(462.6,284.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=823, q=6203')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(464.7,294.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(464.7,284.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=857, q=6473')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(505.8,250.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(505.8,242.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=859, q=6473')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(507.8,244.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(507.8,236.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=881, q=6653')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(534.5,222.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(534.5,215.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=907, q=6841')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(566.1,189.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(566.1,183.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=929, q=7001')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(592.8,161.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(592.8,157.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=941, q=7103')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(607.8,145.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(607.8,141.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=953, q=7229')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(622.9,128.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(622.9,125.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=977, q=7411')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt6' transform='translate(652.4,100.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt6' transform='translate(652.4,98.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
@@ -1731,45 +1749,45 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 	<g id="gnuplot_plot_9" ><title>prime q, fixed weight 2n/3</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g id="gnuplot_plot_9_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'gnuplot_plot_9')">
-	<g transform="translate(690.4,693.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<g transform="translate(690.4,678.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" >prime q, fixed weight 2n/3</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	</g>
-	<use xlink:href='#gpPt5' transform='translate(96.1,686.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(109.8,670.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(150.9,626.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(164.6,615.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(168.0,609.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(192.7,581.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(210.5,565.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(220.8,554.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(237.2,537.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(248.9,521.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(262.6,509.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(290.7,476.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(307.8,460.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(319.4,449.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(365.3,399.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(378.4,382.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(405.1,355.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(433.8,327.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(448.2,310.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(450.3,310.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(462.6,294.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(464.7,294.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(505.8,250.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(507.8,244.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(534.5,222.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(566.1,189.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(592.8,161.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(607.8,145.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(622.9,128.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
-	<use xlink:href='#gpPt5' transform='translate(652.4,100.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(96.1,661.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(109.8,645.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(150.9,603.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(164.6,592.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(168.0,587.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(192.7,560.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(210.5,544.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(220.8,534.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(237.2,518.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(248.9,502.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(262.6,491.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(290.7,459.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(307.8,443.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(319.4,433.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(365.3,385.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(378.4,369.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(405.1,343.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(433.8,316.5) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(448.2,300.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(450.3,300.6) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(462.6,284.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(464.7,284.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(505.8,242.2) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(507.8,236.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(534.5,215.7) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(566.1,183.8) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(592.8,157.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(607.8,141.3) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(622.9,125.4) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(652.4,98.9) scale(3.75)' color='rgb(  0, 158, 115)'/>
 	<use xlink:href='#gpPt5' transform='translate(695.5,51.1) scale(3.75)' color='rgb(  0, 158, 115)'/>
 	<g id="gnuplot_plot_9_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'gnuplot_plot_9')">
-	<use xlink:href='#gpPt5' transform='translate(715.1,690.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
+	<use xlink:href='#gpPt5' transform='translate(715.1,675.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
 	</g>
 </g>
 	</g>
@@ -1778,187 +1796,187 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=509, q=5783')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(121.5,720.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(121.5,693.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=521, q=5903')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(135.9,703.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(135.9,677.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=557, q=6329')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(179.0,659.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(179.0,635.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=569, q=6427')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(193.4,642.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(193.4,619.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=571, q=6449')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(195.5,642.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(195.5,619.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=593, q=6701')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(222.2,615.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(222.2,592.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=607, q=6857')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(239.3,598.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(239.3,576.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=617, q=6971')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(251.6,587.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(251.6,566.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=631, q=7187')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(268.7,570.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(268.7,550.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=641, q=7243')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(280.4,559.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(280.4,539.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=653, q=7393')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(295.5,543.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(295.5,523.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=677, q=7649')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(324.9,515.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(324.9,497.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=691, q=7841')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(342.0,498.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(342.0,481.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=701, q=7933')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(354.4,487.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(354.4,470.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=739, q=8369')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(401.6,443.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(401.6,428.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=751, q=8501')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(416.0,427.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(416.0,412.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=773, q=8761')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(443.4,399.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(443.4,385.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=797, q=9029')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(473.6,371.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(473.6,359.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=809, q=9157')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(488.6,355.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(488.6,343.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=811, q=9203')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(491.4,355.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(491.4,343.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=821, q=9281')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(503.0,338.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(503.0,327.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=823, q=9371')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(506.5,338.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(506.5,327.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=857, q=9689')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(548.2,299.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(548.2,290.0) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=859, q=9787')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(551.7,294.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(551.7,284.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=881, q=10007')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(579.1,266.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(579.1,258.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=907, q=10259')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(611.9,233.5) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(611.9,226.3) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=929, q=10501')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(639.4,205.9) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(639.4,199.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=941, q=10639')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(654.4,194.8) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(654.4,189.1) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=953, q=10781')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(670.2,178.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(670.2,173.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=977, q=11047')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(700.3,150.6) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(700.3,146.7) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=1013, q=11489')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
-	<use xlink:href='#gpPt10' transform='translate(746.9,106.4) scale(3.75)' color='rgb(255, 255, 255)'/></g>
+	<use xlink:href='#gpPt10' transform='translate(746.9,104.2) scale(3.75)' color='rgb(255, 255, 255)'/></g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
@@ -1966,49 +1984,144 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 	<g id="gnuplot_plot_11" ><title>prime q, uniform</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g id="gnuplot_plot_11_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'gnuplot_plot_11')">
-	<g transform="translate(690.4,708.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+	<g transform="translate(690.4,693.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
 		<text><tspan font-family="arial" >prime q, uniform</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	</g>
-	<use xlink:href='#gpPt9' transform='translate(121.5,720.0) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(135.9,703.4) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(179.0,659.2) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(193.4,642.6) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(195.5,642.6) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(222.2,615.0) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(239.3,598.4) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(251.6,587.3) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(268.7,570.7) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(280.4,559.7) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(295.5,543.1) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(324.9,515.5) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(342.0,498.9) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(354.4,487.8) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(401.6,443.6) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(416.0,427.0) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(443.4,399.4) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(473.6,371.7) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(488.6,355.1) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(491.4,355.1) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(503.0,338.6) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(506.5,338.6) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(548.2,299.9) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(551.7,294.3) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(579.1,266.7) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(611.9,233.5) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(639.4,205.9) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(654.4,194.8) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(670.2,178.2) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(700.3,150.6) scale(3.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt9' transform='translate(746.9,106.4) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(121.5,693.5) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(135.9,677.5) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(179.0,635.1) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(193.4,619.1) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(195.5,619.1) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(222.2,592.6) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(239.3,576.7) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(251.6,566.0) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(268.7,550.1) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(280.4,539.5) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(295.5,523.6) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(324.9,497.0) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(342.0,481.1) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(354.4,470.5) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(401.6,428.0) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(416.0,412.1) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(443.4,385.5) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(473.6,359.0) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(488.6,343.1) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(491.4,343.1) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(503.0,327.2) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(506.5,327.2) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(548.2,290.0) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(551.7,284.7) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(579.1,258.1) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(611.9,226.3) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(639.4,199.7) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(654.4,189.1) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(670.2,173.2) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(700.3,146.7) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(746.9,104.2) scale(3.75)' color='rgb(148,   0, 211)'/>
 	<g id="gnuplot_plot_11_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'gnuplot_plot_11')">
-	<use xlink:href='#gpPt9' transform='translate(715.1,705.0) scale(3.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt9' transform='translate(715.1,690.0) scale(3.75)' color='rgb(148,   0, 211)'/>
 	</g>
 </g>
 	</g>
-<g fill="none" color="white" stroke="rgb(148,   0, 211)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g id="gnuplot_plot_12" ><title>NTRU-HRSS</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g id="gnuplot_plot_12_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'gnuplot_plot_12')">
+	<g transform="translate(690.4,708.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
+		<text><tspan font-family="arial" >NTRU-HRSS</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	</g>
+	<use xlink:href='#gpPt2' transform='translate(143.4,720.0) scale(3.75)' color='rgb(229,  30,  16)'/>
+	<use xlink:href='#gpPt2' transform='translate(196.8,661.6) scale(3.75)' color='rgb(229,  30,  16)'/>
+	<use xlink:href='#gpPt2' transform='translate(303.7,539.5) scale(3.75)' color='rgb(229,  30,  16)'/>
+	<use xlink:href='#gpPt2' transform='translate(330.4,507.7) scale(3.75)' color='rgb(229,  30,  16)'/>
+	<use xlink:href='#gpPt2' transform='translate(357.1,475.8) scale(3.75)' color='rgb(229,  30,  16)'/>
+	<use xlink:href='#gpPt2' transform='translate(503.0,449.3) scale(3.75)' color='rgb(229,  30,  16)'/>
+	<use xlink:href='#gpPt2' transform='translate(531.8,422.7) scale(3.75)' color='rgb(229,  30,  16)'/>
+	<use xlink:href='#gpPt2' transform='translate(560.6,390.9) scale(3.75)' color='rgb(229,  30,  16)'/>
+	<use xlink:href='#gpPt2' transform='translate(606.5,343.1) scale(3.75)' color='rgb(229,  30,  16)'/>
+	<use xlink:href='#gpPt2' transform='translate(664.0,284.7) scale(3.75)' color='rgb(229,  30,  16)'/>
+	<use xlink:href='#gpPt2' transform='translate(704.4,242.2) scale(3.75)' color='rgb(229,  30,  16)'/>
+	<g id="gnuplot_plot_12_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'gnuplot_plot_12')">
+	<use xlink:href='#gpPt2' transform='translate(715.1,705.0) scale(3.75)' color='rgb(229,  30,  16)'/>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_13" ><title>gnuplot_plot_13</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=509, q=8192')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
+	<use xlink:href='#gpPt2' transform='translate(143.4,720.0) scale(3.75)' color='rgb(255,   0,   0)'/></g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=557, q=8192')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
+	<use xlink:href='#gpPt2' transform='translate(196.8,661.6) scale(3.75)' color='rgb(255,   0,   0)'/></g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=653, q=8192')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
+	<use xlink:href='#gpPt2' transform='translate(303.7,539.5) scale(3.75)' color='rgb(255,   0,   0)'/></g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=677, q=8192')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
+	<use xlink:href='#gpPt2' transform='translate(330.4,507.7) scale(3.75)' color='rgb(255,   0,   0)'/></g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=701, q=8192')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
+	<use xlink:href='#gpPt2' transform='translate(357.1,475.8) scale(3.75)' color='rgb(255,   0,   0)'/></g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=773, q=16384')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
+	<use xlink:href='#gpPt2' transform='translate(503.0,449.3) scale(3.75)' color='rgb(255,   0,   0)'/></g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=797, q=16384')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
+	<use xlink:href='#gpPt2' transform='translate(531.8,422.7) scale(3.75)' color='rgb(255,   0,   0)'/></g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=821, q=16384')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
+	<use xlink:href='#gpPt2' transform='translate(560.6,390.9) scale(3.75)' color='rgb(255,   0,   0)'/></g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=859, q=16384')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
+	<use xlink:href='#gpPt2' transform='translate(606.5,343.1) scale(3.75)' color='rgb(255,   0,   0)'/></g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=907, q=16384')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
+	<use xlink:href='#gpPt2' transform='translate(664.0,284.7) scale(3.75)' color='rgb(255,   0,   0)'/></g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g onmousemove="gnuplot_svg.showHypertext(evt,'n=941, q=16384')" onmouseout="gnuplot_svg.hideHypertext()"><title> </title>
+	<use xlink:href='#gpPt2' transform='translate(704.4,242.2) scale(3.75)' color='rgb(255,   0,   0)'/></g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+	</g>
+<g fill="none" color="white" stroke="black" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
@@ -2031,7 +2144,7 @@ gnuplot_svg.plot_width = 686.4;
 gnuplot_svg.plot_height = 668.9;
 gnuplot_svg.plot_axis_xmin = 1410;
 gnuplot_svg.plot_axis_xmax = 3414;
-gnuplot_svg.plot_axis_ymin = 95;
+gnuplot_svg.plot_axis_ymin = 90;
 gnuplot_svg.plot_axis_ymax = 216;
 gnuplot_svg.polar_mode = false;
 gnuplot_svg.plot_axis_x2min = "none"
