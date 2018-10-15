@@ -38,7 +38,7 @@ set arrow 1 from ntruhrss701_bytes+20, ntruhrss701_sievecost-10 to ntruhrss701_b
 set label 2 "ntruhrss701" at ntruhrss701_bytes+20, ntruhrss701_sievecost-11
 # Data is input twice. First for mouse over text, then for points
 plot "data/sieve_hrss_prq.dat" using (2*$4):3:(Params(1,2)) with labels hypertext point pt 11 lc rgb "#ffffff" notitle,\
-     "data/sieve_hrss_prq.dat" using (2*$4):3 with points pt 10 lc 1 title 'prime cyclotomic, prime q, uniform', \
+     "data/sieve_hrss_prq.dat" using (2*$4):3 with points pt 10 lc 1 title 'prime q, uniform', \
      "data/sieve_hrss.dat"     using (2*$4):3 with points pt 3  lc 7 title 'NTRU-HRSS', \
      "data/sieve_hrss.dat"     using (2*$4):3:(Params(1,2)) with labels hypertext point pt 3  lc rgb "#ff0000" notitle, \
 
@@ -102,13 +102,13 @@ set label 2 "n=701, q=7933" at ntruhrss701_bytes+20, ntruhrss701_sievecost-11
 # Data is input twice. First for mouse over text, then for points
 plot "data/sieve_prime.dat"     using (2*$5):4 with lines lc rgb "#aaaaaa" notitle, \
      "data/sieve_prime_38.dat"  using (2*$5):4:(Params(1,2)) with labels hypertext point pt 9  lc rgb "#ffffff" notitle, \
-        "data/sieve_prime_38.dat"  using (2*$5):4 with points pt 8  lc rgb "#00bfff" title 'prime q, fixed weight 3n/8', \
+        "data/sieve_prime_38.dat"  using (2*$5):4 with points pt 8  lc 2 title 'prime q, fixed weight 3n/8', \
      "data/sieve_prime_12.dat"  using (2*$5):4:(Params(1,2)) with labels hypertext point pt 13 lc rgb "#ffffff" notitle, \
-        "data/sieve_prime_12.dat"  using (2*$5):4 with points pt 12 lc rgb "#00bfff" title 'prime q, fixed weight 1n/2', \
+        "data/sieve_prime_12.dat"  using (2*$5):4 with points pt 12 lc 2 title 'prime q, fixed weight 1n/2', \
      "data/sieve_prime_35.dat"  using (2*$5):4:(Params(1,2)) with labels hypertext point pt 5  lc rgb "#ffffff" notitle, \
-        "data/sieve_prime_35.dat"  using (2*$5):4 with points pt 4  lc rgb "#00bfff" title 'prime q, fixed weight 3n/5', \
+        "data/sieve_prime_35.dat"  using (2*$5):4 with points pt 4  lc 2 title 'prime q, fixed weight 3n/5', \
      "data/sieve_prime_23.dat"  using (2*$5):4:(Params(1,2)) with labels hypertext point pt 7  lc rgb "#ffffff" notitle, \
-        "data/sieve_prime_23.dat"  using (2*$5):4 with points pt 6  lc rgb "#00bfff" title 'prime q, fixed weight 2n/3', \
+        "data/sieve_prime_23.dat"  using (2*$5):4 with points pt 6  lc 2 title 'prime q, fixed weight 2n/3', \
      "data/sieve_hrss_prq.dat" using (2*$4):3:(Params(1,2)) with labels hypertext point pt 11 lc rgb "#ffffff" notitle,  \
          "data/sieve_hrss_prq.dat" using (2*$4):3 with points pt 10 lc 1 title 'prime q, uniform', \
 
@@ -145,11 +145,11 @@ plot "data/sieve_sntrup.dat"    using 5:4 with lines lt rgb "#cccccc" notitle, \
      "data/sieve_hrss.dat"      using (2*$4):3 with points pt 3  lc 7 title 'NTRU-HRSS', \
        "data/sieve_hrss.dat"      using (2*$4):3:(Params(1,2)) with labels hypertext point pt 3  lc rgb "#ff0000" notitle, \
      "data/sieve_prime_38.dat"  using (2*$5):4:(Params(1,2)) with labels hypertext point pt 9  lc rgb "#ffffff" notitle, \
-        "data/sieve_prime_38.dat"  using (2*$5):4 with points pt 8  lc rgb "#00bfff" title 'prime q, fixed weight 3n/8', \
+        "data/sieve_prime_38.dat"  using (2*$5):4 with points pt 8  lc 2 title 'prime q, fixed weight 3n/8', \
      "data/sieve_prime_12.dat"  using (2*$5):4:(Params(1,2)) with labels hypertext point pt 13 lc rgb "#ffffff" notitle, \
-        "data/sieve_prime_12.dat"  using (2*$5):4 with points pt 12 lc rgb "#00bfff" title 'prime q, fixed weight 1n/2', \
+        "data/sieve_prime_12.dat"  using (2*$5):4 with points pt 12 lc 2 title 'prime q, fixed weight 1n/2', \
      "data/sieve_prime_35.dat"  using (2*$5):4:(Params(1,2)) with labels hypertext point pt 5  lc rgb "#ffffff" notitle, \
-        "data/sieve_prime_35.dat"  using (2*$5):4 with points pt 4  lc rgb "#00bfff" title 'prime q, fixed weight 3n/5', \
+        "data/sieve_prime_35.dat"  using (2*$5):4 with points pt 4  lc 2 title 'prime q, fixed weight 3n/5', \
      "data/sieve_prime_23.dat"  using (2*$5):4:(Params(1,2)) with labels hypertext point pt 7  lc rgb "#ffffff" notitle, \
-        "data/sieve_prime_23.dat"  using (2*$5):4 with points pt 6  lc rgb "#00bfff" title 'prime q, fixed weight 2n/3', \
+        "data/sieve_prime_23.dat"  using (2*$5):4 with points pt 6  lc 2 title 'prime q, fixed weight 2n/3', \
 

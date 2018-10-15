@@ -675,7 +675,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M478.5,720.0 L478.5,712.5 M478.5,682.5 L478.5,51.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M478.5,720.0 L478.5,51.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -688,7 +688,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M516.1,720.0 L516.1,712.5 M516.1,682.5 L516.1,51.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M516.1,720.0 L516.1,51.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -701,7 +701,7 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M553.7,720.0 L553.7,712.5 M553.7,682.5 L553.7,51.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M553.7,720.0 L553.7,51.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -988,11 +988,11 @@ onclick="gnuplot_svg.toggleCoordBox(evt)"  onmousemove="gnuplot_svg.moveCoordBox
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 	</g>
-	<g id="gnuplot_plot_2" ><title>prime cyclotomic, prime q, uniform</title>
+	<g id="gnuplot_plot_2" ><title>prime q, uniform</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g id="gnuplot_plot_2_keyentry" visibility="visible" onclick="gnuplot_svg.toggleVisibility(evt,'gnuplot_plot_2')">
 	<g transform="translate(690.4,693.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
-		<text><tspan font-family="arial" >prime cyclotomic, prime q, uniform</tspan></text>
+		<text><tspan font-family="arial" >prime q, uniform</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
