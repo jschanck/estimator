@@ -6,10 +6,12 @@ PRIMAL = 0;
 HYBRID = 1;
 
 \\ Valid n for prime q ntru
-ns_ntru_primeq = []; forprime(p=500,1024,if(znorder(Mod(3,p)) == p-1, ns_ntru_primeq = concat(ns_ntru_primeq,p)))
+ns_ntru_primeq = [];
+forprime(n=500,1024,if(znorder(Mod(3,n)) == n-1, ns_ntru_primeq = concat(ns_ntru_primeq,n)))
 
 \\ Valid n for pow2 ntru
-ns_ntru_pow2q = []; forprime(p=500,1024,if(znorder(Mod(2,p)) == p-1 && znorder(Mod(3,p)) == p-1, ns_ntru_pow2q = concat(ns_ntru_pow2q,p)))
+ns_ntru_pow2q = [];
+forprime(n=500,1024,if(znorder(Mod(2,n)) == n-1 && znorder(Mod(3,n)) == n-1, ns_ntru_pow2q = concat(ns_ntru_pow2q,n)))
 
 \\ Weight parameters for fixed weight ntru
 wts = [3/8,1/2,3/5,2/3]
@@ -19,6 +21,9 @@ sntrup_params_all = [467, 3911, 122, 130, 5573; 479, 5689, 159, 132, 5976; 479, 
 
 \\ Pruned set of sntrup params with q in [3n, 18n]
 sntrup_params_pruned = [467, 3911, 122; 479, 5689, 159; 479, 6089, 159; 491, 6287, 163; 491, 8627, 163; 499, 8243, 166; 503, 2879, 89; 503, 8663, 167; 523, 3331, 104; 523, 7151, 174; 523, 7159, 174; 541, 2297, 71; 541, 2437, 76; 557, 4759, 148; 557, 9323, 185; 569, 3929, 122; 571, 4201, 131; 571, 7177, 190; 577, 1861, 58; 587, 5233, 163; 587, 8263, 195; 599, 7001, 199; 599, 9551, 199; 607, 6317, 197; 613, 3319, 103; 613, 4363, 136; 613, 9157, 204; 613, 10529, 204; 619, 2297, 71; 619, 6907, 206; 619, 9397, 206; 619, 9679, 206; 631, 2081, 65; 631, 2693, 84; 631, 11287, 210; 643, 6247, 195; 647, 3559, 111; 653, 2311, 72; 653, 4621, 144; 653, 8419, 217; 659, 2137, 66; 659, 6781, 211; 659, 7481, 219; 673, 9413, 224; 677, 3251, 101; 683, 5623, 175; 691, 5471, 170; 691, 6449, 201; 691, 12281, 230; 709, 10337, 236; 709, 11923, 236; 719, 2351, 73; 719, 5153, 161; 719, 9133, 239; 719, 10531, 239; 719, 10739, 239; 727, 5827, 182; 727, 12241, 242; 739, 9829, 246; 739, 10859, 246; 739, 12713, 246; 743, 7541, 235; 743, 11251, 247; 751, 3067, 95; 751, 3823, 119; 757, 3727, 116; 757, 6869, 214; 757, 7879, 246; 757, 10979, 252; 757, 12973, 252; 761, 4091, 127; 761, 4591, 143; 761, 7883, 246; 769, 6599, 206; 773, 8317, 257; 773, 9811, 257; 773, 13757, 257; 787, 4243, 132; 809, 6113, 191; 809, 14107, 269; 811, 8543, 266; 811, 10457, 270; 811, 11831, 270; 811, 14083, 270; 823, 4513, 141; 823, 8069, 252; 823, 11197, 274; 827, 7219, 225; 827, 9767, 275; 827, 13159, 275; 829, 12227, 276; 829, 13037, 276; 829, 14107, 276; 853, 9721, 284; 853, 12377, 284; 857, 5167, 161; 857, 13367, 285; 857, 14797, 285; 859, 12487, 286; 863, 4111, 128; 863, 8779, 274; 881, 3217, 100; 881, 7673, 239; 881, 15733, 293; 883, 8089, 252; 883, 14639, 294; 887, 13007, 295; 907, 7727, 241; 907, 8807, 275; 907, 12109, 302; 907, 15467, 302; 919, 11827, 306; 919, 13933, 306; 919, 14771, 306; 929, 12953, 309; 929, 14011, 309; 937, 12401, 312; 941, 10781, 313; 947, 3917, 122; 953, 6343, 198; 953, 8237, 257; 953, 16693, 317; 967, 8243, 257]
+
+\\ NTRU EES parameters
+ees_params = [443, 2048, 143; 743, 2048, 247]
 
 data_ntru_hrss(n,costfn,hybrid=0) = {
   my(q,coeffDist,cost,size);
@@ -66,6 +71,7 @@ data_ntru_primeq_uniform(n,costfn,hybrid=0) = {
   [n,q,cost,size];
 }
 
+
 data_sntrup(n,q,t,costfn,hybrid=0) = {
   my(coeffDist,cost,size);
   coeffDist=fixedWtTri(n,t);
@@ -74,6 +80,16 @@ data_sntrup(n,q,t,costfn,hybrid=0) = {
     cost = floor(RunHybrid(n, n, q, coeffDist, costfn)),
     cost = floor(RunPrimal(n, n, q, coeffDist, costfn)));
   [n,q,2*t,cost,size];
+}
+
+data_ntru_ees(n,q,d,costfn,hybrid=0) = {
+  my(coeffDist,cost,size);
+  size = ceil(n*log2(q)/8);
+  coeffDist = fixedWtTri(n, d);
+  if(hybrid,
+    cost = floor(RunHybrid(n, n, q, coeffDist, costfn)),
+    cost = floor(RunPrimal(n, n, q, coeffDist, costfn)));
+  [n,q,d,cost,size];
 }
 
 
@@ -142,6 +158,20 @@ for(i=1, matsize(sntrup_params_pruned)[1], \
   [n,q,t] = sntrup_params_pruned[i,]; \
   data = matconcat([data; data_sntrup(n,q,t,SieveBDGL16,PRIMAL)]));
 write(concat(output_dir,"sieve_sntrup.dat"), data)
+
+\\ enum_ees.dat
+data = [];
+for(i=1, matsize(ees_params)[1], \
+  [n,q,d] = ees_params[i,]; \
+  data = matconcat([data; data_ntru_ees(n,q,d,EnumCN11Simple,HYBRID)]));
+write(concat(output_dir,"enum_ees.dat"), data)
+
+\\ sieve_ees.dat
+data = [];
+for(i=1, matsize(ees_params)[1], \
+  [n,q,d] = ees_params[i,]; \
+  data = matconcat([data; data_ntru_ees(n,q,d,SieveBDGL16,PRIMAL)]));
+write(concat(output_dir,"sieve_ees.dat"), data)
 
 
 quit();
