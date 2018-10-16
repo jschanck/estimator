@@ -14,10 +14,16 @@ forprime(n=500,1024,if(znorder(Mod(2,n)) == n-1, ns_ntru_2ok = concat(ns_ntru_2o
 ns_ntru_3ok = [];
 forprime(n=500,1024,if(znorder(Mod(3,n)) == n-1, ns_ntru_3ok = concat(ns_ntru_3ok,n)))
 
+\\ n with Phi_n irreducible mod 5
+ns_ntru_5ok = [];
+forprime(n=500,1024,if(znorder(Mod(5,n)) == n-1, ns_ntru_5ok = concat(ns_ntru_5ok,n)))
+
 \\ n with Phi_n irreducible mod 2 and 3
 ns_ntru_pow2q = setintersect(ns_ntru_2ok, ns_ntru_3ok); 
 ns_ntru_primeq_p2 = ns_ntru_2ok;
 ns_ntru_primeq_p3 = ns_ntru_3ok;
+ns_ntru_primeq_p4 = ns_ntru_2ok;
+ns_ntru_primeq_p5 = ns_ntru_5ok;
 
 \\ Weight parameters for fixed weight ntru
 wts = [3/8,1/2,3/5,2/3]
@@ -158,17 +164,30 @@ for(i=1, #ns_ntru_primeq_p3, n = ns_ntru_primeq_p3[i]; \
   data = matconcat([data; data_ntru_primeq_uniform(n,3,SieveBDGL16,PRIMAL)]));
 write(concat(output_dir,"sieve_hrss_prq.dat"), data)
 
-\\ enum_hrss_prq_p2.dat
-data = [];
-for(i=1, #ns_ntru_primeq_p2, n = ns_ntru_primeq_p2[i]; \
-  data = matconcat([data; data_ntru_primeq_uniform(n,2,EnumCN11Simple,HYBRID)]));
-write(concat(output_dir,"enum_hrss_prq_p2.dat"), data)
 
-\\ sieve_hrss_prq_p2.dat
+\\ enum_hrss_prq_p4.dat
 data = [];
-for(i=1, #ns_ntru_primeq_p2, n = ns_ntru_primeq_p2[i]; \
-  data = matconcat([data; data_ntru_primeq_uniform(n,2,SieveBDGL16,PRIMAL)]));
-write(concat(output_dir,"sieve_hrss_prq_p2.dat"), data)
+for(i=1, #ns_ntru_primeq_p4, n = ns_ntru_primeq_p4[i]; \
+  data = matconcat([data; data_ntru_primeq_uniform(n,4,EnumCN11Simple,HYBRID)]));
+write(concat(output_dir,"enum_hrss_prq_p4.dat"), data)
+
+\\ sieve_hrss_prq_p4.dat
+data = [];
+for(i=1, #ns_ntru_primeq_p4, n = ns_ntru_primeq_p4[i]; \
+  data = matconcat([data; data_ntru_primeq_uniform(n,4,SieveBDGL16,PRIMAL)]));
+write(concat(output_dir,"sieve_hrss_prq_p4.dat"), data)
+
+\\ enum_hrss_prq_p5.dat
+data = [];
+for(i=1, #ns_ntru_primeq_p5, n = ns_ntru_primeq_p5[i]; \
+  data = matconcat([data; data_ntru_primeq_uniform(n,5,EnumCN11Simple,HYBRID)]));
+write(concat(output_dir,"enum_hrss_prq_p5.dat"), data)
+
+\\ sieve_hrss_prq_p5.dat
+data = [];
+for(i=1, #ns_ntru_primeq_p5, n = ns_ntru_primeq_p5[i]; \
+  data = matconcat([data; data_ntru_primeq_uniform(n,5,SieveBDGL16,PRIMAL)]));
+write(concat(output_dir,"sieve_hrss_prq_p5.dat"), data)
 
 \\ enum_sntrup.dat
 data = [];
