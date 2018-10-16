@@ -95,7 +95,7 @@ set xlabel 'Communication cost (pk + ct bytes)'
 set ylabel 'Core-sieve attack cost (log scale)'
 
 set key bottom right
-set label 1 "Lines connect parameter sets that use the same ring." at graph .05, graph .9
+set label 1 "Lines connect parameter sets with the same n." at graph .05, graph .9
 
 set arrow 1 from ntruhrss701_bytes+20, ntruhrss701_sievecost-10 to ntruhrss701_bytes+2, ntruhrss701_sievecost+1
 set label 2 "ntruhrss701" at ntruhrss701_bytes+20, ntruhrss701_sievecost-11

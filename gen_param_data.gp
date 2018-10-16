@@ -5,13 +5,19 @@ output_dir = "~/tmp/data/"
 PRIMAL = 0;
 HYBRID = 1;
 
-\\ Valid n for prime q ntru
-ns_ntru_primeq = [];
-forprime(n=500,1024,if(znorder(Mod(3,n)) == n-1, ns_ntru_primeq = concat(ns_ntru_primeq,n)))
 
-\\ Valid n for pow2 ntru
-ns_ntru_pow2q = [];
-forprime(n=500,1024,if(znorder(Mod(2,n)) == n-1 && znorder(Mod(3,n)) == n-1, ns_ntru_pow2q = concat(ns_ntru_pow2q,n)))
+\\ n with Phi_n irreducible mod 2
+ns_ntru_2ok = [];
+forprime(n=500,1024,if(znorder(Mod(2,n)) == n-1, ns_ntru_2ok = concat(ns_ntru_2ok,n)))
+
+\\ n with Phi_n irreducible mod 3
+ns_ntru_3ok = [];
+forprime(n=500,1024,if(znorder(Mod(3,n)) == n-1, ns_ntru_3ok = concat(ns_ntru_3ok,n)))
+
+\\ n with Phi_n irreducible mod 2 and 3
+ns_ntru_pow2q = setintersect(ns_ntru_2ok, ns_ntru_3ok); 
+ns_ntru_primeq_p2 = ns_ntru_2ok;
+ns_ntru_primeq_p3 = ns_ntru_3ok;
 
 \\ Weight parameters for fixed weight ntru
 wts = [3/8,1/2,3/5,2/3]
@@ -25,52 +31,60 @@ sntrup_params_pruned = [467, 3911, 122; 479, 5689, 159; 479, 6089, 159; 491, 628
 \\ NTRU EES parameters
 ees_params = [443, 2048, 143; 743, 2048, 247]
 
+min_q(n,p,wtf,wtg,wtr) = {
+  \\ weight parameters wtf,wtg, wtf set percentage of non-zero
+  \\ coefficients in f, g, and r. Coefficients are at most
+  \\ floor(p/2) in magnitude.
+  ngr = floor(p/2)^2 * sqrt(wtg*(n-1)) * sqrt(wtr*(n-1));
+  nfm = floor(p/2)^2 * sqrt(wtf*(n-1)) * sqrt(n-1);
+  q = ceil(2*sqrt(2)*(p*ngr + nfm));
+}
+
 data_ntru_hrss(n,costfn,hybrid=0) = {
   my(q,coeffDist,cost,size);
-  q = 2^ceil(3.5 + log2(n));
+  q = 2^ceil(log2(min_q(n,3,1,1,1)));
   size = ceil((n-1)*log2(q)/8);
   coeffDist = cbdMod3(2);
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn)));
+    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
   [n,q,cost,size];
 }
 
 data_ntru_primeq_fixedwt(n,wt,costfn,hybrid=0) = {
   my(q,coeffDist,cost,size);
-  q = nextprime(8*sqrt(2)*wt*(n-1));
+  q = nextprime(min_q(n,3,wt,wt,wt));
   while(!polisirreducible(Mod(polcyclo(n),q)), q = nextprime(q+1));
   size = ceil((n-1)*log2(q)/8);
   coeffDist = fixedWtTri(n, floor(wt*n/2));
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn)));
+    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
   [n,q,wt,cost,size];
 }
 
 data_ntru_pow2q_fixedwt(n,wt,costfn,hybrid=0) = {
   my(q,coeffDist,cost,size);
-  q = 2^ceil(3.5 + log2(wt*n));
+  q = 2^ceil(log2(min_q(n,3,wt,wt,wt)));
   coeffDist = fixedWtTri(n, floor(wt*n/2));
   size = ceil((n-1)*log2(q)/8);
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn)));
+    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
   [n,q,wt,cost,size];
 }
 
-data_ntru_primeq_uniform(n,costfn,hybrid=0) = {
+data_ntru_primeq_uniform(n,p,costfn,hybrid=0) = {
   my(q,coeffDist,cost,size);
-  q = nextprime(8*sqrt(2)*(n-1));
+  q = nextprime(min_q(n,p,1,1,1));
   while(!polisirreducible(Mod(polcyclo(n),q)), q = nextprime(q+1));
-  coeffDist = cUnif(3);
+  coeffDist = cUnif(p);
   size = ceil((n-1)*log2(q)/8);
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn)));
+    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
   [n,q,cost,size];
 }
-
 
 data_sntrup(n,q,t,costfn,hybrid=0) = {
   my(coeffDist,cost,size);
@@ -78,7 +92,7 @@ data_sntrup(n,q,t,costfn,hybrid=0) = {
   size = ceil(n*log2(q)/8)+ceil(n*log2(q/3)/8);
   if(hybrid,
     cost = floor(RunHybrid(n, n, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n, n, q, coeffDist, costfn)));
+    cost = floor(RunPrimal(n, n, q, coeffDist, costfn, 1)));
   [n,q,2*t,cost,size];
 }
 
@@ -88,10 +102,9 @@ data_ntru_ees(n,q,d,costfn,hybrid=0) = {
   coeffDist = fixedWtTri(n, d);
   if(hybrid,
     cost = floor(RunHybrid(n, n, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n, n, q, coeffDist, costfn)));
+    cost = floor(RunPrimal(n, n, q, coeffDist, costfn, 1)));
   [n,q,d,cost,size];
 }
-
 
 \\ enum_hrss.dat
 data = [];
@@ -121,28 +134,28 @@ write(concat(output_dir,"sieve_pow2.dat"), data)
 
 \\ enum_prime.dat
 data = [];
-for(i=1, #ns_ntru_primeq, n = ns_ntru_primeq[i]; \
+for(i=1, #ns_ntru_primeq_p3, n = ns_ntru_primeq_p3[i]; \
   for(j=1, #wts, wt = wts[j]; \
     data = matconcat([data; data_ntru_primeq_fixedwt(n,wt,EnumCN11Simple,HYBRID)])));
 write(concat(output_dir,"enum_prime.dat"), data)
 
 \\ sieve_prime.dat
 data = [];
-for(i=1, #ns_ntru_primeq, n = ns_ntru_primeq[i]; \
+for(i=1, #ns_ntru_primeq_p3, n = ns_ntru_primeq_p3[i]; \
   for(j=1, #wts, wt = wts[j]; \
     data = matconcat([data; data_ntru_primeq_fixedwt(n,wt,SieveBDGL16,PRIMAL)])));
 write(concat(output_dir,"sieve_prime.dat"), data)
 
 \\ enum_hrss_prq.dat
 data = [];
-for(i=1, #ns_ntru_primeq, n = ns_ntru_primeq[i]; \
-  data = matconcat([data; data_ntru_primeq_uniform(n,EnumCN11Simple,HYBRID)]));
+for(i=1, #ns_ntru_primeq_p3, n = ns_ntru_primeq_p3[i]; \
+  data = matconcat([data; data_ntru_primeq_uniform(n,3,EnumCN11Simple,HYBRID)]));
 write(concat(output_dir,"enum_hrss_prq.dat"), data)
 
 \\ sieve_hrss_prq.dat
 data = [];
-for(i=1, #ns_ntru_primeq, n = ns_ntru_primeq[i]; \
-  data = matconcat([data; data_ntru_primeq_uniform(n,SieveBDGL16,PRIMAL)]));
+for(i=1, #ns_ntru_primeq_p3, n = ns_ntru_primeq_p3[i]; \
+  data = matconcat([data; data_ntru_primeq_uniform(n,3,SieveBDGL16,PRIMAL)]));
 write(concat(output_dir,"sieve_hrss_prq.dat"), data)
 
 \\ enum_sntrup.dat
