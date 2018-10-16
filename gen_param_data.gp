@@ -158,6 +158,18 @@ for(i=1, #ns_ntru_primeq_p3, n = ns_ntru_primeq_p3[i]; \
   data = matconcat([data; data_ntru_primeq_uniform(n,3,SieveBDGL16,PRIMAL)]));
 write(concat(output_dir,"sieve_hrss_prq.dat"), data)
 
+\\ enum_hrss_prq_p2.dat
+data = [];
+for(i=1, #ns_ntru_primeq_p2, n = ns_ntru_primeq_p2[i]; \
+  data = matconcat([data; data_ntru_primeq_uniform(n,2,EnumCN11Simple,HYBRID)]));
+write(concat(output_dir,"enum_hrss_prq_p2.dat"), data)
+
+\\ sieve_hrss_prq_p2.dat
+data = [];
+for(i=1, #ns_ntru_primeq_p2, n = ns_ntru_primeq_p2[i]; \
+  data = matconcat([data; data_ntru_primeq_uniform(n,2,SieveBDGL16,PRIMAL)]));
+write(concat(output_dir,"sieve_hrss_prq_p2.dat"), data)
+
 \\ enum_sntrup.dat
 data = [];
 for(i=1, matsize(sntrup_params_pruned)[1], \
