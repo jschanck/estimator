@@ -6,46 +6,57 @@ gnuplot still needs some work at the command line.
 
   2. gp -q gen_param_data.gp
 
-  3. Reformat the output files with one data point
-     per line and a blank line between parameter
-     sets with distinct n.
-
   * You've now reproduced
-      data/enum_hrss.dat
-      data/enum_hrss_prq.dat
-      data/enum_pow2.dat
-      data/enum_prime.dat
-      data/enum_sntrup.dat
-      data/sieve_hrss.dat
-      data/sieve_hrss_prq.dat
-      data/sieve_pow2.dat
-      data/sieve_prime.dat
-      data/sieve_sntrup.dat
-
-  To get different shapes for the different weight
-  parameters there's still a bit of work to do.
-
-  4. Create the files
-
+      enum_ees.dat
+      enum_hrss.dat
+      enum_hrss_prq.dat
+      enum_hrss_prq_p2.dat
+      enum_hrss_prq_p4.dat
+      enum_hrss_prq_p5.dat
       enum_pow2_12.dat
       enum_pow2_23.dat
       enum_pow2_35.dat
       enum_pow2_38.dat
-
+      enum_pow2.dat
       enum_prime_12.dat
       enum_prime_23.dat
       enum_prime_35.dat
       enum_prime_38.dat
-
+      enum_prime.dat
+      enum_sntrup.dat
+      sieve_ees.dat
+      sieve_hrss.dat
+      sieve_hrss_prq.dat
+      sieve_hrss_prq_p2.dat
+      sieve_hrss_prq_p4.dat
+      sieve_hrss_prq_p5.dat
       sieve_pow2_12.dat
       sieve_pow2_23.dat
       sieve_pow2_35.dat
       sieve_pow2_38.dat
-
+      sieve_pow2.dat
       sieve_prime_12.dat
       sieve_prime_23.dat
       sieve_prime_35.dat
       sieve_prime_38.dat
+      sieve_prime.dat
+      sieve_sntrup.dat
 
-  5. Copy appropriate data to the files. Start with
-     sort -k 3,3 enum_pow2.dat -o tmp_enum_pow2.dat
+  The lines in variants_fixed_prime.svg and
+  variants_fixed_prime_enum.svg come from
+  enum_prime_all.dat and sieve_prime_all.dat.
+
+  4. Concatenate
+        enum_prime.dat
+        enum_hrss.dat
+        enum_hrss_prq.dat
+     into
+        enum_prime_all.dat
+
+     Insert a "weight" column in position 3 into the
+     enum_hrss and enum_hrss_prq data.
+     The value doesn't matter.
+
+     Sort by n and insert blank lines between distinct values of n.
+
+  5. Do the same for sieve_prime_all.
