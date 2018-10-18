@@ -60,12 +60,12 @@ data_hrss_pow2q(n,costfn,hybrid=0) = {
   \\ NOTE: Assumes trinary distribution [5/16,6/16,5/16]
   my(q,coeffDist,cost,size);
   q = 2^ceil(log2(min_q_hrss(n,3,1,1,1)));
-  size = ceil((n-1)*log2(q)/8);
+  size = 2*ceil((n-1)*log2(q)/8);
   coeffDist = cbdMod3(2);
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
     cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
-  [n,q,cost,size];
+  [n,q,1,cost,size];
 }
 
 
@@ -75,18 +75,18 @@ data_hrss_primeq(n,costfn,hybrid=0) = {
   q = nextprime(min_q_hrss(n,3,1,1,1));
   while(!polisirreducible(Mod(polcyclo(n),q)), q = nextprime(q+1));
   coeffDist = cbdMod3(2);
-  size = ceil((n-1)*log2(q)/8);
+  size = 2*ceil((n-1)*log2(q)/8);
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
     cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
-  [n,q,cost,size];
+  [n,q,1,cost,size];
 }
 
 data_hrss_pow2q_fixedwt(n,wt,costfn,hybrid=0) = {
   my(q,coeffDist,cost,size);
   q = 2^ceil(log2(min_q_hrss(n,3,wt,wt,1)));
   coeffDist = fixedWtTri(n, floor(wt*n/2));
-  size = ceil((n-1)*log2(q)/8);
+  size = 2*ceil((n-1)*log2(q)/8);
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
     cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
@@ -97,7 +97,7 @@ data_hrss_primeq_fixedwt(n,wt,costfn,hybrid=0) = {
   my(q,coeffDist,cost,size);
   q = nextprime(min_q_hrss(n,3,wt,wt,wt));
   while(!polisirreducible(Mod(polcyclo(n),q)), q = nextprime(q+1));
-  size = ceil((n-1)*log2(q)/8);
+  size = 2*ceil((n-1)*log2(q)/8);
   coeffDist = fixedWtTri(n, floor(wt*n/2));
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
@@ -112,11 +112,11 @@ data_hrss_primeq_unifp(n,p,costfn,hybrid=0) = {
   q = nextprime(min_q_hrss(n,p,1,1,1));
   while(!polisirreducible(Mod(polcyclo(n),q)), q = nextprime(q+1));
   coeffDist = cUnif(p);
-  size = ceil((n-1)*log2(q)/8);
+  size = 2*ceil((n-1)*log2(q)/8);
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
     cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
-  [n,q,cost,size];
+  [n,q,1,cost,size];
 }
 
 
@@ -125,7 +125,7 @@ data_ntru_pow2q(n,wt,costfn,hybrid=0) = {
   my(q,coeffDist,cost,size);
   q = 2^ceil(log2(min_q_ntru(n,3,wt,wt,wt,wt)));
   coeffDist = fixedWtTri(n, floor(wt*n/2));
-  size = ceil((n-1)*log2(q)/8);
+  size = 2*ceil((n-1)*log2(q)/8);
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
     cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
@@ -136,7 +136,7 @@ data_ntru_primeq(n,wt,costfn,hybrid=0) = {
   my(q,coeffDist,cost,size);
   q = nextprime(min_q_ntru(n,3,wt,wt,wt,wt));
   while(!polisirreducible(Mod(polcyclo(n),q)), q = nextprime(q+1));
-  size = ceil((n-1)*log2(q)/8);
+  size = 2*ceil((n-1)*log2(q)/8);
   coeffDist = fixedWtTri(n, floor(wt*n/2));
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
@@ -160,7 +160,7 @@ data_sntrup(n,q,t,costfn,hybrid=0) = {
 
 data_ees(n,q,d,costfn,hybrid=0) = {
   my(coeffDist,cost,size);
-  size = ceil(n*log2(q)/8);
+  size = 2*ceil(n*log2(q)/8);
   coeffDist = fixedWtTri(n, d);
   if(hybrid,
     cost = floor(RunHybrid(n, n, q, coeffDist, costfn)),

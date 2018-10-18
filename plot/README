@@ -1,62 +1,31 @@
-Reproducing the data is automated, but formatting for
-gnuplot still needs some work at the command line.
+How to reproduce the data
+-------------------------
 
   1. Create the directory ~/tmp/data or change
      the output directory in gen_param_data.gp
 
-  2. gp -q gen_param_data.gp
+  2. Run the parameter generation script:
+     gp -q gen_param_data.gp
 
-  * You've now reproduced
-      enum_ees.dat
-      enum_hrss.dat
-      enum_hrss_prq.dat
-      enum_hrss_prq_p2.dat
-      enum_hrss_prq_p4.dat
-      enum_hrss_prq_p5.dat
-      enum_pow2_12.dat
-      enum_pow2_23.dat
-      enum_pow2_35.dat
-      enum_pow2_38.dat
-      enum_pow2.dat
-      enum_prime_12.dat
-      enum_prime_23.dat
-      enum_prime_35.dat
-      enum_prime_38.dat
-      enum_prime.dat
-      enum_sntrup.dat
-      sieve_ees.dat
-      sieve_hrss.dat
-      sieve_hrss_prq.dat
-      sieve_hrss_prq_p2.dat
-      sieve_hrss_prq_p4.dat
-      sieve_hrss_prq_p5.dat
-      sieve_pow2_12.dat
-      sieve_pow2_23.dat
-      sieve_pow2_35.dat
-      sieve_pow2_38.dat
-      sieve_pow2.dat
-      sieve_prime_12.dat
-      sieve_prime_23.dat
-      sieve_prime_35.dat
-      sieve_prime_38.dat
-      sieve_prime.dat
-      sieve_sntrup.dat
+  You've now reproduced essentially all of the data files.
 
-  The lines in variants_fixed_prime.svg and
-  variants_fixed_prime_enum.svg come from
-  enum_prime_all.dat and sieve_prime_all.dat.
+  3. The lines connecting parameter sets with the same
+     value of n in variants_primeq_enum.svg and
+     variants_fixed_primeq_sieve.svg are loaded from
+     enum_all_primeq.dat and sieve_all_primeq.dat.
+     You need to make these files
 
-  4. Concatenate
-        enum_prime.dat
-        enum_hrss.dat
-        enum_hrss_prq.dat
-     into
-        enum_prime_all.dat
+      cat enum_hrss_primeq.dat \
+          enum_hrss_primeq_fw.dat \
+          enum_ntru_primeq_ft.dat > enum_all_primeq.dat
 
-     Insert a "weight" column in position 3 into the
-     enum_hrss and enum_hrss_prq data.
-     The value doesn't matter.
+      cat sieve_hrss_primeq.dat \
+          sieve_hrss_primeq_fw.dat \
+          sieve_ntru_primeq_ft.dat > sieve_all_primeq.dat
 
-     Sort by n and insert blank lines between distinct values of n.
+     Then sort the files and insert blank lines between
+     distinct values of n.
 
-  5. Do the same for sieve_prime_all.
+  4. Replace the files in estimator/plot/data with your
+     newly generated ones.
+
