@@ -18,6 +18,30 @@ sntrup4591761_enumcost  = 225
 plotw = 768
 ploth = 768
 
+pt_wt_38 = 8
+pt_wt_38_f = 9
+pt_wt_12 = 12
+pt_wt_12_f = 13
+pt_wt_35 = 4
+pt_wt_35_f = 5
+pt_wt_23 = 6
+pt_wt_23_f = 7
+pt_u1 = 10
+pt_u1_f = 11
+pt_u2 = 3
+pt_sntrup = 2
+
+lc_fill = "#ffffff"
+
+lc_hrss_prime   = "#009e73"
+lc_hrss_pow2    = "#56b4e9"
+lc_hrss_prime_u = "#009e73"
+lc_hrss_pow2_u  = "#e51e10"
+lc_ntru_prime   = "#555555"
+lc_ntru_pow2    = "#9400d3"
+lc_sntrup       = "#ff9f00"
+
+
 
 #set arrow 3 from sntrup4591761_bytes-250,sntrup4591761_sievecost+5 to sntrup4591761_bytes-20,sntrup4591761_sievecost+.5
 #set label 3 "sntrup4591761" at sntrup4591761_bytes-450,sntrup4591761_sievecost+6
