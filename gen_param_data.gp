@@ -81,7 +81,7 @@ data_hrss_primeq(n,costfn,hybrid=0) = {
 
 data_hrss_pow2q_fixedwt(n,wt,costfn,hybrid=0) = {
   my(q,coeffDist,cost,size);
-  q = 2^ceil(log2(min_q_hrss(n,3,wt,wt,1)));
+  q = 2^ceil(log2(min_q_hrss(n,3,wt,wt,wt)));
   coeffDist = fixedWtTri(n, floor(wt*n/2));
   size = 2*ceil((n-1)*log2(q)/8);
   if(hybrid,
