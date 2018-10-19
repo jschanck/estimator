@@ -35,10 +35,10 @@ lc_fill = "#ffffff"
 
 lc_hrss_prime   = "#009e73"
 lc_hrss_pow2    = "#56b4e9"
-lc_hrss_prime_u = "#009e73"
+lc_hrss_prime_u = "#9400d3"
 lc_hrss_pow2_u  = "#e51e10"
-lc_ntru_prime   = "#555555"
-lc_ntru_pow2    = "#9400d3"
+lc_ntru_prime   = "#003366"
+lc_ntru_pow2    = "#ff66cc"
 lc_sntrup       = "#ff9f00"
 
 
