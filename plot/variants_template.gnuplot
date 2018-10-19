@@ -26,7 +26,9 @@ set ylabel xxxx_ylabel
 set key bottom right
 set label 1 "Lines connect parameter sets with the same n." at graph .05, graph .9
 
-plot "data/xxxx_hrss_primeq_fw_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt 9  lc rgb "#ffffff" notitle, \
+plot "data/xxxx_hrss_primeq_fw.dat"    using 5:4 with lines lc rgb "#aaaaaa" notitle, \
+     "data/xxxx_hrss_pow2q_fw.dat"     using 5:4 with lines lc rgb "#dddddd" notitle, \
+     "data/xxxx_hrss_primeq_fw_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt 9  lc rgb "#ffffff" notitle, \
      "data/xxxx_hrss_primeq_fw_38.dat" using 5:4 with points pt 8  lc 2 title 'NTRU-HRSS, prime q, fixed weight 3n/8', \
      "data/xxxx_hrss_primeq_fw_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt 13 lc rgb "#ffffff" notitle, \
      "data/xxxx_hrss_primeq_fw_12.dat" using 5:4 with points pt 12 lc 2 title 'NTRU-HRSS, prime q, fixed weight 1n/2', \
@@ -65,7 +67,9 @@ set ylabel xxxx_ylabel
 set key bottom right
 set label 1 "Lines connect parameter sets with the same n." at graph .05, graph .9
 
-plot "data/xxxx_ntru_primeq_ft_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt 9  lc rgb "#ffffff" notitle, \
+plot "data/xxxx_ntru_primeq_ft.dat"    using 5:4 with lines lc rgb "#aaaaaa" notitle, \
+     "data/xxxx_ntru_pow2q_ft.dat"     using 5:4 with lines lc rgb "#dddddd" notitle, \
+     "data/xxxx_ntru_primeq_ft_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt 9  lc rgb "#ffffff" notitle, \
      "data/xxxx_ntru_primeq_ft_38.dat" using 5:4 with points pt 8  lc 2 title 'NTRU, prime q, fixed type 3n/8', \
      "data/xxxx_ntru_primeq_ft_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt 13 lc rgb "#ffffff" notitle, \
      "data/xxxx_ntru_primeq_ft_12.dat" using 5:4 with points pt 12 lc 2 title 'NTRU, prime q, fixed type 1n/2', \
@@ -123,7 +127,8 @@ set ylabel xxxx_ylabel
 set key bottom right
 set label 1 "Lines connect parameter sets with the same n." at graph .05, graph .9
 
-plot "data/xxxx_all_primeq.dat"        using 5:4 with lines lc rgb "#aaaaaa" notitle, \
+plot "data/xxxx_hrss_primeq_fw.dat"     using 5:4 with lines lc rgb "#dddddd" notitle, \
+     "data/xxxx_ntru_primeq_ft.dat"     using 5:4 with lines lc rgb "#dddddd" notitle, \
      "data/xxxx_sntrup.dat"            using 5:4 with lines lc rgb "#dddddd" notitle, \
      "data/xxxx_ntru_primeq_ft_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt 9  lc rgb "#ffffff" notitle, \
      "data/xxxx_ntru_primeq_ft_38.dat" using 5:4 with points pt 8  lc 3 title 'NTRU, prime q, fixed type 3n/8', \
@@ -165,7 +170,8 @@ set ylabel xxxx_ylabel
 set key bottom right
 set label 1 "Lines connect parameter sets with the same n." at graph .05, graph .9
 
-plot "data/xxxx_all_pow2q.dat"       using 5:4 with lines lc rgb "#aaaaaa" notitle, \
+plot "data/xxxx_ntru_pow2q_ft.dat"        using 5:4 with lines lc rgb "#aaaaaa" notitle, \
+     "data/xxxx_hrss_pow2q_fw.dat"        using 5:4 with lines lc rgb "#aaaaaa" notitle, \
      "data/xxxx_ntru_pow2q_ft_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt 9  lc rgb "#ffffff" notitle, \
      "data/xxxx_ntru_pow2q_ft_38.dat" using 5:4 with points pt 8  lc 3 title 'NTRU, pow2 q, fixed type 3n/8', \
      "data/xxxx_ntru_pow2q_ft_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt 13 lc rgb "#ffffff" notitle, \

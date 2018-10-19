@@ -12,26 +12,3 @@ How to reproduce the data
 
   2. Run the parameter generation script:
      gp -q gen_param_data.gp
-
-  You've now reproduced essentially all of the data files.
-
-  3. The lines connecting parameter sets with the same
-     value of n in variants_primeq_enum.svg and
-     variants_fixed_primeq_sieve.svg are loaded from
-     enum_all_primeq.dat and sieve_all_primeq.dat.
-     You need to make these files
-
-      cat enum_hrss_primeq.dat \
-          enum_hrss_primeq_fw.dat \
-          enum_ntru_primeq_ft.dat > enum_all_primeq.dat
-
-      cat sieve_hrss_primeq.dat \
-          sieve_hrss_primeq_fw.dat \
-          sieve_ntru_primeq_ft.dat > sieve_all_primeq.dat
-
-     Then sort the files and insert blank lines between
-     distinct values of n.
-
-  4. Replace the files in estimator/plot/data with your
-     newly generated ones.
-
