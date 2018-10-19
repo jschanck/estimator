@@ -14,7 +14,7 @@ load "variants_header.gnuplot"
 reset
 
 set terminal svg enhanced mouse standalone font "arial,10" size plotw, ploth
-set output 'variants_hrss_xxxx.svg'
+set output 'svg/variants_hrss_xxxx.svg'
 
 set grid
 set xtics 1200,100,3501
@@ -53,7 +53,7 @@ plot "data/xxxx_hrss_primeq_fw_38.dat" using 5:4:(Params(1,2)) with labels hyper
 reset
 
 set terminal svg enhanced mouse standalone font "arial,10" size plotw, ploth
-set output 'variants_ntru_xxxx.svg'
+set output 'svg/variants_ntru_xxxx.svg'
 
 set grid
 set xtics 1200,100,3501
@@ -88,7 +88,7 @@ plot "data/xxxx_ntru_primeq_ft_38.dat" using 5:4:(Params(1,2)) with labels hyper
 reset
 
 set terminal svg enhanced mouse standalone font "arial,10" size plotw, ploth
-set output 'variants_sntrup_xxxx.svg'
+set output 'svg/variants_sntrup_xxxx.svg'
 
 set grid
 set xtics 1200,100,3501
@@ -111,7 +111,7 @@ plot "data/xxxx_sntrup.dat"            using 5:4 with lines lc rgb "#aaaaaa" not
 reset
 
 set terminal svg enhanced mouse standalone font "arial,10" size plotw, ploth
-set output 'variants_primeq_xxxx.svg'
+set output 'svg/variants_primeq_xxxx.svg'
 
 set grid
 set xtics 1200,100,3501
@@ -153,7 +153,7 @@ plot "data/xxxx_all_primeq.dat"        using 5:4 with lines lc rgb "#aaaaaa" not
 reset
 
 set terminal svg enhanced mouse standalone font "arial,10" size plotw, ploth
-set output 'variants_pow2_xxxx.svg'
+set output 'svg/variants_pow2_xxxx.svg'
 
 set grid
 set xtics 1200,100,3501
@@ -195,7 +195,7 @@ plot "data/xxxx_all_pow2q.dat"       using 5:4 with lines lc rgb "#aaaaaa" notit
 reset
 
 set terminal svg font "arial,10" size plotw, ploth
-set output 'variants_hrss_p_xxxx.svg'
+set output 'svg/variants_hrss_p_xxxx.svg'
 
 set grid
 set xtics 1200,200,4001
