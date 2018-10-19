@@ -48,7 +48,7 @@
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,691.1 L669.4,691.1 M739.9,691.1 L746.9,691.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M60.5,691.1 L529.4,691.1 M739.9,691.1 L746.9,691.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -321,7 +321,7 @@
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M566.2,720.0 L566.2,14.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M566.2,720.0 L566.2,712.5 M566.2,652.5 L566.2,14.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -334,7 +334,7 @@
 <g fill="none" color="black" stroke="black" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="gray" stroke="currentColor" stroke-width="0.50" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M620.5,720.0 L620.5,14.1  '/></g>
+	<path stroke='gray' stroke-dasharray='2,4' class="gridline"  d='M620.5,720.0 L620.5,712.5 M620.5,652.5 L620.5,14.1  '/></g>
 <g fill="none" color="gray" stroke="gray" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -384,10 +384,10 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
-	<g id="gnuplot_plot_1" ><title>p=2</title>
+	<g id="gnuplot_plot_1" ><title>NTRU-HRSS, prime q, p=2</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(690.4,663.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
-		<text><tspan font-family="arial" >p=2</tspan></text>
+		<text><tspan font-family="arial" >NTRU-HRSS, prime q, p=2</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -424,10 +424,10 @@
 	<use xlink:href='#gpPt1' transform='translate(715.1,660.0) scale(3.75)' color='rgb(148,   0, 211)'/>
 </g>
 	</g>
-	<g id="gnuplot_plot_2" ><title>p=3</title>
+	<g id="gnuplot_plot_2" ><title>NTRU-HRSS, prime q, p=3</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(690.4,678.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
-		<text><tspan font-family="arial" >p=3</tspan></text>
+		<text><tspan font-family="arial" >NTRU-HRSS, prime q, p=3</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -465,10 +465,10 @@
 	<use xlink:href='#gpPt3' transform='translate(715.1,675.0) scale(3.75)' color='rgb(  0, 158, 115)'/>
 </g>
 	</g>
-	<g id="gnuplot_plot_3" ><title>p=4</title>
+	<g id="gnuplot_plot_3" ><title>NTRU-HRSS, prime q, p=4</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(690.4,693.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
-		<text><tspan font-family="arial" >p=4</tspan></text>
+		<text><tspan font-family="arial" >NTRU-HRSS, prime q, p=4</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -505,10 +505,10 @@
 	<use xlink:href='#gpPt5' transform='translate(715.1,690.0) scale(3.75)' color='rgb( 86, 180, 233)'/>
 </g>
 	</g>
-	<g id="gnuplot_plot_4" ><title>p=5</title>
+	<g id="gnuplot_plot_4" ><title>NTRU-HRSS, prime q, p=5</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(690.4,708.3)" stroke="none" fill="black" font-family="arial" font-size="10.00"  text-anchor="end">
-		<text><tspan font-family="arial" >p=5</tspan></text>
+		<text><tspan font-family="arial" >NTRU-HRSS, prime q, p=5</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">

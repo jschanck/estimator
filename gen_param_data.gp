@@ -5,16 +5,13 @@ output_dir = "~/tmp/data/"
 PRIMAL = 0;
 HYBRID = 1;
 
-\\ n with Phi_n irreducible mod 2
-ns_2ok = [];
+ns_2ok = []; \\ n with Phi_n irreducible mod 2
 forprime(n=500,1024,if(znorder(Mod(2,n)) == n-1, ns_2ok = concat(ns_2ok,n)))
 
-\\ ... mod 3
-ns_3ok = [];
+ns_3ok = []; \\ ... mod 3
 forprime(n=500,1024,if(znorder(Mod(3,n)) == n-1, ns_3ok = concat(ns_3ok,n)))
 
-\\ ... mod 5
-ns_5ok = [];
+ns_5ok = []; \\ ... mod 5
 forprime(n=500,1024,if(znorder(Mod(5,n)) == n-1, ns_5ok = concat(ns_5ok,n)))
 
 ns_pow2q = setintersect(ns_2ok, ns_3ok); 
@@ -37,16 +34,16 @@ ees_params = [443, 2048, 143; 743, 2048, 247]
 
 
 min_q_hrss(n,p,wtf,wtg,wtr) = {
-  \\ Weight parameters wtf,wtg, wtf set percentage of non-zero
-  \\ coefficients in f, g, and r. Coefficients are at most
-  \\ floor(p/2) in magnitude.
+  \\ Min q for NTRU-HRSS. Weight parameters wtf,wtg, wtf set
+  \\ percentage of non-zero coefficients in f, g, and r.
+  \\ All coefficients are assumed to be of worst-case magnitude, floor(p/2).
   ngr = floor(p/2)^2 * sqrt(wtg*(n-1)) * sqrt(wtr*(n-1));
   nfm = floor(p/2)^2 * sqrt(wtf*(n-1)) * sqrt(n-1);
   q = ceil(2*sqrt(2)*(p*ngr + nfm));
 }
 
 min_q_ntru(n,p,wtf,wtg,wtr,wtm) = {
-  \\ min q for NTRU (not NTRU-HRSS) where g(0) = 0 and m(0) = 0
+  \\ Min q for NTRU with g(0) = 0 and m(0) = 0
   \\ No need to multiply by (x-1), hence no sqrt(2).
   \\ Can set type of m.
   ngr = floor(p/2)^2 * sqrt(wtg*(n-1)) * sqrt(wtr*(n-1));
@@ -322,8 +319,8 @@ write_wt_filtered(concat("sieve_",fn), wts, sieve_data);
 fn = "sntrup"
 enum_data = [];
 sieve_data = [];
-for(i=1, matsize(sntrup_params_pruned)[1], \
-  [n,q,t] = sntrup_params_pruned[i,]; \
+for(i=1, matsize(sntrup_params_all)[1], \
+  [n,q,t] = sntrup_params_all[i,]; \
   enum_data  = matconcat([enum_data;  data_sntrup(n,q,t,EnumCN11Simple,HYBRID)]); \
   sieve_data = matconcat([sieve_data; data_sntrup(n,q,t,SieveBDGL16,PRIMAL)]));
 write_data(concat("enum_",fn), enum_data);
