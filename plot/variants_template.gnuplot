@@ -1,4 +1,3 @@
-load "variants_header.gnuplot"
 
 # This file generates
 #   - variants_hrss_xxxx.svg
@@ -13,7 +12,6 @@ load "variants_header.gnuplot"
 
 reset
 
-set terminal svg enhanced mouse standalone font "arial,10" size plotw, ploth
 set output 'svg/variants_hrss_xxxx.svg'
 
 set grid
@@ -26,8 +24,8 @@ set ylabel xxxx_ylabel
 set key bottom right
 set label 1 "Lines connect parameter sets with the same n." at graph .05, graph .9
 
-plot "data/xxxx_hrss_primeq_fw.dat"    using 5:4 with lines lc rgb "#aaaaaa" notitle, \
-     "data/xxxx_hrss_pow2q_fw.dat"     using 5:4 with lines lc rgb "#dddddd" notitle, \
+plot "data/xxxx_hrss_primeq_fw.dat"    using 5:4 with lines lw .5 lc rgb lc_hrss_prime notitle, \
+     "data/xxxx_hrss_pow2q_fw.dat"     using 5:4 with lines lw .5 lc rgb lc_hrss_pow2 notitle, \
      "data/xxxx_hrss_primeq_fw_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
      "data/xxxx_hrss_primeq_fw_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_hrss_prime title 'NTRU-HRSS, prime q, fixed weight 3n/8', \
      "data/xxxx_hrss_primeq_fw_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
@@ -54,7 +52,6 @@ plot "data/xxxx_hrss_primeq_fw.dat"    using 5:4 with lines lc rgb "#aaaaaa" not
 
 reset
 
-set terminal svg enhanced mouse standalone font "arial,10" size plotw, ploth
 set output 'svg/variants_ntru_xxxx.svg'
 
 set grid
@@ -67,8 +64,8 @@ set ylabel xxxx_ylabel
 set key bottom right
 set label 1 "Lines connect parameter sets with the same n." at graph .05, graph .9
 
-plot "data/xxxx_ntru_primeq_ft.dat"    using 5:4 with lines lc rgb "#aaaaaa" notitle, \
-     "data/xxxx_ntru_pow2q_ft.dat"     using 5:4 with lines lc rgb "#dddddd" notitle, \
+plot "data/xxxx_ntru_primeq_ft.dat"    using 5:4 with lines lw .5 lc rgb lc_ntru_prime notitle, \
+     "data/xxxx_ntru_pow2q_ft.dat"     using 5:4 with lines lw .5 lc rgb lc_ntru_pow2 notitle, \
      "data/xxxx_ntru_primeq_ft_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
      "data/xxxx_ntru_primeq_ft_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/8', \
      "data/xxxx_ntru_primeq_ft_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
@@ -91,7 +88,6 @@ plot "data/xxxx_ntru_primeq_ft.dat"    using 5:4 with lines lc rgb "#aaaaaa" not
 
 reset
 
-set terminal svg enhanced mouse standalone font "arial,10" size plotw, ploth
 set output 'svg/variants_sntrup_xxxx.svg'
 
 set grid
@@ -104,8 +100,8 @@ set ylabel xxxx_ylabel
 set key bottom right
 set label 1 "Lines connect parameter sets with the same n." at graph .05, graph .9
 
-plot "data/xxxx_sntrup.dat"            using 5:4 with lines lc rgb "#aaaaaa" notitle, \
-     "data/xxxx_sntrup.dat"            using 5:4 with points pt pt_sntrup  lc rgb "#ff9f00" title 'Streamlined NTRU Prime, prime q, various weights',                \
+plot "data/xxxx_sntrup.dat"            using 5:4 with lines lw .5 lc rgb lc_sntrup notitle, \
+     "data/xxxx_sntrup.dat"            using 5:4 with points pt pt_sntrup  lc rgb lc_sntrup title 'Streamlined NTRU Prime, prime q, various weights',                \
      "data/xxxx_sntrup.dat"            using 5:4:(Params3(1,2,3))  with labels hypertext point pt pt_sntrup  lc rgb "#ff9f00" notitle, \
 
 
@@ -114,7 +110,6 @@ plot "data/xxxx_sntrup.dat"            using 5:4 with lines lc rgb "#aaaaaa" not
 
 reset
 
-set terminal svg enhanced mouse standalone font "arial,10" size plotw, ploth
 set output 'svg/variants_primeq_xxxx.svg'
 
 set grid
@@ -127,9 +122,9 @@ set ylabel xxxx_ylabel
 set key bottom right
 set label 1 "Lines connect parameter sets with the same n." at graph .05, graph .9
 
-plot "data/xxxx_hrss_primeq_fw.dat"     using 5:4 with lines lc rgb "#dddddd" notitle, \
-     "data/xxxx_ntru_primeq_ft.dat"     using 5:4 with lines lc rgb "#dddddd" notitle, \
-     "data/xxxx_sntrup.dat"            using 5:4 with lines lc rgb "#dddddd" notitle, \
+plot "data/xxxx_hrss_primeq_fw.dat"     using 5:4 with lines lw .5 lc rgb lc_hrss_prime notitle, \
+     "data/xxxx_ntru_primeq_ft.dat"     using 5:4 with lines lw .5 lc rgb lc_ntru_prime notitle, \
+     "data/xxxx_sntrup.dat"            using 5:4 with lines lw .3 lc rgb lc_sntrup notitle, \
      "data/xxxx_ntru_primeq_ft_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
      "data/xxxx_ntru_primeq_ft_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/8', \
      "data/xxxx_ntru_primeq_ft_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
@@ -138,7 +133,7 @@ plot "data/xxxx_hrss_primeq_fw.dat"     using 5:4 with lines lc rgb "#dddddd" no
      "data/xxxx_ntru_primeq_ft_35.dat" using 5:4 with points pt pt_wt_35 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/5', \
      "data/xxxx_ntru_primeq_ft_23.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
      "data/xxxx_ntru_primeq_ft_23.dat" using 5:4 with points pt pt_wt_23 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 2n/3', \
-     "data/xxxx_sntrup.dat"            using 5:4 with points pt pt_sntrup  lc rgb "#ff9f00" title 'Streamlined NTRU Prime, prime q, various weights',                \
+     "data/xxxx_sntrup.dat"            using 5:4 with points pt pt_sntrup  lc rgb lc_sntrup title 'Streamlined NTRU Prime, prime q, various weights',                \
      "data/xxxx_sntrup.dat"            using 5:4:(Params3(1,2,3))   with labels hypertext point pt pt_sntrup  lc rgb "#ff9f00" notitle, \
      "data/xxxx_hrss_primeq_fw_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
      "data/xxxx_hrss_primeq_fw_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_hrss_prime title 'NTRU-HRSS, prime q, fixed weight 3n/8', \
@@ -157,7 +152,6 @@ plot "data/xxxx_hrss_primeq_fw.dat"     using 5:4 with lines lc rgb "#dddddd" no
 
 reset
 
-set terminal svg enhanced mouse standalone font "arial,10" size plotw, ploth
 set output 'svg/variants_pow2_xxxx.svg'
 
 set grid
@@ -170,8 +164,8 @@ set ylabel xxxx_ylabel
 set key bottom right
 set label 1 "Lines connect parameter sets with the same n." at graph .05, graph .9
 
-plot "data/xxxx_ntru_pow2q_ft.dat"        using 5:4 with lines lc rgb "#aaaaaa" notitle, \
-     "data/xxxx_hrss_pow2q_fw.dat"        using 5:4 with lines lc rgb "#aaaaaa" notitle, \
+plot "data/xxxx_ntru_pow2q_ft.dat"    using 5:4 with lines lw .5 lc rgb lc_ntru_pow2 notitle, \
+     "data/xxxx_hrss_pow2q_fw.dat"    using 5:4 with lines lw .5 lc rgb lc_ntru_pow2 notitle, \
      "data/xxxx_ntru_pow2q_ft_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
      "data/xxxx_ntru_pow2q_ft_38.dat" using 5:4 with points pt pt_wt_38  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 3n/8', \
      "data/xxxx_ntru_pow2q_ft_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
@@ -196,8 +190,9 @@ plot "data/xxxx_ntru_pow2q_ft.dat"        using 5:4 with lines lc rgb "#aaaaaa" 
 
 reset
 
-set terminal svg enhanced mouse standalone font "arial,10" size plotw, ploth
 set output 'svg/variants_all_xxxx.svg'
+
+set key bottom right
 
 set grid
 set xtics 1200,100,3501
@@ -206,10 +201,13 @@ set ytics 80,10,361
 set xlabel 'Communication cost (pk + ct bytes)'
 set ylabel xxxx_ylabel
 
-set key bottom right
 set label 1 "Lines connect parameter sets with the same n." at graph .05, graph .9
 
-plot "data/xxxx_ntru_primeq_ft_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
+plot "data/xxxx_ntru_pow2q_ft.dat"     using 5:4 with lines lw .5 lc rgb lc_ntru_pow2 notitle, \
+     "data/xxxx_hrss_pow2q_fw.dat"     using 5:4 with lines lw .5 lc rgb lc_hrss_pow2 notitle, \
+     "data/xxxx_hrss_primeq_fw.dat"    using 5:4 with lines lw .5 lc rgb lc_hrss_prime notitle, \
+     "data/xxxx_ntru_primeq_ft.dat"    using 5:4 with lines lw .5 lc rgb lc_ntru_prime notitle, \
+     "data/xxxx_ntru_primeq_ft_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
      "data/xxxx_ntru_primeq_ft_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/8', \
      "data/xxxx_ntru_primeq_ft_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
      "data/xxxx_ntru_primeq_ft_12.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 1n/2', \
@@ -256,7 +254,6 @@ plot "data/xxxx_ntru_primeq_ft_38.dat" using 5:4:(Params(1,2)) with labels hyper
 
 reset
 
-set terminal svg font "arial,10" size plotw, ploth
 set output 'svg/variants_hrss_p_xxxx.svg'
 
 set grid
