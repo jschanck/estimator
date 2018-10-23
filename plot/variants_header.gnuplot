@@ -34,6 +34,7 @@ pt_sntrup = 2
 
 lc_fill = "#ffffff"
 
+lc_grey         = "#dddddd"
 lc_hrss_prime   = "#009e73"
 lc_hrss_pow2    = "#56b4e9"
 lc_hrss_prime_u = "#9400d3"
