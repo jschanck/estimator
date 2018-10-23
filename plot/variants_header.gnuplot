@@ -3,6 +3,7 @@ enum_ylabel = 'Hybrid-enum attack cost (log scale)'
 
 # Mouse-over text
 Params(a,b) = sprintf("n=%d, q=%d", column(a), column(b))
+Params2(a,b,c) = sprintf("n=%d, q=%d, d=%s", column(a), column(b), stringcolumn(c))
 Params3(a,b,c) = sprintf("n=%d, q=%d, w=%.2fn", column(a), column(b), column(c)/column(a))
 
 # Constants for arrows
@@ -15,8 +16,8 @@ sntrup4591761_sievecost = 151
 sntrup4591761_enumcost  = 225
 
 
-plotw = 768
-ploth = 768
+plotw = 700
+ploth = 900
 
 pt_wt_38 = 8
 pt_wt_38_f = 9
