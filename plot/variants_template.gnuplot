@@ -390,5 +390,4 @@ set key bottom right
 
 plot "data/xxxx_hrss_primeq_p2.dat" using 5:4 with points pt pt_sntrup lc rgb lc_hrss_prime title 'NTRU-HRSS, prime q, p=2', \
      "data/xxxx_hrss_primeq_p3.dat" using 5:4 with points pt pt_wt_35  lc rgb lc_hrss_pow2  title 'NTRU-HRSS, prime q, p=3', \
-     "data/xxxx_hrss_primeq_p4.dat" using 5:4 with points pt pt_wt_23  lc rgb lc_sntrup     title 'NTRU-HRSS, prime q, p=4', \
      "data/xxxx_hrss_primeq_p5.dat" using 5:4 with points pt pt_wt_38  lc rgb lc_ntru_pow2  title 'NTRU-HRSS, prime q, p=5', \
