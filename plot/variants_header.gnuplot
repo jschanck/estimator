@@ -57,7 +57,8 @@ pt_ees_f = 15
 
 lc_fill = "#ffffff"
 
-lc_grey         = "#dddddd"
+lc_gray         = "#dddddd"
+lc_gray2        = "#aaaaaa"
 lc_arrow        = "#aaaaaa"
 lc_hrss_prime   = "#009e73"
 lc_hrss_pow2    = "#56b4e9"

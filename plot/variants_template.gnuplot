@@ -90,13 +90,13 @@ plot "data/xxxx_hrss_primeq_fw.dat"     using 5:4 with lines lw .5 lc rgb lc_hrs
      "data/xxxx_ntru_primeq_fgrm.dat"     using 5:4 with lines lw .5 lc rgb lc_ntru_prime notitle, \
      "data/xxxx_sntrup.dat"            using 5:4 with lines lw .2 lc rgb lc_sntrup notitle, \
      "data/xxxx_ntru_primeq_fgrm_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/8 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 3n/8 fgrm', \
      "data/xxxx_ntru_primeq_fgrm_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_12.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 1n/2 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_12.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 1n/2 fgrm', \
      "data/xxxx_ntru_primeq_fgrm_35.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_35.dat" using 5:4 with points pt pt_wt_35 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/5 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_35.dat" using 5:4 with points pt pt_wt_35 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 3n/5 fgrm', \
      "data/xxxx_ntru_primeq_fgrm_23.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_23.dat" using 5:4 with points pt pt_wt_23 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 2n/3 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_23.dat" using 5:4 with points pt pt_wt_23 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 2n/3 fgrm', \
      "data/xxxx_sntrup.dat"            using 5:4 with points pt pt_sntrup  lc rgb lc_sntrup title 'Streamlined NTRU Prime',                \
      "data/xxxx_sntrup.dat"            using 5:4:(Params3(1,2,3))   with labels hypertext point pt pt_sntrup  lc rgb "#ff9f00" notitle, \
      "data/xxxx_hrss_primeq_fw_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
@@ -131,13 +131,13 @@ set key bottom right
 plot "data/xxxx_ntru_pow2q_fgrm.dat"    using 5:4 with lines lw .5 lc rgb lc_ntru_pow2 notitle, \
      "data/xxxx_hrss_pow2q_fw.dat"    using 5:4 with lines lw .5 lc rgb lc_ntru_pow2 notitle, \
      "data/xxxx_ntru_pow2q_fgrm_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_38.dat" using 5:4 with points pt pt_wt_38  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 3n/8 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_38.dat" using 5:4 with points pt pt_wt_38  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 3n/8 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_12.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 1n/2 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_12.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 1n/2 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_35.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_35.dat" using 5:4 with points pt pt_wt_35  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 3n/5 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_35.dat" using 5:4 with points pt pt_wt_35  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 3n/5 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_23.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_23.dat" using 5:4 with points pt pt_wt_23  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 2n/3 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_23.dat" using 5:4 with points pt pt_wt_23  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 2n/3 fgrm', \
      "data/xxxx_hrss_pow2q_fw_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
      "data/xxxx_hrss_pow2q_fw_38.dat" using 5:4 with points pt pt_wt_38  lc rgb lc_hrss_pow2 title 'NTRU-HRSS, pow2 q, fixed weight 3n/8', \
      "data/xxxx_hrss_pow2q_fw_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
@@ -175,21 +175,21 @@ plot "data/xxxx_ntru_pow2q_fgrm.dat"    using 5:4 with lines lw .5 lc rgb lc_ntr
 #      "data/xxxx_sntrup.dat"             using 5:4 with points pt pt_sntrup  lc rgb lc_sntrup title 'Streamlined NTRU Prime', \
 #      "data/xxxx_sntrup.dat"             using 5:4:(Params3(1,2,3))   with labels hypertext point pt pt_sntrup  lc rgb "#ff9f00" notitle, \
 #      "data/xxxx_ntru_primeq_fgm_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-#      "data/xxxx_ntru_primeq_fgm_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/8 fgm', \
+#      "data/xxxx_ntru_primeq_fgm_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 3n/8 fgm', \
 #      "data/xxxx_ntru_primeq_fgm_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-#      "data/xxxx_ntru_primeq_fgm_12.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 1n/2 fgm', \
+#      "data/xxxx_ntru_primeq_fgm_12.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 1n/2 fgm', \
 #      "data/xxxx_ntru_primeq_fgm_35.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-#      "data/xxxx_ntru_primeq_fgm_35.dat" using 5:4 with points pt pt_wt_35 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/5 fgm', \
+#      "data/xxxx_ntru_primeq_fgm_35.dat" using 5:4 with points pt pt_wt_35 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 3n/5 fgm', \
 #      "data/xxxx_ntru_primeq_fgm_23.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-#      "data/xxxx_ntru_primeq_fgm_23.dat" using 5:4 with points pt pt_wt_23 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 2n/3 fgm', \
+#      "data/xxxx_ntru_primeq_fgm_23.dat" using 5:4 with points pt pt_wt_23 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 2n/3 fgm', \
 #      "data/xxxx_ntru_pow2q_fgm_38.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-#      "data/xxxx_ntru_pow2q_fgm_38.dat"  using 5:4 with points pt pt_wt_38  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 3n/8 fgm', \
+#      "data/xxxx_ntru_pow2q_fgm_38.dat"  using 5:4 with points pt pt_wt_38  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 3n/8 fgm', \
 #      "data/xxxx_ntru_pow2q_fgm_12.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-#      "data/xxxx_ntru_pow2q_fgm_12.dat"  using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 1n/2 fgm', \
+#      "data/xxxx_ntru_pow2q_fgm_12.dat"  using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 1n/2 fgm', \
 #      "data/xxxx_ntru_pow2q_fgm_35.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-#      "data/xxxx_ntru_pow2q_fgm_35.dat"  using 5:4 with points pt pt_wt_35  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 3n/5 fgm', \
+#      "data/xxxx_ntru_pow2q_fgm_35.dat"  using 5:4 with points pt pt_wt_35  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 3n/5 fgm', \
 #      "data/xxxx_ntru_pow2q_fgm_23.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-#      "data/xxxx_ntru_pow2q_fgm_23.dat"  using 5:4 with points pt pt_wt_23  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 2n/3 fgm', \
+#      "data/xxxx_ntru_pow2q_fgm_23.dat"  using 5:4 with points pt pt_wt_23  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 2n/3 fgm', \
 #      "data/xxxx_hrss_primeq_fw_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
 #      "data/xxxx_hrss_primeq_fw_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_hrss_prime title 'NTRU-HRSS, prime q, fixed weight 3n/8', \
 #      "data/xxxx_hrss_primeq_fw_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
@@ -259,21 +259,21 @@ plot "data/xxxx_ntru_pow2q_fgrm.dat"     using 5:4 with lines lw .5 lc rgb lc_nt
      "data/xxxx_hrss_primeq_fw.dat"      using 5:4 with lines lw .5 lc rgb lc_hrss_prime notitle, \
      "data/xxxx_ntru_primeq_fgrm.dat"    using 5:4 with lines lw .5 lc rgb lc_ntru_prime notitle, \
      "data/xxxx_ntru_primeq_fgrm_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/8 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 3n/8 fgrm', \
      "data/xxxx_ntru_primeq_fgrm_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_12.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 1n/2 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_12.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 1n/2 fgrm', \
      "data/xxxx_ntru_primeq_fgrm_35.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_35.dat" using 5:4 with points pt pt_wt_35 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/5 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_35.dat" using 5:4 with points pt pt_wt_35 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 3n/5 fgrm', \
      "data/xxxx_ntru_primeq_fgrm_23.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_23.dat" using 5:4 with points pt pt_wt_23 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 2n/3 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_23.dat" using 5:4 with points pt pt_wt_23 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 2n/3 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_38.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_38.dat"  using 5:4 with points pt pt_wt_38  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 3n/8 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_38.dat"  using 5:4 with points pt pt_wt_38  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 3n/8 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_12.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_12.dat"  using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 1n/2 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_12.dat"  using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 1n/2 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_35.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_35.dat"  using 5:4 with points pt pt_wt_35  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 3n/5 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_35.dat"  using 5:4 with points pt pt_wt_35  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 3n/5 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_23.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_23.dat"  using 5:4 with points pt pt_wt_23  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 2n/3 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_23.dat"  using 5:4 with points pt pt_wt_23  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 2n/3 fgrm', \
      "data/xxxx_hrss_primeq_fw_38.dat"   using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
      "data/xxxx_hrss_primeq_fw_38.dat"   using 5:4 with points pt pt_wt_38 lc rgb lc_hrss_prime title 'NTRU-HRSS, prime q, fixed weight 3n/8', \
      "data/xxxx_hrss_primeq_fw_12.dat"   using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
@@ -320,25 +320,22 @@ plot "data/xxxx_ntru_pow2q_fgrm.dat"     using 5:4 with lines lw .5 lc rgb lc_nt
      "data/xxxx_hrss_pow2q_fw.dat"       using 5:4 with lines lw .5 lc rgb lc_hrss_pow2 notitle, \
      "data/xxxx_hrss_primeq_fw.dat"      using 5:4 with lines lw .5 lc rgb lc_hrss_prime notitle, \
      "data/xxxx_ntru_primeq_fgrm.dat"    using 5:4 with lines lw .5 lc rgb lc_ntru_prime notitle, \
-     "data/xxxx_sntrup.dat"              using 5:4 with lines lw .2 lc rgb lc_sntrup notitle, \
-     "data/xxxx_sntrup.dat"              using 5:4 with points pt pt_sntrup  lc rgb lc_sntrup title 'Streamlined NTRU Prime', \
-     "data/xxxx_sntrup.dat"              using 5:4:(Params3(1,2,3))   with labels hypertext point pt pt_sntrup  lc rgb "#ff9f00" notitle, \
      "data/xxxx_ntru_primeq_fgrm_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/8 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 3n/8 fgrm', \
      "data/xxxx_ntru_primeq_fgrm_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_12.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 1n/2 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_12.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 1n/2 fgrm', \
      "data/xxxx_ntru_primeq_fgrm_35.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_35.dat" using 5:4 with points pt pt_wt_35 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/5 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_35.dat" using 5:4 with points pt pt_wt_35 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 3n/5 fgrm', \
      "data/xxxx_ntru_primeq_fgrm_23.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_23.dat" using 5:4 with points pt pt_wt_23 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 2n/3 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_23.dat" using 5:4 with points pt pt_wt_23 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 2n/3 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_38.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_38.dat"  using 5:4 with points pt pt_wt_38  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 3n/8 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_38.dat"  using 5:4 with points pt pt_wt_38  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 3n/8 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_12.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_12.dat"  using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 1n/2 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_12.dat"  using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 1n/2 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_35.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_35.dat"  using 5:4 with points pt pt_wt_35  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 3n/5 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_35.dat"  using 5:4 with points pt pt_wt_35  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 3n/5 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_23.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_23.dat"  using 5:4 with points pt pt_wt_23  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 2n/3 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_23.dat"  using 5:4 with points pt pt_wt_23  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 2n/3 fgrm', \
      "data/xxxx_hrss_primeq_fw_38.dat"   using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
      "data/xxxx_hrss_primeq_fw_38.dat"   using 5:4 with points pt pt_wt_38 lc rgb lc_hrss_prime title 'NTRU-HRSS, prime q, fixed weight 3n/8', \
      "data/xxxx_hrss_primeq_fw_12.dat"   using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
@@ -359,6 +356,12 @@ plot "data/xxxx_ntru_pow2q_fgrm.dat"     using 5:4 with lines lw .5 lc rgb lc_nt
      "data/xxxx_hrss_primeq.dat"         using 5:4 with points pt pt_u1 lc rgb lc_hrss_prime_u title 'NTRU-HRSS, prime q, uniform', \
      "data/xxxx_hrss_pow2q.dat"          using 5:4 with points pt pt_u2  lc rgb lc_hrss_pow2_u title 'NTRU-HRSS, pow2 q, uniform', \
      "data/xxxx_hrss_pow2q.dat"          using 5:4:(Params(1,2)) with labels hypertext point pt pt_u2 lc rgb lc_hrss_pow2_u notitle, \
+     "data/xxxx_sntrup.dat"              using 5:4 with lines lw .2 lc rgb lc_gray2 notitle, \
+     "data/xxxx_sntrup.dat"              using 5:4 with points pt pt_sntrup  lc rgb lc_gray2   title 'Streamlined NTRU Prime', \
+     "data/xxxx_sntrup.dat"              using 5:4:(Params3(1,2,3)) with labels hypertext point pt pt_sntrup  lc lc_gray2 notitle, \
+     "data/xxxx_sntrup_pruned.dat"       using 5:4 with lines lw .2 lc rgb lc_sntrup notitle, \
+     "data/xxxx_sntrup_pruned.dat"       using 5:4 with points pt pt_sntrup  lc rgb lc_sntrup title 'Streamlined NTRU Prime with 6n < q < 18n', \
+     "data/xxxx_sntrup_pruned.dat"       using 5:4:(Params3(1,2,3))   with labels hypertext point pt pt_sntrup  lc rgb "#ff9f00" notitle, \
 
 # variants_all_best
 
@@ -377,62 +380,62 @@ set ylabel xxxx_ylabel
 
 #set label 1 "Lines connect parameter sets with the same n." at graph .05, graph .9
 
-plot "data/xxxx_ntru_pow2q_fgrm.dat"     using 5:4 with lines lw .5 lc rgb lc_grey notitle, \
-     "data/xxxx_hrss_pow2q_fw.dat"       using 5:4 with lines lw .5 lc rgb lc_grey notitle, \
-     "data/xxxx_hrss_primeq_fw.dat"      using 5:4 with lines lw .5 lc rgb lc_grey notitle, \
-     "data/xxxx_ntru_primeq_fgrm.dat"    using 5:4 with lines lw .5 lc rgb lc_grey notitle, \
+plot "data/xxxx_ntru_pow2q_fgrm.dat"     using 5:4 with lines lw .5 lc rgb lc_gray notitle, \
+     "data/xxxx_hrss_pow2q_fw.dat"       using 5:4 with lines lw .5 lc rgb lc_gray notitle, \
+     "data/xxxx_hrss_primeq_fw.dat"      using 5:4 with lines lw .5 lc rgb lc_gray notitle, \
+     "data/xxxx_ntru_primeq_fgrm.dat"    using 5:4 with lines lw .5 lc rgb lc_gray notitle, \
      "data/xxxx_ntru_primeq_fgrm_38.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_grey notitle, \
+     "data/xxxx_ntru_primeq_fgrm_38.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_gray notitle, \
      "data/xxxx_ntru_primeq_fgrm_12.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_12.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_grey notitle, \
+     "data/xxxx_ntru_primeq_fgrm_12.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_gray notitle, \
      "data/xxxx_ntru_primeq_fgrm_35.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_35.dat" using 5:4 with points pt pt_wt_35 lc rgb lc_grey notitle, \
+     "data/xxxx_ntru_primeq_fgrm_35.dat" using 5:4 with points pt pt_wt_35 lc rgb lc_gray notitle, \
      "data/xxxx_ntru_primeq_fgrm_23.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_23.dat" using 5:4 with points pt pt_wt_23 lc rgb lc_grey notitle, \
+     "data/xxxx_ntru_primeq_fgrm_23.dat" using 5:4 with points pt pt_wt_23 lc rgb lc_gray notitle, \
      "data/xxxx_ntru_pow2q_fgrm_38.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_38.dat"  using 5:4 with points pt pt_wt_38  lc rgb lc_grey notitle, \
+     "data/xxxx_ntru_pow2q_fgrm_38.dat"  using 5:4 with points pt pt_wt_38  lc rgb lc_gray notitle, \
      "data/xxxx_ntru_pow2q_fgrm_12.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_12.dat"  using 5:4 with points pt pt_wt_12 lc rgb lc_grey notitle, \
+     "data/xxxx_ntru_pow2q_fgrm_12.dat"  using 5:4 with points pt pt_wt_12 lc rgb lc_gray notitle, \
      "data/xxxx_ntru_pow2q_fgrm_35.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_35.dat"  using 5:4 with points pt pt_wt_35  lc rgb lc_grey notitle, \
+     "data/xxxx_ntru_pow2q_fgrm_35.dat"  using 5:4 with points pt pt_wt_35  lc rgb lc_gray notitle, \
      "data/xxxx_ntru_pow2q_fgrm_23.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_23.dat"  using 5:4 with points pt pt_wt_23  lc rgb lc_grey notitle, \
+     "data/xxxx_ntru_pow2q_fgrm_23.dat"  using 5:4 with points pt pt_wt_23  lc rgb lc_gray notitle, \
      "data/xxxx_hrss_primeq_fw_38.dat"   using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-     "data/xxxx_hrss_primeq_fw_38.dat"   using 5:4 with points pt pt_wt_38 lc rgb lc_grey notitle, \
+     "data/xxxx_hrss_primeq_fw_38.dat"   using 5:4 with points pt pt_wt_38 lc rgb lc_gray notitle, \
      "data/xxxx_hrss_primeq_fw_12.dat"   using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-     "data/xxxx_hrss_primeq_fw_12.dat"   using 5:4 with points pt pt_wt_12 lc rgb lc_grey notitle, \
+     "data/xxxx_hrss_primeq_fw_12.dat"   using 5:4 with points pt pt_wt_12 lc rgb lc_gray notitle, \
      "data/xxxx_hrss_primeq_fw_35.dat"   using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-     "data/xxxx_hrss_primeq_fw_35.dat"   using 5:4 with points pt pt_wt_35 lc rgb lc_grey notitle, \
+     "data/xxxx_hrss_primeq_fw_35.dat"   using 5:4 with points pt pt_wt_35 lc rgb lc_gray notitle, \
      "data/xxxx_hrss_primeq_fw_23.dat"   using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-     "data/xxxx_hrss_primeq_fw_23.dat"   using 5:4 with points pt pt_wt_23 lc rgb lc_grey notitle, \
+     "data/xxxx_hrss_primeq_fw_23.dat"   using 5:4 with points pt pt_wt_23 lc rgb lc_gray notitle, \
      "data/xxxx_hrss_pow2q_fw_38.dat"    using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-     "data/xxxx_hrss_pow2q_fw_38.dat"    using 5:4 with points pt pt_wt_38  lc rgb lc_grey notitle, \
+     "data/xxxx_hrss_pow2q_fw_38.dat"    using 5:4 with points pt pt_wt_38  lc rgb lc_gray notitle, \
      "data/xxxx_hrss_pow2q_fw_12.dat"    using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-     "data/xxxx_hrss_pow2q_fw_12.dat"    using 5:4 with points pt pt_wt_12 lc rgb lc_grey notitle, \
+     "data/xxxx_hrss_pow2q_fw_12.dat"    using 5:4 with points pt pt_wt_12 lc rgb lc_gray notitle, \
      "data/xxxx_hrss_pow2q_fw_35.dat"    using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-     "data/xxxx_hrss_pow2q_fw_35.dat"    using 5:4 with points pt pt_wt_35  lc rgb lc_grey notitle, \
+     "data/xxxx_hrss_pow2q_fw_35.dat"    using 5:4 with points pt pt_wt_35  lc rgb lc_gray notitle, \
      "data/xxxx_hrss_pow2q_fw_23.dat"    using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-     "data/xxxx_hrss_pow2q_fw_23.dat"    using 5:4 with points pt pt_wt_23  lc rgb lc_grey notitle, \
+     "data/xxxx_hrss_pow2q_fw_23.dat"    using 5:4 with points pt pt_wt_23  lc rgb lc_gray notitle, \
      "data/xxxx_hrss_primeq.dat"         using 5:4:(Params(1,2)) with labels hypertext point pt pt_u1_f lc rgb lc_fill notitle,  \
-     "data/xxxx_hrss_primeq.dat"         using 5:4 with points pt pt_u1 lc rgb lc_grey notitle, \
-     "data/xxxx_hrss_pow2q.dat"          using 5:4 with points pt pt_u2  lc rgb lc_grey notitle, \
-     "data/xxxx_hrss_pow2q.dat"          using 5:4:(Params(1,2)) with labels hypertext point pt pt_u2 lc rgb lc_grey notitle, \
+     "data/xxxx_hrss_primeq.dat"         using 5:4 with points pt pt_u1 lc rgb lc_gray notitle, \
+     "data/xxxx_hrss_pow2q.dat"          using 5:4 with points pt pt_u2  lc rgb lc_gray notitle, \
+     "data/xxxx_hrss_pow2q.dat"          using 5:4:(Params(1,2)) with labels hypertext point pt pt_u2 lc rgb lc_gray notitle, \
      "data/xxxx_ntru_primeq_fgrm_38_best.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_38_best.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/8 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_38_best.dat" using 5:4 with points pt pt_wt_38 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 3n/8 fgrm', \
      "data/xxxx_ntru_primeq_fgrm_12_best.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_12_best.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 1n/2 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_12_best.dat" using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 1n/2 fgrm', \
      "data/xxxx_ntru_primeq_fgrm_35_best.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_35_best.dat" using 5:4 with points pt pt_wt_35 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 3n/5 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_35_best.dat" using 5:4 with points pt pt_wt_35 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 3n/5 fgrm', \
      "data/xxxx_ntru_primeq_fgrm_23_best.dat" using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_primeq_fgrm_23_best.dat" using 5:4 with points pt pt_wt_23 lc rgb lc_ntru_prime title 'NTRU, prime q, fixed type 2n/3 fgrm', \
+     "data/xxxx_ntru_primeq_fgrm_23_best.dat" using 5:4 with points pt pt_wt_23 lc rgb lc_ntru_prime title 'NTRU-HPS, prime q, fixed type 2n/3 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_38_best.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_38_best.dat"  using 5:4 with points pt pt_wt_38  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 3n/8 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_38_best.dat"  using 5:4 with points pt pt_wt_38  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 3n/8 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_12_best.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_12_best.dat"  using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 1n/2 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_12_best.dat"  using 5:4 with points pt pt_wt_12 lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 1n/2 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_35_best.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_35_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_35_best.dat"  using 5:4 with points pt pt_wt_35  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 3n/5 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_35_best.dat"  using 5:4 with points pt pt_wt_35  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 3n/5 fgrm', \
      "data/xxxx_ntru_pow2q_fgrm_23_best.dat"  using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f  lc rgb lc_fill notitle, \
-     "data/xxxx_ntru_pow2q_fgrm_23_best.dat"  using 5:4 with points pt pt_wt_23  lc rgb lc_ntru_pow2 title 'NTRU, pow2 q, fixed type 2n/3 fgrm', \
+     "data/xxxx_ntru_pow2q_fgrm_23_best.dat"  using 5:4 with points pt pt_wt_23  lc rgb lc_ntru_pow2 title 'NTRU-HPS, pow2 q, fixed type 2n/3 fgrm', \
      "data/xxxx_hrss_primeq_fw_38_best.dat"   using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_38_f  lc rgb lc_fill notitle, \
      "data/xxxx_hrss_primeq_fw_38_best.dat"   using 5:4 with points pt pt_wt_38 lc rgb lc_hrss_prime title 'NTRU-HRSS, prime q, fixed weight 3n/8', \
      "data/xxxx_hrss_primeq_fw_12_best.dat"   using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_12_f lc rgb lc_fill notitle, \
