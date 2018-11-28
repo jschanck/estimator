@@ -4,6 +4,8 @@ output_dir = "~/tmp/data/"
 
 PRIMAL = 0;
 HYBRID = 1;
+BKZ_ENUM_MODEL = EnumCN11Simple
+BKZ_SIEVE_MODEL = SieveBDGL16
 
 N_LOW = 449;
 N_HIGH = 941;
@@ -240,8 +242,8 @@ fn = "hrss_pow2q"
 enum_data = [];
 sieve_data = [];
 for(i=1, #ns_pow2q, n = ns_pow2q[i]; \
-  enum_data  = matconcat([enum_data;  data_hrss_pow2q(n,EnumCN11Simple,HYBRID)]); \
-  sieve_data = matconcat([sieve_data; data_hrss_pow2q(n,SieveBDGL16,PRIMAL)]));
+  enum_data  = matconcat([enum_data;  data_hrss_pow2q(n,BKZ_ENUM_MODEL,HYBRID)]); \
+  sieve_data = matconcat([sieve_data; data_hrss_pow2q(n,BKZ_SIEVE_MODEL,PRIMAL)]));
 write_data(concat("enum_",fn), enum_data);
 write_data(concat("sieve_",fn), sieve_data);
 write_best(concat("enum_",fn), enum_data);
@@ -251,8 +253,8 @@ fn = "hrss_primeq"
 enum_data = [];
 sieve_data = [];
 for(i=1, #ns_primeq_p3, n = ns_primeq_p3[i]; \
-  enum_data  = matconcat([enum_data;  data_hrss_primeq(n,EnumCN11Simple,HYBRID)]); \
-  sieve_data = matconcat([sieve_data; data_hrss_primeq(n,SieveBDGL16,PRIMAL)]));
+  enum_data  = matconcat([enum_data;  data_hrss_primeq(n,BKZ_ENUM_MODEL,HYBRID)]); \
+  sieve_data = matconcat([sieve_data; data_hrss_primeq(n,BKZ_SIEVE_MODEL,PRIMAL)]));
 write_data(concat("enum_",fn), enum_data);
 write_data(concat("sieve_",fn), sieve_data);
 write_best(concat("enum_",fn), enum_data);
@@ -266,8 +268,8 @@ enum_data = [];
 sieve_data = [];
 for(i=1, #ns_pow2q, n = ns_pow2q[i]; \
   for(j=1, #wts, wt = wts[j]; \
-    enum_data  = matconcat([enum_data;  data_hrss_pow2q_fixedwt(n,wt,EnumCN11Simple,HYBRID)]); \
-    sieve_data = matconcat([sieve_data; data_hrss_pow2q_fixedwt(n,wt,SieveBDGL16,PRIMAL)])));
+    enum_data  = matconcat([enum_data;  data_hrss_pow2q_fixedwt(n,wt,BKZ_ENUM_MODEL,HYBRID)]); \
+    sieve_data = matconcat([sieve_data; data_hrss_pow2q_fixedwt(n,wt,BKZ_SIEVE_MODEL,PRIMAL)])));
 write_data(concat("enum_",fn), enum_data);
 write_data(concat("sieve_",fn), sieve_data);
 write_wt_filtered(concat("enum_",fn), wts, enum_data);
@@ -278,8 +280,8 @@ enum_data = [];
 sieve_data = [];
 for(i=1, #ns_primeq_p3, n = ns_primeq_p3[i]; \
   for(j=1, #wts, wt = wts[j]; \
-    enum_data  = matconcat([enum_data;  data_hrss_primeq_fixedwt(n,wt,EnumCN11Simple,HYBRID)]); \
-    sieve_data = matconcat([sieve_data; data_hrss_primeq_fixedwt(n,wt,SieveBDGL16,PRIMAL)])));
+    enum_data  = matconcat([enum_data;  data_hrss_primeq_fixedwt(n,wt,BKZ_ENUM_MODEL,HYBRID)]); \
+    sieve_data = matconcat([sieve_data; data_hrss_primeq_fixedwt(n,wt,BKZ_SIEVE_MODEL,PRIMAL)])));
 write_data(concat("enum_",fn), enum_data);
 write_data(concat("sieve_",fn), sieve_data);
 write_wt_filtered(concat("enum_",fn), wts, enum_data);
@@ -292,8 +294,8 @@ fn = "hrss_primeq_p2"
 enum_data = [];
 sieve_data = [];
 for(i=1, #ns_primeq_p2, n = ns_primeq_p2[i]; \
-  enum_data  = matconcat([enum_data;  data_hrss_primeq_unifp(n,2,EnumCN11Simple,HYBRID)]); \
-  sieve_data = matconcat([sieve_data; data_hrss_primeq_unifp(n,2,SieveBDGL16,PRIMAL)]));
+  enum_data  = matconcat([enum_data;  data_hrss_primeq_unifp(n,2,BKZ_ENUM_MODEL,HYBRID)]); \
+  sieve_data = matconcat([sieve_data; data_hrss_primeq_unifp(n,2,BKZ_SIEVE_MODEL,PRIMAL)]));
 write_data(concat("enum_",fn), enum_data);
 write_data(concat("sieve_",fn), sieve_data);
 
@@ -301,8 +303,8 @@ fn = "hrss_primeq_p3"
 enum_data = [];
 sieve_data = [];
 for(i=1, #ns_primeq_p3, n = ns_primeq_p3[i]; \
-  enum_data  = matconcat([enum_data;  data_hrss_primeq_unifp(n,3,EnumCN11Simple,HYBRID)]); \
-  sieve_data = matconcat([sieve_data; data_hrss_primeq_unifp(n,3,SieveBDGL16,PRIMAL)]));
+  enum_data  = matconcat([enum_data;  data_hrss_primeq_unifp(n,3,BKZ_ENUM_MODEL,HYBRID)]); \
+  sieve_data = matconcat([sieve_data; data_hrss_primeq_unifp(n,3,BKZ_SIEVE_MODEL,PRIMAL)]));
 write_data(concat("enum_",fn), enum_data);
 write_data(concat("sieve_",fn), sieve_data);
 
@@ -310,62 +312,37 @@ fn = "hrss_primeq_p5"
 enum_data = [];
 sieve_data = [];
 for(i=1, #ns_primeq_p5, n = ns_primeq_p5[i]; \
-  enum_data  = matconcat([enum_data;  data_hrss_primeq_unifp(n,5,EnumCN11Simple,HYBRID)]); \
-  sieve_data = matconcat([sieve_data; data_hrss_primeq_unifp(n,5,SieveBDGL16,PRIMAL)]));
+  enum_data  = matconcat([enum_data;  data_hrss_primeq_unifp(n,5,BKZ_ENUM_MODEL,HYBRID)]); \
+  sieve_data = matconcat([sieve_data; data_hrss_primeq_unifp(n,5,BKZ_SIEVE_MODEL,PRIMAL)]));
 write_data(concat("enum_",fn), enum_data);
 write_data(concat("sieve_",fn), sieve_data);
 
 
 
 
-fn = "ntru_pow2q_fgrm"
+fn = "ntru_pow2q_ft"
 enum_data = [];
 sieve_data = [];
 for(i=1, #ns_pow2q, n = ns_pow2q[i]; \
   for(j=1, #wts, wt = wts[j]; \
-    enum_data  = matconcat([enum_data;  data_ntru_pow2q(n,wt,EnumCN11Simple,HYBRID)]); \
-    sieve_data = matconcat([sieve_data; data_ntru_pow2q(n,wt,SieveBDGL16,PRIMAL)])));
+    enum_data  = matconcat([enum_data;  data_ntru_pow2q(n,wt,BKZ_ENUM_MODEL,HYBRID)]); \
+    sieve_data = matconcat([sieve_data; data_ntru_pow2q(n,wt,BKZ_SIEVE_MODEL,PRIMAL)])));
 write_data(concat("enum_",fn), enum_data);
 write_data(concat("sieve_",fn), sieve_data);
 write_wt_filtered(concat("enum_",fn), wts, enum_data);
 write_wt_filtered(concat("sieve_",fn), wts, sieve_data);
 
-fn = "ntru_primeq_fgrm"
+fn = "ntru_primeq_ft"
 enum_data = [];
 sieve_data = [];
 for(i=1, #ns_primeq_p3, n = ns_primeq_p3[i]; \
   for(j=1, #wts, wt = wts[j]; \
-    enum_data  = matconcat([enum_data;  data_ntru_primeq(n,wt,EnumCN11Simple,HYBRID,fixr=1)]); \
-    sieve_data = matconcat([sieve_data; data_ntru_primeq(n,wt,SieveBDGL16,PRIMAL,fixr=1)])));
+    enum_data  = matconcat([enum_data;  data_ntru_primeq(n,wt,BKZ_ENUM_MODEL,HYBRID,fixr=1)]); \
+    sieve_data = matconcat([sieve_data; data_ntru_primeq(n,wt,BKZ_SIEVE_MODEL,PRIMAL,fixr=1)])));
 write_data(concat("enum_",fn), enum_data);
 write_data(concat("sieve_",fn), sieve_data);
 write_wt_filtered(concat("enum_",fn), wts, enum_data);
 write_wt_filtered(concat("sieve_",fn), wts, sieve_data);
-
-
-\\ fn = "ntru_pow2q_fgm"
-\\ enum_data = [];
-\\ sieve_data = [];
-\\ for(i=1, #ns_pow2q, n = ns_pow2q[i]; \
-\\   for(j=1, #wts, wt = wts[j]; \
-\\     enum_data  = matconcat([enum_data;  data_ntru_pow2q(n,wt,EnumCN11Simple,HYBRID,fixr=0)]); \
-\\     sieve_data = matconcat([sieve_data; data_ntru_pow2q(n,wt,SieveBDGL16,PRIMAL,fixr=0)])));
-\\ write_data(concat("enum_",fn), enum_data);
-\\ write_data(concat("sieve_",fn), sieve_data);
-\\ write_wt_filtered(concat("enum_",fn), wts, enum_data);
-\\ write_wt_filtered(concat("sieve_",fn), wts, sieve_data);
-\\ 
-\\ fn = "ntru_primeq_fgm"
-\\ enum_data = [];
-\\ sieve_data = [];
-\\ for(i=1, #ns_primeq_p3, n = ns_primeq_p3[i]; \
-\\   for(j=1, #wts, wt = wts[j]; \
-\\     enum_data  = matconcat([enum_data;  data_ntru_primeq(n,wt,EnumCN11Simple,HYBRID,fixr=0)]); \
-\\     sieve_data = matconcat([sieve_data; data_ntru_primeq(n,wt,SieveBDGL16,PRIMAL,fixr=0)])));
-\\ write_data(concat("enum_",fn), enum_data);
-\\ write_data(concat("sieve_",fn), sieve_data);
-\\ write_wt_filtered(concat("enum_",fn), wts, enum_data);
-\\ write_wt_filtered(concat("sieve_",fn), wts, sieve_data);
 
 
 fn = "sntrup"
@@ -374,8 +351,8 @@ sieve_data = [];
 for(i=1, matsize(sntrup_params_all)[1], \
   [n,q,t] = sntrup_params_all[i,]; \
   if(q > SNTRUP_PRUNE_Q_LOW*n && q < SNTRUP_PRUNE_Q_HIGH*n, \
-  enum_data  = matconcat([enum_data;  data_sntrup(n,q,t,EnumCN11Simple,HYBRID)]); \
-  sieve_data = matconcat([sieve_data; data_sntrup(n,q,t,SieveBDGL16,PRIMAL)])));
+  enum_data  = matconcat([enum_data;  data_sntrup(n,q,t,BKZ_ENUM_MODEL,HYBRID)]); \
+  sieve_data = matconcat([sieve_data; data_sntrup(n,q,t,BKZ_SIEVE_MODEL,PRIMAL)])));
 write_data(concat(["enum_",fn,"_pruned"]), enum_data);
 write_data(concat(["sieve_",fn,"_pruned"]), sieve_data);
 
@@ -384,11 +361,10 @@ enum_data = [];
 sieve_data = [];
 for(i=1, matsize(sntrup_params_all)[1], \
   [n,q,t] = sntrup_params_all[i,]; \
-  enum_data  = matconcat([enum_data;  data_sntrup(n,q,t,EnumCN11Simple,HYBRID)]); \
-  sieve_data = matconcat([sieve_data; data_sntrup(n,q,t,SieveBDGL16,PRIMAL)]));
+  enum_data  = matconcat([enum_data;  data_sntrup(n,q,t,BKZ_ENUM_MODEL,HYBRID)]); \
+  sieve_data = matconcat([sieve_data; data_sntrup(n,q,t,BKZ_SIEVE_MODEL,PRIMAL)]));
 write_data(concat("enum_",fn), enum_data);
 write_data(concat("sieve_",fn), sieve_data);
-
 
 
 fn = "ees"
@@ -396,11 +372,10 @@ enum_data = [];
 sieve_data = [];
 for(i=1, matsize(ees_params)[1], \
   [n,q,d] = ees_params[i,]; \
-  enum_data  = matconcat([enum_data;  data_ees(n,q,d,EnumCN11Simple,HYBRID)]); \
-  sieve_data = matconcat([sieve_data; data_ees(n,q,d,SieveBDGL16,PRIMAL)]));
+  enum_data  = matconcat([enum_data;  data_ees(n,q,d,BKZ_ENUM_MODEL,HYBRID)]); \
+  sieve_data = matconcat([sieve_data; data_ees(n,q,d,BKZ_SIEVE_MODEL,PRIMAL)]));
 write_data(concat("enum_",fn), enum_data);
 write_data(concat("sieve_",fn), sieve_data);
-
 
 
 
