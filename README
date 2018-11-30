@@ -1,0 +1,24 @@
+First time users should start by generating some graphs.
+
+Generating graphs
+-----------------
+
+  This repository already contains a large database of NTRU parameters.
+  Here's how to plot them on a size vs. security graph:
+
+  1. cd plot/
+  2. ./plot
+
+  The output will be in plot/svg. Use a nice SVG viewer to explore the
+  data. Mouse over a datapoint to see the corresponding parameters.
+
+
+How to reproduce the data
+-------------------------
+
+  1. Create the directory ~/tmp/data or change the output directory
+     in "gen_param_data.gp" to something you prefer.
+
+  2. Run the parameter generation script:
+     gp -q gen_param_data.gp
+
