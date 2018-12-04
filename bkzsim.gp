@@ -15,15 +15,23 @@ gs(M) = {
   M2;
 }
 
-randhkz(d) = { \\ Requires bash, fplll, fp2gp script
-  my(B,Bgs,Bgn,vs);
-  system(Strprintf("/bin/bash -c \"latticegen -randseed 'time' u %d 16 | fplll -a bkz -b %d | ./fp2gp > randhkz\"", d,d));
-  B = read("./randhkz");
-  Bgs = gs(B~);
-  Bgn = vector(#Bgs, i, log(sqrt(norml2(Bgs[,i]))));
-  vs = vecsum(Bgn)/#Bgs;
-  Bgn = vector(#Bgs, i, Bgn[i] - vs);
-}
+\\ Disabling this because I haven't tested it recently.
+\\
+\\  randhkz(d) = { \\ Requires bash, fplll, fp2gp script
+\\    my(B,Bgs,Bgn,vs);
+\\    system(Strprintf("/bin/bash -c \"latticegen -randseed 'time' u %d 16 | fplll -a bkz -b %d | ./fp2gp > randhkz\"", d,d));
+\\    B = read("./randhkz");
+\\    Bgs = gs(B~);
+\\    Bgn = vector(#Bgs, i, log(sqrt(norml2(Bgs[,i]))));
+\\    vs = vecsum(Bgn)/#Bgs;
+\\    Bgn = vector(#Bgs, i, Bgn[i] - vs);
+\\  }
+\\
+\\ Here's the fp2gp script:
+\\
+\\ #!/bin/bash
+\\ cat - | sed 's/\[\(.*\)\]/\1; /g' | sed 's/ /, /g' | sed 's/, ;,/;/g' | sed ':a;N;$!ba;s/\n/ /g' | sed 's/;\s*\]/]/g'
+\\
 
 simdata(really=0) = {
   my(V, count, d);
@@ -31,9 +39,9 @@ simdata(really=0) = {
   count = 100; \\ Number of HKZ reduced GS norms to average over
   V = vector(d);
   if(really,
-    printf("This will take a while\n");
-    for(i=1,count,V+=randhkz(d));
-    V/count,
+    printf("Feature disabled.\n"),
+    \\ for(i=1,count,V+=randhkz(d));
+    \\ V/count,
     \\ average log(gram schmidt norm) over 100 HKZ reduced bases of dim 50 lattices
     [0.4809337322749968, 0.4889068929146757, 0.4629910732303647, 0.4384921120061095, 0.4198271756529734,
     0.3940124751357192, 0.3793579556691379, 0.3552017168415738, 0.3375032857978846, 0.3229996676156046,

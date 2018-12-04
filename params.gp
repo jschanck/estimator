@@ -1,5 +1,31 @@
 read("estimate.gp")
 
+cbdMod3(k) = {
+  my(p);
+  p = floor(2^(2*k)/3);
+  [p, p+1, p]/2^(2*k);
+};
+
+cbd(k) = { vector(2*k+1, i, binomial(2*k, i-1))/2^(2*k) };
+
+cUnif(k) = { vector(k, i, 1/k) };
+
+fixedWtTri(n,d) = { [d/n, 1-2*d/n, d/n]; }
+
+tailcutDG(t, s) = {
+  my(v);
+  v = vector(2*t+1, i, j = (t-i+1); exp(-j^2/(2*s^2)));
+  v /= vecsum(v);
+}
+
+fixedWtDG(n,t,s) = {
+  my(v);
+  v = tailcutDG(t,s);
+  v = round(n*v);
+  v[t+1] += n - vecsum(v); /* add zeros */
+  v /= n;
+}
+
 min_q_hrss(n,p,wtf,wtg,wtr) = {
   \\ Min q for NTRU-HRSS. Weight parameters wtf,wtg, wtf set
   \\ percentage of non-zero coefficients in f, g, and r.
@@ -19,6 +45,8 @@ min_q_ntru(n,p,wtf,wtg,wtr,wtm) = {
   nfm = floor(p/2)^2 * (n-1) * sqrt(wtf*wtm);
   q = ceil(2*(p*ngr + nfm));
 };
+
+/* Functions with terse output (for gen_param_data.gp) */
 
 data_hrss_pow2q(n,costfn,hybrid=0) = {
   \\ NOTE: Assumes trinary distribution [5/16,6/16,5/16]
@@ -123,3 +151,37 @@ data_ees(n,q,d,costfn,hybrid=0) = {
     cost = floor(RunPrimal(n, n, q, coeffDist, costfn, 1)));
   [n,q,d,cost,size];
 };
+
+/* Functions with verbose output (for humans) */
+
+NTRUKEM(n=701) = {
+  my(q,coeffDist);
+  q = 2^ceil(3.5 + log2(n));
+  coeffDist = cbdMod3(2);
+  Run(n-1, n-1, q, coeffDist);
+}
+
+NTRUEES(n,q,t) = { Run(n, n, q, fixedWtTri(n,t), usvp=1); }
+NTRUEES443EP1() = { NTRUEES(443, 2048, 148) };
+NTRUEES509EP1() = { NTRUEES(509, 2048, 170) };
+NTRUEES587EP1() = { NTRUEES(587, 2048, 196) };
+NTRUEES743EP1() = { NTRUEES(743, 2048, 247) };
+
+NTRUPrime(n,q,t) = { Run(n, n, q, fixedWtTri(n,t), usvp=1); }
+StreamlinedNTRUPrime739() = { NTRUPrime(739, 9829, 204); }
+StreamlinedNTRUPrime761() = { NTRUPrime(761, 4591, 143); }
+
+/* New Hope */
+ADPS16(n,q,k) = { Run(n, 2*n, q, cbd(k), usvp=0); }
+JarJar()  = { ADPS16( 512, 12289, 24) }
+NewHope() = { ADPS16(1024, 12289, 16) }
+
+/* Kyber */
+Kyber(n,d,q,ks) = {
+  coeffDist = cbd(ks);
+  Run(n*d, n*d, q, coeffDist, usvp=0);
+}
+
+Kyber512() = { Kyber(256, 2, 7681, 5) };
+Kyber768() = { Kyber(256, 3, 7681, 4) };
+Kyber1024() = { Kyber(256, 4, 7681, 3) };
