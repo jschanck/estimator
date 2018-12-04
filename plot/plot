@@ -12,15 +12,15 @@ mkdir -p tmp
 
 if [ $FORPAPER -eq 1 ]
 then
-  echo -e $HEADER$SVGTERM $MISC > tmp/variants_sieve.gnuplot
-  echo -e $HEADER$SVGTERM $MISC > tmp/variants_enum.gnuplot
+  echo -e $HEADER$SVGTERM $MISC > tmp/variants_core.gnuplot
+  echo -e $HEADER$SVGTERM $MISC > tmp/variants_hybrid.gnuplot
 else
-  echo -e $HEADER$WEBTERM $MISC > tmp/variants_sieve.gnuplot
-  echo -e $HEADER$WEBTERM $MISC > tmp/variants_enum.gnuplot
+  echo -e $HEADER$WEBTERM $MISC > tmp/variants_core.gnuplot
+  echo -e $HEADER$WEBTERM $MISC > tmp/variants_hybrid.gnuplot
 fi
 
-sed 's/xxxx/sieve/g' variants_template.gnuplot >> tmp/variants_sieve.gnuplot
-sed 's/xxxx/enum/g' variants_template.gnuplot >> tmp/variants_enum.gnuplot
+sed 's/xxxx/core/g' variants_template.gnuplot >> tmp/variants_core.gnuplot
+sed 's/xxxx/hybrid/g' variants_template.gnuplot >> tmp/variants_hybrid.gnuplot
 
-gnuplot tmp/variants_sieve.gnuplot
-gnuplot tmp/variants_enum.gnuplot
+gnuplot tmp/variants_core.gnuplot
+gnuplot tmp/variants_hybrid.gnuplot
