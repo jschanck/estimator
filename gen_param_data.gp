@@ -1,4 +1,4 @@
-read("estimate.gp")
+read("params.gp")
 
 default_config() = {
 output_dir = "~/tmp/ntru_data/";
@@ -35,10 +35,13 @@ SNTRUP_PRUNE_Q_HIGH = 18;
 
 \\ NTRU EES parameters
 ees_params = [443, 2048, 143; 743, 2048, 247];
+
+VERSION = "20181204";
 }
 
 write_config() = {
-  s = Strprintf("DEFAULT_CONFIG=0\n");
+  s = Strprintf("VERSION = %s\n", VERSION);
+  s = concat(s, Strprintf("DEFAULT_CONFIG=0\n"));
   s = concat(s, Strprintf("output_dir = \"%s\"\n", output_dir));
   s = concat(s, Strprintf("USE_SIMULATOR = %s\n", USE_SIMULATOR));
   s = concat(s, Strprintf("IGNORE_TOURS = %s\n", IGNORE_TOURS));
@@ -62,143 +65,6 @@ write_config() = {
 if(DEFAULT_CONFIG, default_config());
 
 write_config();
-
-
-min_q_hrss(n,p,wtf,wtg,wtr) = {
-  \\ Min q for NTRU-HRSS. Weight parameters wtf,wtg, wtf set
-  \\ percentage of non-zero coefficients in f, g, and r.
-  \\ All coefficients are assumed to be of worst-case magnitude, floor(p/2).
-  ngr = floor(p/2)^2 * (n-1) * sqrt(wtg*wtr);
-  nfm = floor(p/2)^2 * (n-1) * sqrt(wtf*1);
-  q = ceil(2*sqrt(2)*(p*ngr + nfm));
-}
-
-min_q_ntru(n,p,wtf,wtg,wtr,wtm) = {
-  \\ Min q for NTRU with g(0) = 0 and m(0) = 0.
-  \\ Each of f,g,r,m assumed to be of degree at most n-2.
-  \\ f has 2-norm sqrt(wtf*(n-1)), etc.
-  \\ NOTE: May be able to do better using l_1*l_inf bound
-  \\ when p > 3 and good l_1 bound is known.
-  ngr = floor(p/2)^2 * (n-1) * sqrt(wtg*wtr);
-  nfm = floor(p/2)^2 * (n-1) * sqrt(wtf*wtm);
-  q = ceil(2*(p*ngr + nfm));
-}
-
-
-
-data_hrss_pow2q(n,costfn,hybrid=0) = {
-  \\ NOTE: Assumes trinary distribution [5/16,6/16,5/16]
-  my(q,coeffDist,cost,size);
-  q = 2^ceil(log2(min_q_hrss(n,3,1,1,1)));
-  size = 2*ceil((n-1)*log2(q)/8);
-  coeffDist = cbdMod3(2);
-  if(hybrid,
-    cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
-  [n,q,1,cost,size];
-}
-
-
-data_hrss_primeq(n,costfn,hybrid=0) = {
-  \\ NOTE: Assumes trinary distribution [5/16,6/16,5/16]
-  my(q,coeffDist,cost,size);
-  q = nextprime(min_q_hrss(n,3,1,1,1));
-  while(!polisirreducible(Mod(polcyclo(n),q)), q = nextprime(q+1));
-  coeffDist = cbdMod3(2);
-  size = 2*ceil((n-1)*log2(q)/8);
-  if(hybrid,
-    cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
-  [n,q,1,cost,size];
-}
-
-data_hrss_pow2q_fixedwt(n,wt,costfn,hybrid=0) = {
-  my(q,coeffDist,cost,size);
-  q = 2^ceil(log2(min_q_hrss(n,3,wt,wt,wt)));
-  coeffDist = fixedWtTri(n, floor(wt*n/2));
-  size = 2*ceil((n-1)*log2(q)/8);
-  if(hybrid,
-    cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
-  [n,q,wt,cost,size];
-}
-
-data_hrss_primeq_fixedwt(n,wt,costfn,hybrid=0) = {
-  my(q,coeffDist,cost,size);
-  q = nextprime(min_q_hrss(n,3,wt,wt,wt));
-  while(!polisirreducible(Mod(polcyclo(n),q)), q = nextprime(q+1));
-  size = 2*ceil((n-1)*log2(q)/8);
-  coeffDist = fixedWtTri(n, floor(wt*n/2));
-  if(hybrid,
-    cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
-  [n,q,wt,cost,size];
-}
-
-
-data_hrss_primeq_unifp(n,p,costfn,hybrid=0) = {
-  \\ NOTE: assumes uniform mod p
-  my(q,coeffDist,cost,size);
-  q = nextprime(min_q_hrss(n,p,1,1,1));
-  while(!polisirreducible(Mod(polcyclo(n),q)), q = nextprime(q+1));
-  coeffDist = cUnif(p);
-  size = 2*ceil((n-1)*log2(q)/8);
-  if(hybrid,
-    cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
-  [n,q,1,cost,size];
-}
-
-
-
-data_ntru_pow2q(n,wt,costfn,hybrid=0) = {
-  my(q,coeffDist,cost,size);
-  q = 2^ceil(log2(min_q_ntru(n,3,wt,wt,wt,wt)));
-  coeffDist = fixedWtTri(n, floor(wt*n/2));
-  size = 2*ceil((n-1)*log2(q)/8);
-  if(hybrid,
-    cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
-  [n,q,wt,cost,size];
-}
-
-data_ntru_primeq(n,wt,costfn,hybrid=0) = {
-  my(q,coeffDist,cost,size);
-  q = nextprime(min_q_ntru(n,3,wt,wt,wt,wt));
-  while(!polisirreducible(Mod(polcyclo(n),q)), q = nextprime(q+1));
-  size = 2*ceil((n-1)*log2(q)/8);
-  coeffDist = fixedWtTri(n, floor(wt*n/2));
-  if(hybrid,
-    cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
-  [n,q,wt,cost,size];
-}
-
-
-
-data_sntrup(n,q,t,costfn,hybrid=0) = {
-  my(coeffDist,cost,size);
-  coeffDist=fixedWtTri(n,t);
-  size = ceil(n*log2(q)/8)+ceil(n*log2(q/3)/8);
-  if(hybrid,
-    cost = floor(RunHybrid(n, n, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n, n, q, coeffDist, costfn, 1)));
-  [n,q,2*t,cost,size];
-}
-
-
-
-data_ees(n,q,d,costfn,hybrid=0) = {
-  my(coeffDist,cost,size);
-  size = 2*ceil(n*log2(q)/8);
-  coeffDist = fixedWtTri(n, d);
-  if(hybrid,
-    cost = floor(RunHybrid(n, n, q, coeffDist, costfn)),
-    cost = floor(RunPrimal(n, n, q, coeffDist, costfn, 1)));
-  [n,q,d,cost,size];
-}
-
-
 
 data_to_string(data) = {
   s = "";
@@ -234,7 +100,6 @@ data_filter_best(data) = {
     if(xx_data_best(best) < xx_data_best(data[i,]), best = data[i,]));
   data_out = matconcat([data_out; best]);
 }
-
 
 write_data(fn, data) = {
   write(concat([output_dir,fn,".dat"]), data_to_string(data));
@@ -380,6 +245,5 @@ for(i=1, matsize(ees_params)[1], \
   core_data = matconcat([core_data; data_ees(n,q,d,CORE_MODEL,hybrid=0)]));
 write_data(concat("hybrid_",fn), hybrid_data);
 write_data(concat("core_",fn), core_data);
-
 
 quit();

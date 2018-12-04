@@ -1,3 +1,4 @@
+VERSION = 20181204
 DEFAULT_CONFIG=0
 output_dir = "~/tmp/ntru_data/"
 USE_SIMULATOR = 0
