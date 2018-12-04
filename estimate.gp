@@ -10,26 +10,6 @@ OPTIMIZE_M = 1;
 
 MAXDEPTH = -1; /* Infinite */
 
-UseSimulator(b) = {
-  global(USE_SIMULATOR);
-  USE_SIMULATOR = b;
-}
-
-IgnoreTours(b) = {
-  global(IGNORE_TOURS);
-  IGNORE_TOURS = b;
-}
-
-TourCap(count) = {
-  global(TOUR_CAP);
-  TOUR_CAP = count;
-}
-
-MaxDepth(depth) = {
-  global(TOUR_CAP);
-  MAXDEPTH = depth;
-}
-
 
 /* Wrappers around CN11 simulator */
 CN11SimHermite(d, b) = {
@@ -84,6 +64,7 @@ ExpectedCoeffSize(coeffDist) = {
 }
 
 MaxCoeffSize(coeffDist) = {
+  my(len, low);
   len = length(coeffDist);
   low = -floor(len/2);
   vecmax(vector(#coeffDist, i, if(coeffDist[i] != 0, abs(low + i - 1), 0)));
@@ -92,7 +73,7 @@ MaxCoeffSize(coeffDist) = {
 /* MITM / Quantum Search cost */
 
 MITM(coeffDist, k) = {
-  my(h,C);
+  my(plogp,C);
   \\ Assume we can MITM (or quantum search) k coeffs using
   \\ 2^{.5 * entropy(coeffDist)} queries
   plogp = coeffDist * vector(#coeffDist, i, log2(coeffDist[i]))~;
@@ -156,7 +137,7 @@ HybridHermite(d,m,q,coeffDist) = {
 };
 
 HybridBlocksize(d, delta) = {
-  my(bs, iter, low, high);
+  my(bs, low, high);
 
   /* Do a quick search to narrow range for simulator, if we're using it */
   bs = MaxLT((x)->(-GSAHermite(x)), -delta, 2, d);
@@ -199,7 +180,7 @@ HybridTradeoff(CostFn,n,maxm,q,coeffDist) = {
 /* Primal attack */
 
 PrimalBlocksize(n,m,q,s,usvp=0) = {
-  my(d,bs);
+  my(d,bs,low,high);
   if(usvp, d=n+m, d=n+m+1);
   bs = MaxLT(/* max blocksize with b*_{d-bs} < s*sqrt{bs} */
          (x)->(GSAHeight(d, m, q, GSAHermite(x), d-x)/sqrt(x)), s, 2, d);
@@ -360,5 +341,4 @@ Kyber512() = { Kyber(256, 2, 7681, 5) };
 Kyber768() = { Kyber(256, 3, 7681, 4) };
 Kyber1024() = { Kyber(256, 4, 7681, 3) };
 
-
-printf("UseSimulator(%d); IgnoreTours(%d); TourCap(%d); MaxDepth(%d)\n", USE_SIMULATOR, IGNORE_TOURS, TOUR_CAP, MAXDEPTH);
+\\ printf("UseSimulator(%d); IgnoreTours(%d); TourCap(%d); MaxDepth(%d)\n", USE_SIMULATOR, IGNORE_TOURS, TOUR_CAP, MAXDEPTH);
