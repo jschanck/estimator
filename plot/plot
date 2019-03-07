@@ -19,8 +19,8 @@ else
   echo -e $HEADER$WEBTERM $MISC > tmp/variants_hybrid.gnuplot
 fi
 
-sed 's/xxxx/core/g' variants_template.gnuplot >> tmp/variants_core.gnuplot
-sed 's/xxxx/hybrid/g' variants_template.gnuplot >> tmp/variants_hybrid.gnuplot
+sed 's/xxxx/core/g' variants_template2.gnuplot >> tmp/variants_core.gnuplot
+sed 's/xxxx/hybrid/g' variants_template2.gnuplot >> tmp/variants_hybrid.gnuplot
 
 gnuplot tmp/variants_core.gnuplot
 gnuplot tmp/variants_hybrid.gnuplot

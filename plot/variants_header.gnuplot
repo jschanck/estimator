@@ -1,5 +1,6 @@
 core_ylabel = 'Core-SVP cost, 0.292b metric, log scale'
-hybrid_ylabel = 'Hybrid cost, (b/2e)log2(b) - b + 16 metric, log scale'
+hybrid_ylabel = 'Hybrid attack cost assuming Core-SVP preprocessing, 0.292b metric, log scale'
+#hybrid_ylabel = 'Hybrid cost, (b/2e)log2(b) - b + 16 metric, log scale'
 #hybrid_ylabel = 'Hybrid cost, 0.000784314*b^2 + 0.366078*b - 6.125 metric, log scale'
 
 # Mouse-over text
@@ -10,48 +11,48 @@ Params3(a,b,c) = sprintf("n=%d, q=%d, w=%.2fn", column(a), column(b), column(c)/
 # Constants for arrows
 ntruhrss701_bytes = 2276          # 2 * ceil(700*log(2,8192)/8)
 ntruhrss701_corecost = 136
-ntruhrss701_hybridcost  = 207
-#ntruhrss701_hybridcost  = 210
+#ntruhrss701_hybridcost  = 207
+ntruhrss701_hybridcost  = 134
 
 ntruhps2048509_bytes = 1398
 ntruhps2048509_corecost = 106
-ntruhps2048509_hybridcost = 150
-#ntruhps2048509_hybridcost = 152
+#ntruhps2048509_hybridcost = 150
+ntruhps2048509_hybridcost = 105
 
 ntruhps2048677_bytes = 1860
 ntruhps2048677_corecost = 144
-ntruhps2048677_hybridcost = 210
-#ntruhps2048677_hybridcost = 212
+#ntruhps2048677_hybridcost = 210
+ntruhps2048677_hybridcost = 144
 
 ntruhps4096701_bytes = 2100
 ntruhps4096701_corecost = 149
-ntruhps4096701_hybridcost = 226
-#ntruhps4096701_hybridcost = 229
+#ntruhps4096701_hybridcost = 226
+ntruhps4096701_hybridcost = 146
 
 ntruhps4096821_bytes = 2460
 ntruhps4096821_corecost = 178
-ntruhps4096821_hybridcost = 280
-#ntruhps4096821_hybridcost = 287
+#ntruhps4096821_hybridcost = 280
+ntruhps4096821_hybridcost = 178
 
 sntrup11923709_bytes = 2261
 sntrup11923709_corecost = 133
-sntrup11923709_hybridcost  = 202
-#sntrup11923709_hybridcost  = 206
+#sntrup11923709_hybridcost  = 202
+sntrup11923709_hybridcost  = 130
 
 sntrup12241727_bytes = 2325
 sntrup12241727_corecost = 136
-sntrup12241727_hybridcost  = 210
-#sntrup12241727_hybridcost  = 213
+#sntrup12241727_hybridcost  = 210
+sntrup12241727_hybridcost  = 133
 
 sntrup7541743_bytes = 2247
 sntrup7541743_corecost = 147
-sntrup7541743_hybridcost  = 228
-#sntrup7541743_hybridcost  = 232
+#sntrup7541743_hybridcost  = 228
+sntrup7541743_hybridcost  = 146
 
 sntrup4591761_bytes = 2165
 sntrup4591761_corecost = 151
-sntrup4591761_hybridcost  = 225
-#sntrup4591761_hybridcost  = 229
+#sntrup4591761_hybridcost  = 225
+sntrup4591761_hybridcost  = 151
 
 #sntrup877773_bytes = 1737
 #sntrup877773_corecost = 147
