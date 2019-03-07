@@ -46,18 +46,6 @@ min_q_ntru(n,p,wtf,wtg,wtr,wtm) = {
   q = ceil(2*(p*ngr + nfm));
 };
 
-min_q_ntru_fatf(n,p,wtf,wtg,wtr,wtm) = {
-  \\ Min q for NTRU with g(0) = 0 and m(0) = 0.
-  \\ Each of f,g,r,m assumed to be of degree at most n-2.
-  \\ f has 2-norm sqrt(wtf*(n-1)), etc.
-  \\ NOTE: May be able to do better using l_1*l_inf bound
-  \\ when p > 3 and good l_1 bound is known.
-  ngr = floor(p/2)^2 * (n-1) * sqrt(wtg*wtr);
-  nfm = floor(p/2)^2 * (n-1) * sqrt(wtf*wtm);
-  q = ceil(2*(p*(ngr + nfm)));
-};
-
-
 /* Functions with terse output (for gen_param_data.gp) */
 
 data_hrss_pow2q(n,costfn,hybrid=0) = {
@@ -132,10 +120,9 @@ data_ntru_pow2q(n,wt,costfn,hybrid=0) = {
   [n,q,wt,cost,size];
 };
 
-data_hps_pow2q_fatf(n,q,costfn,hybrid=0) = {
+data_hps_fixedq_fatf(n,q,costfn,hybrid=0) = {
   my(wt,coeffDist,cost,size);
-  wt = min(2/3, (q/8 - 2)/(n-1));
-  q = 2^ceil(log2(min_q_ntru_fatf(n,3,wt,wt,wt,wt)));
+  wt = min(2/3, (q/12 - 2)/(n-1));
   coeffDist = fixedWtTri(n, floor(wt*(n-1)/2));
   size = 2*ceil((n-1)*log2(q)/8);
   if(hybrid,
@@ -144,7 +131,7 @@ data_hps_pow2q_fatf(n,q,costfn,hybrid=0) = {
   [n,q,wt,cost,size];
 };
 
-data_hps_pow2q(n,q,costfn,hybrid=0) = {
+data_hps_fixedq(n,q,costfn,hybrid=0) = {
   my(wt,coeffDist,cost,size);
   wt = min(2/3, (q/8 - 2)/(n-1));
   coeffDist = fixedWtTri(n, floor(wt*(n-1)/2));

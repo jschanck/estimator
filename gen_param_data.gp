@@ -146,17 +146,17 @@ run() = {
     core_data = matconcat([core_data; data_hrss_pow2q(n,CORE_MODEL,hybrid=0)]));
   write_data(concat("hybrid_",fn), hybrid_data);
   write_data(concat("core_",fn), core_data);
-  write_best(concat("hybrid_",fn), hybrid_data);
-  write_best(concat("core_",fn), core_data);
+  \\ write_best(concat("hybrid_",fn), hybrid_data);
+  \\ write_best(concat("core_",fn), core_data);
 
-  \\ fn = "hrss_primeq";
-  \\ hybrid_data = [];
-  \\ core_data = [];
-  \\ for(i=1, #ns_primeq_p3, n = ns_primeq_p3[i];
-  \\   hybrid_data  = matconcat([hybrid_data;  data_hrss_primeq(n,HYBRID_MODEL,hybrid=1)]);
-  \\   core_data = matconcat([core_data; data_hrss_primeq(n,CORE_MODEL,hybrid=0)]));
-  \\ write_data(concat("hybrid_",fn), hybrid_data);
-  \\ write_data(concat("core_",fn), core_data);
+  fn = "hrss_primeq";
+  hybrid_data = [];
+  core_data = [];
+  for(i=1, #ns_primeq_p3, n = ns_primeq_p3[i];
+    hybrid_data  = matconcat([hybrid_data;  data_hrss_primeq(n,HYBRID_MODEL,hybrid=1)]);
+    core_data = matconcat([core_data; data_hrss_primeq(n,CORE_MODEL,hybrid=0)]));
+  write_data(concat("hybrid_",fn), hybrid_data);
+  write_data(concat("core_",fn), core_data);
   \\ write_best(concat("hybrid_",fn), hybrid_data);
   \\ write_best(concat("core_",fn), core_data);
 
@@ -241,21 +241,46 @@ run() = {
   for(i=1, #ns_pow2q, n = ns_pow2q[i];
     for(j=1, #qs, q = qs[j];
       if((n/3 < (q/8 - 2)) && ((q/8-2) < 2*n/3),
-      hybrid_data  = matconcat([hybrid_data;  data_hps_pow2q(n,q,HYBRID_MODEL,hybrid=1)]);
-      core_data = matconcat([core_data; data_hps_pow2q(n,q,CORE_MODEL,hybrid=0)]))));
+      hybrid_data  = matconcat([hybrid_data;  data_hps_fixedq(n,q,HYBRID_MODEL,hybrid=1)]);
+      core_data = matconcat([core_data; data_hps_fixedq(n,q,CORE_MODEL,hybrid=0)]))));
   write_data(concat("hybrid_",fn), hybrid_data);
   write_data(concat("core_",fn), core_data);
   write_q_filtered(concat("hybrid_",fn), qs, hybrid_data);
   write_q_filtered(concat("core_",fn), qs, core_data);
+
+  fn = "hps_primeq";
+  hybrid_data = [];
+  core_data = [];
+  for(i=1, #ns_3ok, n = ns_3ok[i];
+    forprime(q=8*n/3 + 16, 16*n/3 + 16,
+      if(znorder(Mod(q,n)) == n-1,
+      hybrid_data  = matconcat([hybrid_data;  data_hps_fixedq(n,q,HYBRID_MODEL,hybrid=1)]);
+      core_data = matconcat([core_data; data_hps_fixedq(n,q,CORE_MODEL,hybrid=0)]))));
+  write_data(concat("hybrid_",fn), hybrid_data);
+  write_data(concat("core_",fn), core_data);
 
   fn = "hps_pow2q_fatf";
   hybrid_data = [];
   core_data = [];
   for(i=1, #ns_pow2q, n = ns_pow2q[i];
     for(j=1, #qs, q = qs[j];
-      if((n/3 < (q/8 - 2)) && ((q/8-2) < 2*n/3),
-      hybrid_data  = matconcat([hybrid_data;  data_hps_pow2q_fatf(n,q,HYBRID_MODEL,hybrid=1)]);
-      core_data = matconcat([core_data; data_hps_pow2q_fatf(n,q,CORE_MODEL,hybrid=0)]))));
+      if((n/3 < (q/12 - 2)) && ((q/12-2) < 2*n/3),
+      hybrid_data  = matconcat([hybrid_data;  data_hps_fixedq_fatf(n,q,HYBRID_MODEL,hybrid=1)]);
+      core_data = matconcat([core_data; data_hps_fixedq_fatf(n,q,CORE_MODEL,hybrid=0)]))));
+  write_data(concat("hybrid_",fn), hybrid_data);
+  write_data(concat("core_",fn), core_data);
+  write_q_filtered(concat("hybrid_",fn), qs, hybrid_data);
+  write_q_filtered(concat("core_",fn), qs, core_data);
+
+  fn = "hps_primeq_fatf";
+  hybrid_data = [];
+  core_data = [];
+  for(i=1, #ns_pow2q, n = ns_pow2q[i];
+    \\ d = q/12 - 2; consider n/3 < d < 2n
+    forprime(q=12*n/3 + 24, 24*n/3 + 24,
+      if(znorder(Mod(q,n)) == n-1,
+      hybrid_data  = matconcat([hybrid_data;  data_hps_fixedq_fatf(n,q,HYBRID_MODEL,hybrid=1)]);
+      core_data = matconcat([core_data; data_hps_fixedq_fatf(n,q,CORE_MODEL,hybrid=0)]))));
   write_data(concat("hybrid_",fn), hybrid_data);
   write_data(concat("core_",fn), core_data);
   write_q_filtered(concat("hybrid_",fn), qs, hybrid_data);
