@@ -46,6 +46,18 @@ min_q_ntru(n,p,wtf,wtg,wtr,wtm) = {
   q = ceil(2*(p*ngr + nfm));
 };
 
+min_q_ntru_fatf(n,p,wtf,wtg,wtr,wtm) = {
+  \\ Min q for NTRU with g(0) = 0 and m(0) = 0.
+  \\ Each of f,g,r,m assumed to be of degree at most n-2.
+  \\ f has 2-norm sqrt(wtf*(n-1)), etc.
+  \\ NOTE: May be able to do better using l_1*l_inf bound
+  \\ when p > 3 and good l_1 bound is known.
+  ngr = floor(p/2)^2 * (n-1) * sqrt(wtg*wtr);
+  nfm = floor(p/2)^2 * (n-1) * sqrt(wtf*wtm);
+  q = ceil(2*(p*(ngr + nfm)));
+};
+
+
 /* Functions with terse output (for gen_param_data.gp) */
 
 data_hrss_pow2q(n,costfn,hybrid=0) = {
@@ -76,7 +88,7 @@ data_hrss_primeq(n,costfn,hybrid=0) = {
 data_hrss_pow2q_fixedwt(n,wt,costfn,hybrid=0) = {
   my(q,coeffDist,cost,size);
   q = 2^ceil(log2(min_q_hrss(n,3,wt,wt,wt)));
-  coeffDist = fixedWtTri(n, floor(wt*n/2));
+  coeffDist = fixedWtTri(n, floor(wt*(n-1)/2));
   size = 2*ceil((n-1)*log2(q)/8);
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
@@ -89,7 +101,7 @@ data_hrss_primeq_fixedwt(n,wt,costfn,hybrid=0) = {
   q = nextprime(min_q_hrss(n,3,wt,wt,wt));
   while(!polisirreducible(Mod(polcyclo(n),q)), q = nextprime(q+1));
   size = 2*ceil((n-1)*log2(q)/8);
-  coeffDist = fixedWtTri(n, floor(wt*n/2));
+  coeffDist = fixedWtTri(n, floor(wt*(n-1)/2));
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
     cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
@@ -112,7 +124,30 @@ data_hrss_primeq_unifp(n,p,costfn,hybrid=0) = {
 data_ntru_pow2q(n,wt,costfn,hybrid=0) = {
   my(q,coeffDist,cost,size);
   q = 2^ceil(log2(min_q_ntru(n,3,wt,wt,wt,wt)));
-  coeffDist = fixedWtTri(n, floor(wt*n/2));
+  coeffDist = fixedWtTri(n, floor(wt*(n-1)/2));
+  size = 2*ceil((n-1)*log2(q)/8);
+  if(hybrid,
+    cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
+    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
+  [n,q,wt,cost,size];
+};
+
+data_hps_pow2q_fatf(n,q,costfn,hybrid=0) = {
+  my(wt,coeffDist,cost,size);
+  wt = min(2/3, (q/8 - 2)/(n-1));
+  q = 2^ceil(log2(min_q_ntru_fatf(n,3,wt,wt,wt,wt)));
+  coeffDist = fixedWtTri(n, floor(wt*(n-1)/2));
+  size = 2*ceil((n-1)*log2(q)/8);
+  if(hybrid,
+    cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
+    cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
+  [n,q,wt,cost,size];
+};
+
+data_hps_pow2q(n,q,costfn,hybrid=0) = {
+  my(wt,coeffDist,cost,size);
+  wt = min(2/3, (q/8 - 2)/(n-1));
+  coeffDist = fixedWtTri(n, floor(wt*(n-1)/2));
   size = 2*ceil((n-1)*log2(q)/8);
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
@@ -125,7 +160,7 @@ data_ntru_primeq(n,wt,costfn,hybrid=0) = {
   q = nextprime(min_q_ntru(n,3,wt,wt,wt,wt));
   while(!polisirreducible(Mod(polcyclo(n),q)), q = nextprime(q+1));
   size = 2*ceil((n-1)*log2(q)/8);
-  coeffDist = fixedWtTri(n, floor(wt*n/2));
+  coeffDist = fixedWtTri(n, floor(wt*(n-1)/2));
   if(hybrid,
     cost = floor(RunHybrid(n-1, n-1, q, coeffDist, costfn)),
     cost = floor(RunPrimal(n-1, n-1, q, coeffDist, costfn, 1)));
@@ -154,14 +189,22 @@ data_ees(n,q,d,costfn,hybrid=0) = {
 
 /* Functions with verbose output (for humans) */
 
-NTRUKEM(n=701) = {
+NTRUHRSS(n) = {
   my(q,coeffDist);
   q = 2^ceil(3.5 + log2(n));
   coeffDist = cbdMod3(2);
   Run(n-1, n-1, q, coeffDist);
 }
 
+NTRUHPS(n,q) = {
+  my(t,coeffDist);
+  t = q/16 - 1;
+  coeffDist = fixedWtTri(n, t);
+  Run(n-1, n-1, q, coeffDist);
+}
+
 NTRUEES(n,q,t) = { Run(n, n, q, fixedWtTri(n,t), usvp=1); }
+NTRUPKE443() = { NTRUEES(443, 2048, 115) };
 NTRUEES443EP1() = { NTRUEES(443, 2048, 148) };
 NTRUEES509EP1() = { NTRUEES(509, 2048, 170) };
 NTRUEES587EP1() = { NTRUEES(587, 2048, 196) };
