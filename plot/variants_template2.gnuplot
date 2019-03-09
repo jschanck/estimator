@@ -4,7 +4,7 @@
 
 reset
 
-set output 'svg/nist_submission_options.svg'
+set output 'svg/xxxx_nist_submission_options.svg'
 
 set key bottom right
 
