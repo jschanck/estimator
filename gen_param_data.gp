@@ -307,15 +307,15 @@ run() = {
   write_data(concat("hybrid_",fn), hybrid_data);
   write_data(concat("core_",fn), core_data);
 
-  \\ fn = "ees";
-  \\ hybrid_data = [];
-  \\ core_data = [];
-  \\ for(i=1, matsize(ees_params)[1],
-  \\   [n,q,d] = ees_params[i,];
-  \\   hybrid_data  = matconcat([hybrid_data;  data_ees(n,q,d,HYBRID_MODEL,hybrid=1)]);
-  \\   core_data = matconcat([core_data; data_ees(n,q,d,CORE_MODEL,hybrid=0)]));
-  \\ write_data(concat("hybrid_",fn), hybrid_data);
-  \\ write_data(concat("core_",fn), core_data);
+  fn = "ees";
+  hybrid_data = [];
+  core_data = [];
+  for(i=1, matsize(ees_params)[1],
+    [n,q,d] = ees_params[i,];
+    hybrid_data  = matconcat([hybrid_data;  data_ees(n,q,d,HYBRID_MODEL,hybrid=1)]);
+    core_data = matconcat([core_data; data_ees(n,q,d,CORE_MODEL,hybrid=0)]));
+  write_data(concat("hybrid_",fn), hybrid_data);
+  write_data(concat("core_",fn), core_data);
 }
 
 run();

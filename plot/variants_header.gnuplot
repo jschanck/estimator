@@ -63,6 +63,14 @@ sntrup5167857_corecost = 172
 sntrup5167857_hybridcost  = 262
 #sntrup5167857_hybridcost  = 267
 
+ntruees443ep1_bytes = 1220
+ntruees443ep1_corecost = 93
+ntruees443ep1_hybridcost  = 89
+
+ntruees743ep1_bytes = 2044
+ntruees743ep1_corecost = 176
+ntruees743ep1_hybridcost  = 173
+
 ax1 = -350
 ax2 = -5
 ay1 = +33
@@ -99,5 +107,5 @@ lc_hrss_pow2_u  = "#e51e10"
 lc_ntru_prime   = "#003366"
 lc_ntru_pow2    = "#ff66cc"
 lc_sntrup       = "#ff9f00"
-lc_ees          = "#ff0000"
+lc_ees          = "#9f009f"
 

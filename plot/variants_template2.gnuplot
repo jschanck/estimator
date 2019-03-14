@@ -21,24 +21,34 @@ set ylabel xxxx_ylabel
 #set label 1 "sntrup4591761" at sntrup4591761_bytes-580,sntrup4591761_xxxxcost+ay1+7
 
 set arrow 2 size 1 front lc rgb lc_gray2 \
-            from ntruhrss701_bytes+ax1,ntruhrss701_xxxxcost+ay1 \
-            to ntruhrss701_bytes+ax2,ntruhrss701_xxxxcost+ay2
-set label 2 "ntruhrss701" at ntruhrss701_bytes-475,ntruhrss701_xxxxcost+ay1+1
+            from ntruhrss701_bytes+ax1,ntruhrss701_xxxxcost+ay1-13 \
+              to ntruhrss701_bytes+ax2,ntruhrss701_xxxxcost+ay2
+set label 2 "ntruhrss701" at ntruhrss701_bytes+ax2-500,ntruhrss701_xxxxcost+ay1-12
 
 set arrow 3 size 1 front lc rgb lc_gray2 \
-            from ntruhps2048509_bytes+ax2-50,ntruhps2048509_xxxxcost+ay1 \
-            to ntruhps2048509_bytes+ax2,ntruhps2048509_xxxxcost+ay2
-set label 3 "ntruhps2048509" at ntruhps2048509_bytes+ax2-100,ntruhps2048509_xxxxcost+ay1+2
+            from ntruhps2048509_bytes,ntruhps2048509_xxxxcost+ay1-1 \
+              to ntruhps2048509_bytes,ntruhps2048509_xxxxcost+ay2
+set label 3 "ntruhps2048509" at ntruhps2048509_bytes-200,ntruhps2048509_xxxxcost+ay1
 
 set arrow 4 size 1 front lc rgb lc_gray2 \
-            from ntruhps2048677_bytes+ax1,ntruhps2048677_xxxxcost+ay1 \
-            to ntruhps2048677_bytes+ax2,ntruhps2048677_xxxxcost+ay2
-set label 4 "ntruhps2048677" at ntruhps2048677_bytes-550,ntruhps2048677_xxxxcost+ay1+2
+            from ntruhps2048677_bytes+ax1,ntruhps2048677_xxxxcost+ay1-13 \
+              to ntruhps2048677_bytes+ax2,ntruhps2048677_xxxxcost+ay2
+set label 4 "ntruhps2048677" at ntruhps2048677_bytes-550,ntruhps2048677_xxxxcost+ay1-12
 
 set arrow 5 size 1 front lc rgb lc_gray2 \
             from ntruhps4096821_bytes+ax1,ntruhps4096821_xxxxcost+ay1-13 \
               to ntruhps4096821_bytes+ax2,ntruhps4096821_xxxxcost+ay2
 set label 5 "ntruhps4096821" at ntruhps4096821_bytes-550,ntruhps4096821_xxxxcost+ay1-12
+
+set arrow 6 size 1 front lc rgb lc_gray2 \
+            from ntruees443ep1_bytes,ntruees443ep1_xxxxcost+ay1-1 \
+              to ntruees443ep1_bytes,ntruees443ep1_xxxxcost+ay2
+set label 6 "ntru-pke-443" at ntruees443ep1_bytes-50,ntruees443ep1_xxxxcost+ay1
+
+set arrow 7 size 1 front lc rgb lc_gray2 \
+            from ntruees743ep1_bytes+ax1,ntruees743ep1_xxxxcost+ay1-13 \
+              to ntruees743ep1_bytes+ax2,ntruees743ep1_xxxxcost+ay2
+set label 7 "ntru-pke-743" at ntruees743ep1_bytes-450,ntruees743ep1_xxxxcost+ay1-12
 
 plot "data/xxxx_hps_primeq.dat"          using 5:4 with points pt 7 ps .5 lc rgb lc_ntru_prime title 'ntruhps-like with q prime', \
      "data/xxxx_hps_pow2q.dat"           using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f lc rgb lc_fill notitle, \
@@ -49,5 +59,5 @@ plot "data/xxxx_hps_primeq.dat"          using 5:4 with points pt 7 ps .5 lc rgb
      "data/xxxx_hrss_primeq.dat"         using 5:4 with points pt 7 ps .5 lc rgb lc_hrss_pow2_u title 'ntruhrss-like with q prime', \
      "data/xxxx_hrss_pow2q.dat"          using 5:4:(Params(1,2)) with labels hypertext point pt pt_wt_23_f lc rgb lc_fill notitle, \
      "data/xxxx_hrss_pow2q.dat"          using 5:4 with points pt pt_wt_23 lc rgb lc_hrss_pow2_u title 'ntruhrss', \
-     #"data/xxxx_sntrup_pruned.dat"       using 5:4 with points pt pt_sntrup  lc rgb lc_sntrup title 'Streamlined NTRU Prime with n/3 < d < 2n/3 and q < 18n', \
-     #"data/xxxx_sntrup_pruned.dat"       using 5:4:(Params3(1,2,3))   with labels hypertext point pt pt_sntrup  lc rgb "#ff9f00" notitle, \
+     "data/xxxx_ees.dat"                 using 5:4 with points pt pt_wt_23  lc rgb lc_ees title 'NTRUEncrypt submission parameters', \
+     "data/xxxx_ees.dat"                 using 5:4:(Params3(1,2,3))   with labels hypertext point pt pt_wt_23 lc lc_ees notitle, \
