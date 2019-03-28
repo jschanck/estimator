@@ -19,8 +19,16 @@ else
   echo -e $HEADER$WEBTERM $MISC > tmp/variants_hybrid.gnuplot
 fi
 
-sed 's/xxxx/core/g' variants_template2.gnuplot >> tmp/variants_core.gnuplot
-sed 's/xxxx/hybrid/g' variants_template2.gnuplot >> tmp/variants_hybrid.gnuplot
+MODELS="nv11 bdgl16 d18"
 
-gnuplot tmp/variants_core.gnuplot
-gnuplot tmp/variants_hybrid.gnuplot
+for MODEL in ${MODELS}; do
+  cp tmp/variants_core.gnuplot tmp/variants_core_${MODEL}.gnuplot
+  cp tmp/variants_hybrid.gnuplot tmp/variants_hybrid_${MODEL}.gnuplot
+
+  sed "s/xxxx/core/g; s/yyyy/${MODEL}/g;" variants_template2.gnuplot >> tmp/variants_core_${MODEL}.gnuplot
+  sed "s/xxxx/hybrid/g; s/yyyy/${MODEL}/g;" variants_template2.gnuplot >> tmp/variants_hybrid_${MODEL}.gnuplot
+
+  gnuplot tmp/variants_core_${MODEL}.gnuplot
+  gnuplot tmp/variants_hybrid_${MODEL}.gnuplot
+done
+

@@ -40,10 +40,22 @@ QEnumCN11(b) = {
     return(MAXDEPTH + 2*(C-MAXDEPTH)));
 }
 
+SieveNV11(b) = { 0.415*b }
+SieveBGJ15(b) = { 0.311*b }
+SieveD18(b) = { (0.2075 + 0.142)*b }
 SieveBDGL16(b) = { b*log2(sqrt(3/2)); }
 QSieveLaa15(b) = { b*log2(sqrt(13/9)); }
-
 SieveSpace(b) = { b*log2(sqrt(4/3)); }
+CSWSpace(b,angle) = {
+  csw = 1/2 * log2(2*Pi*b) + log2(cos(angle)) - (b-1)*log2(sin(angle));
+}
+JJPSpace(b,angle) = {
+  my(jjp_sin_q, log2_c, csw, jjp);
+  jjp_sin_q = ((cos(angle) - 1)^2 * (1 + 2*cos(angle))) / sin(angle);
+  log2_c = log2(log(sin(angle)) - log(jjp_sin_q));
+  csw = CSWSpace(b,angle);
+  jjp = csw + log2(b) + log2_c;
+}
 
 /* Table indicating which cost functions will be used */
 COSTFNS =                                  /* enabled? */
@@ -51,7 +63,10 @@ COSTFNS =                                  /* enabled? */
  ["Enum [CN11]",                  EnumCN11,     0],\
  ["Enum [CN11]",            EnumCN11Simple,     1],\
  ["Quantum CN11Enum",             QEnumCN11,    0],\
- ["LSF Sieve",                    SieveBDGL16,  1],\
+ ["SieveNV11",                     SieveNV11,   1],\
+ ["SieveBGJ15",                   SieveBGJ15,   0],\
+ ["SieveD18",                       SieveD18,   1],\
+ ["SieveBDGL16",                  SieveBDGL16,  1],\
  ["Quantum LSF Sieve",            QSieveLaa15,  1],\
  ["Sieve vectors",                SieveSpace,   0]];
 
@@ -231,7 +246,7 @@ SummarizeBKZ(CostFn, d, m, q, s, h, bs, iter) = {
   printf("\tFirst block\t\t%8.2f ... %5.2f\n", GSAHeight(d, m, q, h, 1), GSAHeight(d, m, q, h, bs));
   printf("\tLast block\t\t%8.2f ... %5.2f\n", GSAHeight(d, m, q, h, d-bs), GSAHeight(d, m, q, h, d));
   printf("\tProj. last block\t%8.2f ... %5.2f\n", sqrt(bs)*s, s);
-  printf("\tCost of SVP-%-5d\t%8d\n", bs, cost);
+  printf("\tCost of SVP-%-5d\t%8.2f\n", bs, cost);
   if(!IGNORE_TOURS,
     printf("\t... with %d tour(s)\t%8d\n", iter, cost+log2(d*iter)));
 }
