@@ -40,7 +40,7 @@ QEnumCN11(b) = {
     return(MAXDEPTH + 2*(C-MAXDEPTH)));
 }
 
-SieveNV11(b) = { 0.415*b }
+SieveNV08(b) = { 0.415*b }
 SieveBGJ15(b) = { 0.311*b }
 SieveD18(b) = { (0.2075 + 0.142)*b }
 SieveBDGL16(b) = { b*log2(sqrt(3/2)); }
@@ -61,13 +61,13 @@ JJPSpace(b,angle) = {
 COSTFNS =                                  /* enabled? */
 [["Quad Enum [CN11]",         QuadEnumCN11,     0],\
  ["Enum [CN11]",                  EnumCN11,     0],\
- ["Enum [CN11]",            EnumCN11Simple,     1],\
+ ["Enum [CN11]",            EnumCN11Simple,     0],\
  ["Quantum CN11Enum",             QEnumCN11,    0],\
- ["SieveNV11",                     SieveNV11,   1],\
+ ["SieveNV08",                     SieveNV08,   1],\
  ["SieveBGJ15",                   SieveBGJ15,   0],\
  ["SieveD18",                       SieveD18,   1],\
  ["SieveBDGL16",                  SieveBDGL16,  1],\
- ["Quantum LSF Sieve",            QSieveLaa15,  1],\
+ ["Quantum LSF Sieve",            QSieveLaa15,  0],\
  ["Sieve vectors",                SieveSpace,   0]];
 
 ExpectedCoeffSize(coeffDist) = {
@@ -190,7 +190,6 @@ HybridCostEstimate(CostFn,n,maxm,q,coeffDist,k,summarize=0) = {
 HybridTradeoff(CostFn,n,maxm,q,coeffDist) = {
   MaxLT((k)->(vecsum(MITM(coeffDist,k)) - HybridCostEstimate(CostFn,n,maxm,q,coeffDist,k)), 0, 0, n);
 }
-
 
 /* Primal attack */
 

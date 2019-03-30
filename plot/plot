@@ -19,7 +19,7 @@ else
   echo -e $HEADER$WEBTERM $MISC > tmp/variants_hybrid.gnuplot
 fi
 
-MODELS="nv11 bdgl16 d18"
+MODELS="nv08 bdgl16 d18"
 
 for MODEL in ${MODELS}; do
   cp tmp/variants_core.gnuplot tmp/variants_core_${MODEL}.gnuplot

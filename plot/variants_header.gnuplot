@@ -1,5 +1,5 @@
-core_nv11_ylabel = 'Core-SVP cost, 0.415b metric, log scale'
-hybrid_nv11_ylabel = 'Hybrid attack cost assuming Core-SVP preprocessing, 0.415b metric, log scale'
+core_nv08_ylabel = 'Core-SVP cost, 0.415b metric, log scale'
+hybrid_nv08_ylabel = 'Hybrid attack cost assuming Core-SVP preprocessing, 0.415b metric, log scale'
 core_bdgl16_ylabel = 'Core-SVP cost, 0.292b metric, log scale'
 hybrid_bdgl16_ylabel = 'Hybrid attack cost assuming Core-SVP preprocessing, 0.292b metric, log scale'
 core_d18_ylabel = 'Core-SVP cost, 0.3495b metric, log scale'
@@ -15,16 +15,16 @@ Params3(a,b,c) = sprintf("n=%d, q=%d, w=%.2fn", column(a), column(b), column(c)/
 
 # Constants for arrows
 ntruhrss701_bytes = 2276          # 2 * ceil(700*log(2,8192)/8)
-ntruhrss701_core_nv11_cost = `grep 701 ./data/core_nv11_hrss_pow2q.dat | cut -d, -f 4`
-ntruhrss701_hybrid_nv11_cost  = `grep 701 ./data/hybrid_nv11_hrss_pow2q.dat | cut -d, -f 4`
+ntruhrss701_core_nv08_cost = `grep 701 ./data/core_nv08_hrss_pow2q.dat | cut -d, -f 4`
+ntruhrss701_hybrid_nv08_cost  = `grep 701 ./data/hybrid_nv08_hrss_pow2q.dat | cut -d, -f 4`
 ntruhrss701_core_bdgl16_cost = `grep 701 ./data/core_bdgl16_hrss_pow2q.dat | cut -d, -f 4`
 ntruhrss701_hybrid_bdgl16_cost  = `grep 701 ./data/hybrid_bdgl16_hrss_pow2q.dat | cut -d, -f 4`
 ntruhrss701_core_d18_cost = `grep 701 ./data/core_d18_hrss_pow2q.dat | cut -d, -f 4`
 ntruhrss701_hybrid_d18_cost  = `grep 701 ./data/hybrid_d18_hrss_pow2q.dat | cut -d, -f 4`
 
 ntruhps2048509_bytes = 1398
-ntruhps2048509_core_nv11_cost = `grep "509, 2048" ./data/core_nv11_hps_pow2q.dat | cut -d, -f 4`
-ntruhps2048509_hybrid_nv11_cost  = `grep "509, 2048" ./data/hybrid_nv11_hps_pow2q.dat | cut -d, -f 4`
+ntruhps2048509_core_nv08_cost = `grep "509, 2048" ./data/core_nv08_hps_pow2q.dat | cut -d, -f 4`
+ntruhps2048509_hybrid_nv08_cost  = `grep "509, 2048" ./data/hybrid_nv08_hps_pow2q.dat | cut -d, -f 4`
 ntruhps2048509_core_bdgl16_cost = `grep "509, 2048" ./data/core_bdgl16_hps_pow2q.dat | cut -d, -f 4`
 ntruhps2048509_hybrid_bdgl16_cost  = `grep "509, 2048" ./data/hybrid_bdgl16_hps_pow2q.dat | cut -d, -f 4`
 ntruhps2048509_core_d18_cost = `grep "509, 2048" ./data/core_d18_hps_pow2q.dat | cut -d, -f 4`
@@ -33,8 +33,8 @@ ntruhps2048509_hybrid_d18_cost  = `grep "509, 2048" ./data/hybrid_d18_hps_pow2q.
 ntruhps2048677_bytes = 1860
 #ntruhps2048677_core_bdgl_cost = 144
 #ntruhps2048677_hybrid_bdgl_cost = 144
-ntruhps2048677_core_nv11_cost = `grep "677, 2048" ./data/core_nv11_hps_pow2q.dat | cut -d, -f 4`
-ntruhps2048677_hybrid_nv11_cost  = `grep "677, 2048" ./data/hybrid_nv11_hps_pow2q.dat | cut -d, -f 4`
+ntruhps2048677_core_nv08_cost = `grep "677, 2048" ./data/core_nv08_hps_pow2q.dat | cut -d, -f 4`
+ntruhps2048677_hybrid_nv08_cost  = `grep "677, 2048" ./data/hybrid_nv08_hps_pow2q.dat | cut -d, -f 4`
 ntruhps2048677_core_bdgl16_cost = `grep "677, 2048" ./data/core_bdgl16_hps_pow2q.dat | cut -d, -f 4`
 ntruhps2048677_hybrid_bdgl16_cost  = `grep "677, 2048" ./data/hybrid_bdgl16_hps_pow2q.dat | cut -d, -f 4`
 ntruhps2048677_core_d18_cost = `grep "677, 2048" ./data/core_d18_hps_pow2q.dat | cut -d, -f 4`
@@ -46,8 +46,8 @@ ntruhps2048677_hybrid_d18_cost  = `grep "677, 2048" ./data/hybrid_d18_hps_pow2q.
 #ntruhps4096701_hybrid_bdgl_cost = 146
 
 ntruhps4096821_bytes = 2460
-ntruhps4096821_core_nv11_cost = `grep "821, 4096" ./data/core_nv11_hps_pow2q.dat | cut -d, -f 4`
-ntruhps4096821_hybrid_nv11_cost  = `grep "821, 4096" ./data/hybrid_nv11_hps_pow2q.dat | cut -d, -f 4`
+ntruhps4096821_core_nv08_cost = `grep "821, 4096" ./data/core_nv08_hps_pow2q.dat | cut -d, -f 4`
+ntruhps4096821_hybrid_nv08_cost  = `grep "821, 4096" ./data/hybrid_nv08_hps_pow2q.dat | cut -d, -f 4`
 ntruhps4096821_core_bdgl16_cost = `grep "821, 4096" ./data/core_bdgl16_hps_pow2q.dat | cut -d, -f 4`
 ntruhps4096821_hybrid_bdgl16_cost  = `grep "821, 4096" ./data/hybrid_bdgl16_hps_pow2q.dat | cut -d, -f 4`
 ntruhps4096821_core_d18_cost = `grep "821, 4096" ./data/core_d18_hps_pow2q.dat | cut -d, -f 4`
@@ -83,16 +83,16 @@ sntrup5167857_hybrid_bdgl_cost  = 262
 #sntrup5167857_hybrid_bdgl_cost  = 267
 
 ntruees443ep1_bytes = 1220
-ntruees443ep1_core_nv11_cost = `grep 443 ./data/core_nv11_ees.dat | cut -d, -f 4`
-ntruees443ep1_hybrid_nv11_cost = `grep 443 ./data/hybrid_nv11_ees.dat | cut -d, -f 4`
+ntruees443ep1_core_nv08_cost = `grep 443 ./data/core_nv08_ees.dat | cut -d, -f 4`
+ntruees443ep1_hybrid_nv08_cost = `grep 443 ./data/hybrid_nv08_ees.dat | cut -d, -f 4`
 ntruees443ep1_core_bdgl16_cost = `grep 443 ./data/core_bdgl16_ees.dat | cut -d, -f 4`
 ntruees443ep1_hybrid_bdgl16_cost = `grep 443 ./data/hybrid_bdgl16_ees.dat | cut -d, -f 4`
 ntruees443ep1_core_d18_cost = `grep 443 ./data/hybrid_d18_ees.dat | cut -d, -f 4`
 ntruees443ep1_hybrid_d18_cost  = `grep 443 ./data/hybrid_d18_ees.dat | cut -d, -f 4`
 
 ntruees743ep1_bytes = 2044
-ntruees743ep1_core_nv11_cost = `grep 743 ./data/core_nv11_ees.dat | cut -d, -f 4`
-ntruees743ep1_hybrid_nv11_cost = `grep 743 ./data/hybrid_nv11_ees.dat | cut -d, -f 4`
+ntruees743ep1_core_nv08_cost = `grep 743 ./data/core_nv08_ees.dat | cut -d, -f 4`
+ntruees743ep1_hybrid_nv08_cost = `grep 743 ./data/hybrid_nv08_ees.dat | cut -d, -f 4`
 ntruees743ep1_core_bdgl16_cost = `grep 743 ./data/core_bdgl16_ees.dat | cut -d, -f 4`
 ntruees743ep1_hybrid_bdgl16_cost = `grep 743 ./data/hybrid_bdgl16_ees.dat | cut -d, -f 4`
 ntruees743ep1_core_d18_cost = `grep 743 ./data/core_d18_ees.dat | cut -d, -f 4`
@@ -127,6 +127,7 @@ lc_fill = "#ffffff"
 
 lc_gray         = "#dddddd"
 lc_gray2        = "#aaaaaa"
+lc_black        = "#000000"
 lc_arrow        = "#000000"
 lc_hrss_prime   = "#009e73"
 lc_hrss_pow2    = "#56b4e9"

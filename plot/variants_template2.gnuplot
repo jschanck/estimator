@@ -20,32 +20,32 @@ set ylabel xxxx_yyyy_ylabel
 #              to sntrup4591761_bytes+ax2,sntrup4591761_xxxx_yyyy_cost+ay2
 #set label 1 "sntrup4591761" at sntrup4591761_bytes-580,sntrup4591761_xxxx_yyyy_cost+ay1+7
 
-set arrow 2 size 1 front lc rgb lc_gray2 \
+set arrow 2 size 1 front lc rgb lc_black \
             from ntruhrss701_bytes+ax1,ntruhrss701_xxxx_yyyy_cost+ay1-13 \
               to ntruhrss701_bytes+ax2,ntruhrss701_xxxx_yyyy_cost+ay2
 set label 2 "ntruhrss701" at ntruhrss701_bytes+ax2-500,ntruhrss701_xxxx_yyyy_cost+ay1-12
 
-set arrow 3 size 1 front lc rgb lc_gray2 \
+set arrow 3 size 1 front lc rgb lc_black \
             from ntruhps2048509_bytes,ntruhps2048509_xxxx_yyyy_cost+ay1-1 \
               to ntruhps2048509_bytes,ntruhps2048509_xxxx_yyyy_cost+ay2
 set label 3 "ntruhps2048509" at ntruhps2048509_bytes-200,ntruhps2048509_xxxx_yyyy_cost+ay1
 
-set arrow 4 size 1 front lc rgb lc_gray2 \
+set arrow 4 size 1 front lc rgb lc_black \
             from ntruhps2048677_bytes+ax1,ntruhps2048677_xxxx_yyyy_cost+ay1-13 \
               to ntruhps2048677_bytes+ax2,ntruhps2048677_xxxx_yyyy_cost+ay2
 set label 4 "ntruhps2048677" at ntruhps2048677_bytes-550,ntruhps2048677_xxxx_yyyy_cost+ay1-12
 
-set arrow 5 size 1 front lc rgb lc_gray2 \
+set arrow 5 size 1 front lc rgb lc_black \
             from ntruhps4096821_bytes+ax1,ntruhps4096821_xxxx_yyyy_cost+ay1-13 \
               to ntruhps4096821_bytes+ax2,ntruhps4096821_xxxx_yyyy_cost+ay2
 set label 5 "ntruhps4096821" at ntruhps4096821_bytes-550,ntruhps4096821_xxxx_yyyy_cost+ay1-12
 
-set arrow 6 size 1 front lc rgb lc_gray2 \
+set arrow 6 size 1 front lc rgb lc_black \
             from ntruees443ep1_bytes,ntruees443ep1_xxxx_yyyy_cost+ay1-1 \
               to ntruees443ep1_bytes,ntruees443ep1_xxxx_yyyy_cost+ay2
-set label 6 "ntru-pke-443" at ntruees443ep1_bytes-50,ntruees443ep1_xxxx_yyyy_cost+ay1
+set label 6 "ntru-pke-443" at ntruees443ep1_bytes-125,ntruees443ep1_xxxx_yyyy_cost+ay1
 
-set arrow 7 size 1 front lc rgb lc_gray2 \
+set arrow 7 size 1 front lc rgb lc_black \
             from ntruees743ep1_bytes+ax1,ntruees743ep1_xxxx_yyyy_cost+ay1-13 \
               to ntruees743ep1_bytes+ax2,ntruees743ep1_xxxx_yyyy_cost+ay2
 set label 7 "ntru-pke-743" at ntruees743ep1_bytes-450,ntruees743ep1_xxxx_yyyy_cost+ay1-12
