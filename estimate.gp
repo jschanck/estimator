@@ -46,16 +46,6 @@ SieveD18(b) = { (0.2075 + 0.142)*b }
 SieveBDGL16(b) = { b*log2(sqrt(3/2)); }
 QSieveLaa15(b) = { b*log2(sqrt(13/9)); }
 SieveSpace(b) = { b*log2(sqrt(4/3)); }
-CSWSpace(b,angle) = {
-  csw = 1/2 * log2(2*Pi*b) + log2(cos(angle)) - (b-1)*log2(sin(angle));
-}
-JJPSpace(b,angle) = {
-  my(jjp_sin_q, log2_c, csw, jjp);
-  jjp_sin_q = ((cos(angle) - 1)^2 * (1 + 2*cos(angle))) / sin(angle);
-  log2_c = log2(log(sin(angle)) - log(jjp_sin_q));
-  csw = CSWSpace(b,angle);
-  jjp = csw + log2(b) + log2_c;
-}
 
 /* Table indicating which cost functions will be used */
 COSTFNS =                                  /* enabled? */
