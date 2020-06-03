@@ -185,7 +185,7 @@ NTRUHRSS(n) = {
 
 NTRUHPS(n,q) = {
   my(t,coeffDist);
-  t = q/16 - 1;
+  t = min(q/16 - 1, round(n/3));
   coeffDist = fixedWtTri(n, t);
   Run(n-1, n-1, q, coeffDist);
 }
