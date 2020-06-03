@@ -3,9 +3,9 @@ read("params.gp")
 default_config() = {
 output_dir = "~/tmp/ntru_data/";
 
-MODEL = "d18";
-HYBRID_MODEL = SieveD18;
-CORE_MODEL = SieveD18;
+MODEL = "bdgl";
+HYBRID_MODEL = SieveBDGL16;
+CORE_MODEL = SieveBDGL16;
 
 N_LOW = 443;
 N_HIGH = 941;
